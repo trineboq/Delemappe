@@ -1,0 +1,50 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "007-tmp",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": false,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "",
+      "template": ""
+    }
+  ],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": ""
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": true,
+  "enabled_templates_hotkeys": [
+    "007-tmp/Observasjon/Append/NewLine-TimeNow.md",
+    "007-tmp/Observasjon/Txt/Reiser seg.md",
+    "007-tmp/Observasjon/Append/Kontekst.md",
+    "007-tmp/Observasjon/Txt/ansatt.md",
+    "007-tmp/Observasjon/Txt/barnet.md",
+    "007-tmp/Observasjon/Txt/går til.md",
+    "007-tmp/Observasjon/Append/NewScene.md",
+    "007-tmp/Observasjon/Append/Analyse.md",
+    "007-tmp/Observasjon/Txt/Setter seg.md",
+    "007-tmp/Observasjon/Txt/Annet barn.md",
+    "007-tmp/Observasjon/Txt/det andre barnet.md",
+    "007-tmp/Nytt notat/Nytt notat i mappe m teamsID navn.md",
+    "007-tmp/Nytt notat/Observasjonsmal.md"
+  ],
+  "startup_templates": [
+    ""
+  ],
+  "intellisense_render": 1
+}
