@@ -1,0 +1,328 @@
+{
+  "main": {
+    "id": "d5b91788b69b88cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "1fd6c0eb77bbf088",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "706c1ad61f5a7bc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "007-tmp/Nytt notat/Observasjon.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Observasjon"
+            }
+          },
+          {
+            "id": "562bbdb94a4b345b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "007-tmp/Observasjon/Append/Bemanning.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Bemanning"
+            }
+          },
+          {
+            "id": "e4081489d52126d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "007-tmp/Observasjon/Txt/det andre barnet.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "det andre barnet"
+            }
+          },
+          {
+            "id": "1d2347c8a7e73197",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "007-tmp/Nytt notat/Observasjon.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Observasjon"
+            }
+          },
+          {
+            "id": "03df265eb12ef3c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "001-Inbox/Forkortelser.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Forkortelser"
+            }
+          },
+          {
+            "id": "77c20b3142677ce3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "007-tmp/Observasjon/Append/Analyse.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Analyse"
+            }
+          },
+          {
+            "id": "2dfb2644e449f5a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "007-tmp/Observasjon/Append/Fysisk utforming.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fysisk utforming"
+            }
+          },
+          {
+            "id": "c5ae53b6d2df171d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "001-Inbox/250923-obs-Syf2021.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "250923-obs-Syf2021"
+            }
+          },
+          {
+            "id": "9d1c003859b75996",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "001-Inbox/20251009-obs-NHR2021.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "20251009-obs-NHR2021"
+            }
+          }
+        ],
+        "currentTab": 8
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e8533503fde56339",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "cae05a5fee380987",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "6c77128cd78b1e7a",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "44bd04bfd9f216a4",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "ef9509b6d90e6396",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
+        }
+      },
+      {
+        "id": "59c2d4ade1c8b79c",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "86cffb28248517c0",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "0a7bacf8517007c0",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "001-Inbox/20251002-obs-Ian2021.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "67467b8313d33dbf",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "001-Inbox/Untitled.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "0ba145f31f0ef176",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "001-Inbox/Untitled.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "bases:Create new base": false,
+      "darlal-switcher-plus:Open in Headings Mode": false,
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "obsidian-regex-pipeline:Regex Rulesets": false
+    }
+  },
+  "active": "9d1c003859b75996",
+  "lastOpenFiles": [
+    "001-Inbox/250923-obs-Syf2021.md",
+    "001-Inbox/20251009-obs-NHR2021.md",
+    "007-tmp/Nytt notat/Observasjon.md",
+    "001-Inbox/20251007-obs-Abc12345.md",
+    "001-Inbox/20251002-obs-Ian2021.md",
+    "001-Inbox/Untitled 1.md",
+    "001-Inbox/Untitled.md",
+    "007-tmp/Observasjon/Append/Fysisk utforming.md",
+    "007-tmp/Observasjon/Append/Bemanning.md",
+    "007-tmp/Observasjon/Append/Barnets stemme.md",
+    "007-tmp/Observasjon/Append/Analyse.md",
+    "007-tmp/Observasjon/Append/NewLine-TimeNow.md",
+    "001-Inbox/Div.md",
+    "09-archive",
+    "001-Inbox/20250902-obs-GAS2021.md",
+    "001-Inbox/Spm-grenser samspill.md",
+    "001-Inbox/Forkortelser.md",
+    "001-Inbox/Diverse spørsmål observasjon.md",
+    "007-tmp/Observasjon/Append/Spm-Kommunikasjon.md",
+    "008-atm/IMG_2950.jpeg",
+    "008-atm/IMG_2953.jpeg",
+    "008-atm/IMG_2954.jpeg",
+    "008-atm/IMG_2955.jpeg",
+    "008-atm/IMG_2956.jpeg",
+    "008-atm/IMG_2957.jpeg",
+    "008-atm/IMG_2958.jpeg",
+    "008-atm/IMG_2959.jpeg",
+    "008-atm/IMG_2960.jpeg",
+    "008-atm/IMG_2961.jpeg",
+    "001-Inbox/20250919-obs-MTG2020.md",
+    "001-Inbox/20250917-obs-VKS2021.md",
+    "001-Inbox/20250917-obs-Vks2021.md",
+    "007-tmp/Observasjon/Txt/det andre barnet.md",
+    "007-tmp/Observasjon/Txt/Annet barn.md",
+    "007-tmp/Observasjon/Append/Fysisk utforming-spm.md",
+    "007-tmp/Observasjon/Append/Kompetanse.md",
+    "007-tmp/Observasjon/Txt/Går i retning.md",
+    "007-tmp/Observasjon",
+    "007-tmp/Observasjon/Append"
+  ]
+}
