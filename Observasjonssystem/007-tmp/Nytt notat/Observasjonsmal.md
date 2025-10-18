@@ -1,5 +1,5 @@
 <%*
-let teamsID = await tp.system.prompt("Teams-ID","")
+let teamsID = await tp.system.prompt("ID","")
 titleName = tp.date.now("YYMMDD") + "-" + teamsID
 await tp.file.rename(titleName);
 await tp.file.move( teamsID + "/" + titleName)
