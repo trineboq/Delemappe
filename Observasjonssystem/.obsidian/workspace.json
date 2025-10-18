@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "007-tmp/Observasjon/Append/NewLine-TimeNow.md",
+                "file": "007-tmp/Append/NewLine-TimeNow.md",
                 "mode": "source",
                 "source": false
               },
@@ -47,7 +47,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "007-tmp/Observasjon/Append/NewScene.md",
+                "file": "007-tmp/Append/NewScene.md",
                 "mode": "source",
                 "source": false
               },
@@ -246,12 +246,12 @@
   },
   "active": "0103699ddeba1135",
   "lastOpenFiles": [
-    "007-tmp/Nytt notat/Observasjonsmal.md",
+    "007-tmp/Observasjonsmal.md",
     "ABC1234/251010-ABC1234.md",
-    "007-tmp/Observasjon/Append/NewLine-TimeNow.md",
-    "007-tmp/Observasjon/Append/Kontekst.md",
-    "007-tmp/Observasjon/Append/Kompetanse.md",
-    "007-tmp/Observasjon/Append/Fysisk utforming-spm.md",
+    "007-tmp/Append/NewLine-TimeNow.md",
+    "007-tmp/Append/Kontekst.md",
+    "007-tmp/Append/Kompetanse.md",
+    "007-tmp/Append/Fysisk utforming-spm.md",
     "Fysisk utforming.md",
     "_Etter observasjon.md",
     "ABC1234/ABC1234",

@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "007-tmp/Observasjon/Append/Bemanning.md",
+                "file": "007-tmp/Append/Bemanning.md",
                 "mode": "source",
                 "source": false
               },
@@ -41,7 +41,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "007-tmp/Observasjon/Txt/det andre barnet.md",
+                "file": "007-tmp/Txt/det andre barnet.md",
                 "mode": "source",
                 "source": false
               },
@@ -83,7 +83,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "007-tmp/Observasjon/Append/Analyse.md",
+                "file": "007-tmp/Append/Analyse.md",
                 "mode": "source",
                 "source": true
               },
@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "007-tmp/Observasjon/Append/Fysisk utforming.md",
+                "file": "007-tmp/Append/Fysisk utforming.md",
                 "mode": "source",
                 "source": false
               },
@@ -292,18 +292,18 @@
     "001-Inbox/20251002-obs-Ian2021.md",
     "001-Inbox/Untitled 1.md",
     "001-Inbox/Untitled.md",
-    "007-tmp/Observasjon/Append/Fysisk utforming.md",
-    "007-tmp/Observasjon/Append/Bemanning.md",
-    "007-tmp/Observasjon/Append/Barnets stemme.md",
-    "007-tmp/Observasjon/Append/Analyse.md",
-    "007-tmp/Observasjon/Append/NewLine-TimeNow.md",
+    "007-tmp/Append/Fysisk utforming.md",
+    "007-tmp/Append/Bemanning.md",
+    "007-tmp/Append/Barnets stemme.md",
+    "007-tmp/Append/Analyse.md",
+    "007-tmp/Append/NewLine-TimeNow.md",
     "001-Inbox/Div.md",
     "09-archive",
     "001-Inbox/20250902-obs-GAS2021.md",
     "001-Inbox/Spm-grenser samspill.md",
     "001-Inbox/Forkortelser.md",
     "001-Inbox/Diverse spørsmål observasjon.md",
-    "007-tmp/Observasjon/Append/Spm-Kommunikasjon.md",
+    "007-tmp/Append/Spm-Kommunikasjon.md",
     "008-atm/IMG_2950.jpeg",
     "008-atm/IMG_2953.jpeg",
     "008-atm/IMG_2954.jpeg",
@@ -317,12 +317,12 @@
     "001-Inbox/20250919-obs-MTG2020.md",
     "001-Inbox/20250917-obs-VKS2021.md",
     "001-Inbox/20250917-obs-Vks2021.md",
-    "007-tmp/Observasjon/Txt/det andre barnet.md",
-    "007-tmp/Observasjon/Txt/Annet barn.md",
-    "007-tmp/Observasjon/Append/Fysisk utforming-spm.md",
-    "007-tmp/Observasjon/Append/Kompetanse.md",
-    "007-tmp/Observasjon/Txt/Går i retning.md",
+    "007-tmp/Txt/det andre barnet.md",
+    "007-tmp/Txt/Annet barn.md",
+    "007-tmp/Append/Fysisk utforming-spm.md",
+    "007-tmp/Append/Kompetanse.md",
+    "007-tmp/Txt/Går i retning.md",
     "007-tmp/Observasjon",
-    "007-tmp/Observasjon/Append"
+    "007-tmp/Append"
   ]
 }

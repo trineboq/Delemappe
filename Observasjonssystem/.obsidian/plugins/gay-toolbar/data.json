@@ -121,39 +121,39 @@
     "mfnmmh03": {
       "id": "mfnmmh03",
       "tapIcon": "lucide-person-standing",
-      "onTapCommandId": "templater-obsidian:007-tmp/Observasjon/Txt/barnet.md",
+      "onTapCommandId": "templater-obsidian:007-tmp/Txt/barnet.md",
       "backgroundColor": "#ffb6c1"
     },
     "mfnmmu4r": {
       "id": "mfnmmu4r",
       "tapIcon": "lucide-a-arrow-up",
-      "onTapCommandId": "templater-obsidian:007-tmp/Observasjon/Txt/ansatt.md",
+      "onTapCommandId": "templater-obsidian:007-tmp/Txt/ansatt.md",
       "backgroundColor": "#ffb6c1"
     },
     "mfnmngxd": {
       "id": "mfnmngxd",
       "tapIcon": "lucide-arrow-left-right",
-      "onTapCommandId": "templater-obsidian:007-tmp/Observasjon/Txt/går til.md",
+      "onTapCommandId": "templater-obsidian:007-tmp/Txt/går til.md",
       "backgroundColor": "#ffb6c1"
     },
     "mfnms120": {
       "id": "mfnms120",
       "tapIcon": "lucide-arrow-big-up",
-      "onTapCommandId": "templater-obsidian:007-tmp/Observasjon/Txt/Reiser seg.md",
+      "onTapCommandId": "templater-obsidian:007-tmp/Txt/Reiser seg.md",
       "backgroundColor": "#ffb6c1"
     },
     "mfnmssrk": {
       "id": "mfnmssrk",
       "tapIcon": "lucide-download",
-      "onTapCommandId": "templater-obsidian:007-tmp/Observasjon/Txt/Setter seg.md",
+      "onTapCommandId": "templater-obsidian:007-tmp/Txt/Setter seg.md",
       "backgroundColor": "#ffb6c1"
     },
     "mfns5ffl": {
       "id": "mfns5ffl",
       "tapIcon": "lucide-timer-reset",
-      "onTapCommandId": "templater-obsidian:007-tmp/Observasjon/Append/NewLine-TimeNow.md",
+      "onTapCommandId": "templater-obsidian:007-tmp/Append/NewLine-TimeNow.md",
       "backgroundColor": "#ff0000",
-      "onPressCommandId": "templater-obsidian:007-tmp/Observasjon/Append/NewScene.md",
+      "onPressCommandId": "templater-obsidian:007-tmp/Append/NewScene.md",
       "pressIcon": "lucide-plus"
     },
     "mfns6roi": {
@@ -167,7 +167,7 @@
     "mfns9l61": {
       "id": "mfns9l61",
       "tapIcon": "lucide-a-large-small",
-      "onTapCommandId": "templater-obsidian:007-tmp/Observasjon/Txt/det andre barnet.md",
+      "onTapCommandId": "templater-obsidian:007-tmp/Txt/det andre barnet.md",
       "backgroundColor": "#ffb6c1"
     },
     "mfntqylw": {

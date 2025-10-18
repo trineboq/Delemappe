@@ -145,7 +145,7 @@
       },
       "format": {
         "enabled": true,
-        "format": "**Dato:** {{DATE:DD.MM.YYYY}}\n**Fra kl:** {{time}}\n**Antall barn:** {{value:AntallBarn}}\n**Antall voksne:** {{value:AntallVoksne}}\n**Barnets dagsform:** {{value:BarnetsDagsform}}"
+        "format": "**Dato:** {{DATE:DD.MM.YYYY}}\n**Fra kl:** {{time}}\n**Antall barn:** {{value:AntallBarn}}\n**Antall voksne:** {{value:AntallVoksne}}\n**Barnets dagsform:** {{value:BarnetsDagsform}}\n"
       },
       "insertAfter": {
         "enabled": true,
