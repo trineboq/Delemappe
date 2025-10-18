@@ -5,4 +5,4 @@ let Voksne = await tp.system.prompt("Antall voksne:","")
 -%>
 
 ### <% Scene %> (Antall barn: <% Brn %>; Antall ansatte: <% Voksne %>)
-<% tp.date.now("HH:mm:ss") %>: <% tp.file.cursor(1) %>
+**<% tp.date.now("HH:mm:ss") %>:** <% tp.file.cursor(1) %>
