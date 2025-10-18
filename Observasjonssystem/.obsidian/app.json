@@ -2,7 +2,7 @@
   "alwaysUpdateLinks": true,
   "defaultViewMode": "source",
   "focusNewTab": true,
-  "livePreview": false,
+  "livePreview": true,
   "promptDelete": false,
   "readableLineLength": true,
   "showFrontmatter": true,
