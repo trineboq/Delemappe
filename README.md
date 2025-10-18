@@ -33,7 +33,7 @@ Last ned mappen "Observasjonssystem"
 3. En zip-fil blir lastet ned. Pakk ut denne og flytt mappen "Observasjonssystem over i obsidian-mappe på icloud. 
 4. Velg "Erstatt" på spørsmål om dette.
 5. Åpne obsidian-appen fra mac 
-6. Opprett nytt hvelv fra mappe
+6. Opprett nytt hvelv fra mappe ![alt text](image.png)
 7. Velg mappen "Observasjonssystem".
 8. Når appen åpnes blir du spurt om du stoler på Godkjenn på spørsmål om stoler på forfatteren av hvelvet:
 ![alt text](Observasjonssystem/Apx/Do%20you%20trust%20the%20author%20of%20this%20vault.png)
