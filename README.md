@@ -38,7 +38,8 @@ Opprett nytt hvelv fra mappe
 Velg mappen "Observasjonssystem".
 
 Når appen åpnes blir du spurt om du stoler på Godkjenn på spørsmål om stoler på forfatteren av hvelvet:
-![alt text](image.png)
+
+![alt text](Apx/Do%20you%20trust%20the%20author%20of%20this%20vault.png)
 
 Velg en av alternativene ut fra dine preferanser.
 
