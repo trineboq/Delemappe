@@ -1,18 +1,22 @@
 # Les dette først
-Her finner du diverse mapper jeg ønsker å dele med andre. Les mer under
+Her finner du diverse mapper jeg ønsker å dele med andre.
 
-## Observasjonsverktøy
-> Gjelder mappene ".obsidian" og "007-Tmp"
+## Mappen Observasjonsverktøy
+> Ved å laste ned mappen og legge den Obsidian-mappe på icloud opprettes det et hvelv, som du kan du som utgangspunkt for et digitalt observasjonsverktøy. 
 
-Ved å laste ned disse mappene og legge dem i et Obsidian-hvelv, kan du bruke mitt digitale observasjonsverktøy. 
-
-Dette fungerer best hvis du bruker iphone og mac. 
+Dette fungerer best hvis du bruker iPhone og Mac. 
 
 ### 1) Last ned obsidian
 
-Du kan laste ned [obsidian](https://obsidian.md/download) til mac fra denne nettsiden. På iPhone søker du på obsidian i app-store.
+Du kan laste ned [obsidian](https://obsidian.md/download) til mac/windows fra denne nettsiden. 
 
-Last ned på iphone og velg synkronisering til icloud. Det blir da opprettet en mappe for obsidian i icloud-mappen din.
+Last ned Obsidian til iPhone ved å søke på obsidian i app-store.
+
+Last ned på iphone og velg synkronisering til icloud. 
+
+Opprett et hvelv med samme navn som mappen med observasjonssystemet "Observasjonssystem".
+
+Det blir da opprettet en mappe for obsidian i icloud-mappen din.
 
 Åpne et finder-vindu og naviger deg til nytt obsidian-hvelv.
 
@@ -20,14 +24,22 @@ Sørg for at skjulte filer er synlig i Finder - **Hurtigtast:** Command + Shift 
 
 Slett innholdet i mappen ".obsidian".
 
-### 2) Last ned mappene fra denne nettsiden 
-Last ned mappene ".obsidian" og "007-Tmp" ved å trykke på "<> Code" (Blå knapp på denne siden, over mappene) og last ned som zip-fil.
+### 2) Last ned mappe fra Github 
+Last ned mappen "Observasjonssystem"
+1. Trykke på "<> Code" (Blå knapp på denne siden, over mappene) 
+2. Trykk på fanen "Local" og "Download Zip"
 
-Følg deretter følgende prosedyre for å sette opp observasjonsverktøyet:
-1. Last ned mappen ".obsidian" fra denne github-siden
-2. Last ned mappen "007-tmp"
-3. Legg mapper inn i hvelvet
-4. Åpne obsidian-hvelvet
-5. Godkjenn på spørsmål om stoler på
+En zip-fil blir lastet ned. Pakk ut denne og flytt mappen "Observasjonssystem over i obsidian-mappe på icloud. 
 
-Du kan nå begynne å bruke observasjonssystemet
+Velg "Erstatt" på spørsmål om dette.
+
+Åpne obsidian-appen fra mac 
+Opprett nytt hvelv fra mappe
+Velg mappen "Observasjonssystem".
+
+Når appen åpnes blir du spurt om du stoler på Godkjenn på spørsmål om stoler på forfatteren av hvelvet:
+![alt text](image.png)
+
+Velg en av alternativene ut fra dine preferanser.
+
+Du kan nå begynne å bruke observasjonssystemet.
