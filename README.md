@@ -1,5 +1,5 @@
 # Observasjonssystem
-På denne siden deler jeg mitt obsidian-hvelv, som jeg bruker i observasjoner.
+På denne siden deler jeg mitt obsidian-hvelv, som jeg bruker i observasjoner (barnehage, saker om tilrettelegging).
 
 Her får du informasjon om hvordan komme i gang med systemet. 
 
