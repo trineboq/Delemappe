@@ -13,8 +13,6 @@ Oppsummert fremgangsmåte:
 3. Last ned obsidian-hvelvet fra github (unzip og flytt til obsidian-mappe i icloud drive)
 
 ## 1) Last ned obsidian til iphone
-
-**iPhone:** 
 1. Søk "Obsidian" i app-store eller bruk [denne lenken](https://apps.apple.com/us/app/obsidian-connected-notes/id1557175442)
 2. Last ned appen til telefon
    ![](Apx/LastNedTelefon1.jpeg)
