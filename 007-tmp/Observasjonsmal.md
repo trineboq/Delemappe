@@ -16,7 +16,7 @@ await tp.file.move( teamsID + "/" + titleName)
 
 
 > [!info]- Før observasjon
-> ![[_Før observasjon]]
+> ![[Om observasjon/Tips - Før (forberedelser)]]
 
 # Observasjon
 <%tp.date.now("YYMMDD")%>-<% teamsID %>-Observasjon
@@ -74,6 +74,6 @@ Barnet gjør bla bla
 
 ## Etter observasjon
 > [!info]- Nyttig info fra notat
-> ![[_etter observasjon]]
+> ![[Om observasjon/Tips - etter]]
 
 

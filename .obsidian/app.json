@@ -38,5 +38,7 @@
   "attachmentFolderPath": "./",
   "newFileLocation": "root",
   "newFileFolderPath": "001-Inbox",
-  "trashOption": "local"
+  "trashOption": "local",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "absolute"
 }
