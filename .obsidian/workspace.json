@@ -11,15 +11,32 @@
             "id": "0103699ddeba1135",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Om observasjonssystemet/_apx/Do you trust the author of this vault.png"
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Do you trust the author of this vault"
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "a47a16abe3a9ebfe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,12 +209,20 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e399a72cb544ef45",
+  "active": "a47a16abe3a9ebfe",
   "lastOpenFiles": [
+    "_apx/Last ned Zip.png",
+    "_apx/Code.png",
+    "README.md",
+    "Om observasjonssystemet/_apx/LastNedGithub2.png",
+    "_apx",
+    "Om observasjonssystemet/Last ned mappe fra Github.md",
+    "Untitled.md",
+    "Om observasjonssystemet/Kom i gang med observasjonssystemet.md",
+    "Om observasjonssystemet/_apx/Do you trust the author of this vault.png",
     "Diverse info/Markdown.md",
     "Om observasjonssystemet/Opprett nytt obs-notat.md",
     "Om observasjonssystemet/_apx/Opprett nytt obs-notat.png",
-    "README.md",
     "Om observasjonssystemet/Tips - etter.md",
     "Om observasjonssystemet/_apx/README-IMG-20260307142040824.jpeg",
     "Om observasjonssystemet/_apx/README-IMG-20260307142008786.jpeg",
@@ -207,16 +232,12 @@
     "Om observasjonssystemet/_apx/README-IMG-20260307141750019.jpeg",
     "Om observasjonssystemet/Last ned obsidian til mac.md",
     "Om observasjonssystemet/_apx",
-    "Om observasjonssystemet/Kom i gang med observasjonssystemet.md",
     "Om observasjonssystemet/Last ned obsidian til iphone.md",
     "Om zotero",
     "Diverse info",
     "Om observasjon/Tips - Før (forberedelser).md",
     "_Informasjon/Info-fil.md",
     "Om observasjonssystemet",
-    "Om observasjonssystemet/_apx/LastNedGithub1.png",
-    "Om observasjonssystemet/_apx/README-IMG-20260307143117258.png",
-    "Om observasjonssystemet/_apx/README-IMG-20260307143030993.png",
     "007-tmp/Append/NewLine-TimeNow.md",
     "007-tmp/Append/NewScene.md",
     "007-tmp/Observasjonsmal.md",
@@ -235,10 +256,6 @@
     "TEST123/251010-TEST123.md",
     "TEST123",
     "007-tmp/Andre maler/Nytt notat i mappe m teamsID navn.md",
-    "007-tmp/Andre maler/MCL-Multicolumn 1-valgtTekst.md",
-    "007-tmp/Andre maler/flytt fil.md",
-    "Test/251010Test.md",
-    "001-Inbox/Spm-grenser samspill.md",
-    "Test"
+    "007-tmp/Andre maler/MCL-Multicolumn 1-valgtTekst.md"
   ]
 }
