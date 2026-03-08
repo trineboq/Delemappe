@@ -1,0 +1,30 @@
+body{
+  --inline-title-margin-bottom:0px;
+  --status-bar-font-size:10px;
+  --icon-color: var(--color-accent);
+}
+
+body:not(.is-mobile) {
+  
+  --file-icon-color:red;
+
+  --background-modifier-border: transparent;
+  --background-modifier-border-hover: transparent;
+}
+
+/* Listepunkt */
+.theme-light {
+  --bullet-list-color:black;
+}
+.theme-dark {
+  --bullet-list-color:white;
+}
+.cm-s-obsidian .cm-formatting-list {
+  color: black !important;
+}
+
+/*
+.list-bullet {
+  color: var(--bullet-list-color);
+  color: var(--bullet-list-color) !important;
+}

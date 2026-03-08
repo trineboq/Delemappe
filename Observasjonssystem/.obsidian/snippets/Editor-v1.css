@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro|Noto+Sans+Mono|Poppins: wght@200|Source+Sans+Pro");
+/*
+  --bold-modifier:;
+  
+  :;
+  :;
+*/
+/* ======================= DIV TEKST =================================== */
+body:not(.is-mobile) {
+  --font-draft: "Source serif pro", serif;
+  --font-interface: "Poppins", sans-serif;
+  --font-mono: "Source+Sans+Pro", sans-serif;
+  --font-note: "Open sans", sans-serif;
+  --font-text: var(--font-note);
+  --font-ui-smaller: 12px;
+  --h1-font: "Source Serif Pro", serif;
+  --h1-size: 2.3em;
+  --h1-style: normal;
+  --h1-variant: all-small-caps;
+  --h1-weight: 600;
+  --h2-font: "Source Serif Pro", serif;
+  --h2-size: 1.65em;
+  --h2-style: normal;
+  --h2-variant: normal;
+  --h2-weight: 600;
+  --h3-font: "Source Serif Pro", serif;
+  --h3-size: 1.5em;
+  --h3-style: italic;
+  --h3-variant: normal;
+  --h3-weight: 600;
+  --h4-font: "Open sans", sans-serif;
+  --h4-size: 1.9em;
+  --h4-style: normal;
+  --h4-variant: all-small-caps;
+  --h4-weight: 500;
+  --h5-font: "Open sans", sans-serif;
+  --h5-size: 1.3em;
+  --h5-style: normal;
+  --h5-variant: normal;
+  --h5-weight: 500;
+  --h6-font: "Open sans", sans-serif;
+  --h6-size: 1.2em;
+  --h6-style: italic;
+  --h6-variant: normal;
+  --h6-weight: 500;
+  --inline-title-font: var(--font-interface);
+  --inline-title-size: var(--h3-size);
+  --inline-title-style: normal;
+  --inline-title-variant: normal;
+  --inline-title-weight: 400;
+}
+/* ======================= SPACING og LINJEAVSTAND =================================== */
+body:not(.is-mobile) {
+  --paragraph-spacing: 0.1em;
+  --paragraph-spacing-editing: 0.1em;
+  --line-height-normal: 1,5em;
+  --line-height-tight: 1,5em;
+  --inline-title-line-height: var(--h5-line-height);
+  --inline-title-margin-bottom: 0.3em;
+}
+.cm-s-obsidian, .markdown-source-view, .markdown-source-view.mod-cm6 .cm-scroller {
+  line-height: var(--line-height);
+  font-family: var(--font-text);
+}
+ul:not(.is-mobile) {
+  margin-block-start: 0.1em !important;
+  margin-block-end: 0.1em !important;
+}
+/* ======================= DIV Inline title, heading, text =================================== */
+.theme-light {
+  --bold-color: #fe0c0c;
+  --bold-colors: #fe0c0c;
+  --italic-colors: #4666ff;
+  --itallic-color: #4666ff;
+}
+.theme-dark {
+  --bold-color: #fdaeae;
+  --bold-colors: var(--bold-color);
+  --italic-color: #a9b6f7;
+  --italic-colors: var(--italic-color);
+}
+body {
+  --normal-weight: 400;
+  --bold-weight: 600;
+  --italic-weight: inherit;
+}
+i,em, .cm-em, span.cm-em {
+  font-style: italic;
+  color: var(--h1-color);
+}
+/* 
+b,strong, .cm-strong, span.cm-strong, span.cm-strong.cm-s-obsidian span.cm-quote, span.cm-strong.cm-quote.cm-quote-1 {
+  font-weight: var(--bold-weight);
+  color: var(--bold-color);
+}*/
+/* ======================= KOMMENTARER ========================== */
+body:not(.is-mobile) {
+  --comment-color-start-end:red;
+}
+.cm-comment-start, .cm-comment-end {
+  color:var(--comment-color-start-end);
+}
+/*.markdown-source-view.cm-s-obsidian.mod-cm6.is-live-preview, .markdown-source-view.cm-s-obsidian.mod-cm6.is-readable-line-width, div.cm-scroller {
+  background-color: white;
+}*/
+
+/* .inline-title {
+  font-weight: var(--inline-title-weight);
+  font-size: var(--inline-title-size);
+  line-height: var(--inline-title-line-height);
+  font-style: var(--inline-title-style);
+  font-variant: var(--inline-title-variant);
+  font-family: var(--inline-title-font);
+  letter-spacing: -0.015em;
+}*/

@@ -1,0 +1,442 @@
+{
+  "userAdmonitions": {
+    "center": {
+      "type": "center",
+      "color": "40, 134, 160",
+      "icon": {
+        "name": "image",
+        "type": "font-awesome"
+      },
+      "command": true,
+      "injectColor": true,
+      "noTitle": true
+    },
+    "draft": {
+      "type": "draft",
+      "color": "40, 237, 202",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-x"
+      },
+      "command": false,
+      "title": "Utkast",
+      "injectColor": false,
+      "noTitle": false,
+      "copy": false
+    },
+    "code": {
+      "type": "code",
+      "color": "253, 57, 73",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-x"
+      },
+      "command": false,
+      "injectColor": false,
+      "noTitle": false
+    },
+    "cite": {
+      "type": "cite",
+      "color": "113, 67, 12",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-x"
+      },
+      "command": false,
+      "title": "Sitat",
+      "injectColor": false,
+      "noTitle": false,
+      "copy": false
+    },
+    "header": {
+      "type": "header",
+      "color": "255, 212, 163",
+      "icon": {
+        "name": "home",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "breadcrumbs",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "Viktig": {
+      "type": "Viktig",
+      "color": "254, 12, 12",
+      "icon": {
+        "name": "exclamation-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "lecture": {
+      "type": "lecture",
+      "color": "247, 192, 192",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-airplay"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "lecturenb": {
+      "type": "lecturenb",
+      "color": "229, 128, 128",
+      "icon": {
+        "name": "exclamation-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": false
+    },
+    "link": {
+      "type": "link",
+      "color": "255, 124, 92",
+      "icon": {
+        "type": "obsidian",
+        "name": "link"
+      },
+      "command": false,
+      "title": "Lenker og vedlegg",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "meta": {
+      "type": "meta",
+      "color": "152, 219, 123",
+      "icon": {
+        "name": "indent",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Metadata",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "KI": {
+      "type": "KI",
+      "color": "192, 159, 254",
+      "icon": {
+        "name": "robot",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "clip": {
+      "type": "clip",
+      "color": "153, 165, 255",
+      "icon": {
+        "name": "copy",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Utklipp",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "info": {
+      "type": "info",
+      "color": "153, 165, 255",
+      "icon": {
+        "name": "info",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Utklipp",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "web": {
+      "type": "web",
+      "color": "184, 205, 255",
+      "icon": {
+        "name": "internet-explorer",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Nettartikkel",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "arkiv": {
+      "type": "arkiv",
+      "color": "144, 149, 162",
+      "icon": {
+        "name": "bitbucket",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Arkiv",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "multi-column": {
+      "type": "multi-column",
+      "color": "68, 161, 22",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-x"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false
+    },
+    "blank-container": {
+      "type": "blank-container",
+      "color": "104, 147, 232",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "Pink": {
+      "type": "Pink",
+      "color": "255, 153, 197",
+      "icon": {
+        "name": "question-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Magenta": {
+      "type": "Magenta",
+      "color": "254, 154, 189",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-list-video"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "red": {
+      "type": "red",
+      "color": "254, 12, 12",
+      "icon": {
+        "name": "exclamation-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Orange": {
+      "type": "Orange",
+      "color": "255, 183, 125",
+      "icon": {
+        "name": "list",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Yellow": {
+      "type": "Yellow",
+      "color": "255, 234, 0",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Green": {
+      "type": "Green",
+      "color": "149, 212, 122",
+      "icon": {
+        "name": "book",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Cyan": {
+      "type": "Cyan",
+      "color": "143, 193, 240",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-quote"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "Blue": {
+      "type": "Blue",
+      "color": "70, 102, 255",
+      "icon": {
+        "name": "id-badge",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Purple": {
+      "type": "Purple",
+      "color": "138, 94, 243",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-quote"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "xPink": {
+      "type": "xPink",
+      "color": "255, 146, 162",
+      "icon": {
+        "type": "octicons",
+        "name": "dot"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "xRed": {
+      "type": "xRed",
+      "color": "255, 109, 109",
+      "icon": {
+        "type": "octicons",
+        "name": "x-circle-fill"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "xYellow": {
+      "type": "xYellow",
+      "color": "255, 234, 0",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-flag-triangle-left"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "xGreen": {
+      "type": "xGreen",
+      "color": "149, 212, 122",
+      "icon": {
+        "type": "octicons",
+        "name": "bookmark"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "xBlue": {
+      "type": "xBlue",
+      "color": "46, 81, 255",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-flag-triangle-left"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "xPurple": {
+      "type": "xPurple",
+      "color": "202, 185, 241",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-flag-triangle-left"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "Husk-gul": {
+      "type": "Husk-gul",
+      "color": "255, 240, 191",
+      "icon": {
+        "type": "octicons",
+        "name": "note"
+      },
+      "command": false,
+      "title": "NB!",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Husk-orange": {
+      "type": "Husk-orange",
+      "color": "250, 112, 0",
+      "icon": {
+        "name": "asterisk",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "NB!",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": true,
+  "version": "10.3.2",
+  "autoCollapse": true,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": false
+  },
+  "icons": [
+    "octicons",
+    "rpg"
+  ],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": true,
+  "snippetPath": "custom-admonitions.affbad"
+}

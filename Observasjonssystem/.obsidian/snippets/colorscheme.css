@@ -1,0 +1,206 @@
+body {
+    --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
+    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+    --color-accent-1: hsl(
+    calc(var(--accent-h) - 3), 
+    calc(var(--accent-s) * 1.02), 
+    calc(var(--accent-l) * 1.15));
+    --color-accent-2: hsl(
+    calc(var(--accent-h) - 5), 
+    calc(var(--accent-s) * 1.05), 
+    calc(var(--accent-l) * 1.29));
+
+    --search-icon-color:transparent;
+
+    --code-radius:7px;
+/*
+    --interactive-accent:;
+    --text-faint:;
+
+TAGS
+    --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+    --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+    --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+    --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+
+*/}
+.theme-light {
+    --h1-color: #4666ff;
+    --h2-color: #fe0c0c;
+    --h3-color: #7ec445;
+    --h4-color: #ff884a;
+    --h5-color: #ff92a2;
+    --h6-color: #9455ec;
+
+    --blockquote-background-color:rgb(249, 239, 239);
+
+    --bold-color: #fe0c0c;
+    --bold-colors: var(--bold-color);
+
+    --italic-color: #4666ff;
+    --italic-colors: var(--italic-color);
+
+    --text-faint:#ababab;
+    --text-highlight-bg: #ffb192;
+    --text-normal:#222222;
+
+    --inline-code-background:rgba(255, 223, 233, 0.698);
+    --inline-code-color: #FE0C0C;
+
+    --tag-color: #fe0c0c;
+    --tag-background: #fdd0d6;
+    --tag-background-hover: #fc7085;
+    --tag-color-hover: var(--text-accent);
+
+    --link-color: #ff884a;
+    --link-color-hover: rgb(255, 183, 125);
+    --link-external-color: #4666ff;
+    --link-external-color-hover: #b6c7f9;
+    --link-unresolved-color: #ff92a2;
+    --link-unresolved-decoration-color: #ff92a2;
+/*
+    --tag-color: var(--text-accent);
+    --tag-color-hover: var(--text-accent);
+    
+    --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+    --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+
+    --code-normal: var(--text-normal);
+    --code-comment: var(--text-faint);
+    --code-function: var(--color-yellow);
+    --code-important: var(--color-orange);
+    --code-keyword: var(--color-pink);
+    --code-operator: var(--color-red);
+    --code-property: var(--color-cyan);
+    --code-punctuation: var(--text-muted);
+    --code-string: var(--color-green);
+    --code-tag: var(--color-red);
+    --code-value: var(--color-purple);
+
+    --colorpicker: hsl(244, 100%, 85%);
+
+    --color-accent-2: rgb(255, 68, 130);
+    --color-accent-3: rgb(255, 144, 150);
+    --color-accent: rgb(255, 94, 0);
+*/}
+.theme-dark {
+    --background-primary: rgb(47, 47, 74);
+    --background-secondary:  rgb(65, 65, 103);
+    --background-primary-alt: rgb(6, 6, 249);;
+    --ribbon-background-collapsed: rgb(67, 67, 106);
+    --titlebar-background: rgb(47, 47, 74);
+
+    --h1-color: #bec8f8;
+    --h2-color: #fdaeae;
+    --h3-color: #7ec445;
+    --h4-color: #ff884a;
+    --h5-color: #ff92a2;
+    --h6-color: #ccacf8;
+    --inline-title-color: var(--color-accent-2);
+
+    --blockquote-background-color: rgb(67, 67, 106);
+
+    --bold-color: #fdaeae;
+    --bold-colors: var(--bold-color);
+    --italic-color: #a9b6f7;
+    --italic-colors: var(--italic-color);
+
+    --text-faint:#d7d7d7;
+    --text-highlight-bg: #ffd9c9;
+    --text-normal:#ffffff;
+
+    --inline-code-background: #d20000;
+    --inline-code-color:rgb(249, 225, 233);
+
+    --tag-color: #f8dfdf;
+    --tag-background: #f60626;
+    --tag-background-hover: #fdaf41;
+    --tag-color-hover: var(--text-accent);
+
+    --link-color: #ff884a;
+    --link-color-hover: rgb(255, 183, 125);
+    --link-external-color: #acb8f7;
+    --link-external-color-hover: #fcba9c;
+    --link-unresolved-color: #ff92a2;
+    --link-unresolved-decoration-color: #ff92a2;
+
+/*
+    --interactive-accent:;
+
+    background-primary = bakgrunnsfarge
+    ribbon-background-collapsed= ribbon
+    titlebar-background = bakgrunnsfarge
+
+
+    --color-accent-3: rgb(255, 144, 150);
+    --color-accent: rgb(249, 198, 154);
+*/}
+.is-mobile .theme-light {
+
+/*
+
+*/}
+.is-mobile .theme-dark {
+
+/*
+
+*/}
+
+
+.theme-light .draft {
+  --bold-color: black;
+  --code-comment: gray;
+  --h1-color: black;
+  --h2-color: black;
+  --h3-color: black;
+  --h4-color: black;
+  --h5-color: black;
+  --h6-color: black;
+  --italic-colors: gray;
+  --itallic-color: black;
+  --text-accent: gray;
+
+  --tag-color: #2e3156;
+  --tag-background: #0040ff;;
+  --tag-background-hover: #cbd7ff;
+
+  --link-color: #5e5754;
+  --link-color-hover: #907361;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-decoration-thickness: 0px;
+  --link-external-color: #59587a;
+  --link-external-color-hover: #72809f;
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: none;
+  --link-external-filter: none;
+  --link-unresolved-color: #362f6f;
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-filter: none;
+  --link-unresolved-decoration-style: solid;
+  --link-unresolved-decoration-color: #75494f;
+}
+.theme-dark .draft {
+  --bold-color: white;
+  --code-comment:gray;
+  --h1-color: white;
+  --h2-color: white;
+  --h3-color: white;
+  --h4-color: white;
+  --h5-color: white;
+  --h6-color: white;
+  --italic-colors: rgb(240, 240, 240);
+  --itallic-color: white;
+  --text-accent: rgb(240, 240, 240);
+
+  --tag-color: #2e3156;
+  --tag-background: #154fff;;
+  --tag-background-hover: #cbd7ff;
+
+  --link-color: #6b6b78;
+  --link-color-hover: #9797a3;
+  --link-external-color: #484350;
+  --link-external-color-hover: #434750;
+  --link-unresolved-color: #362f6f;
+  --link-unresolved-decoration-color: #75494f;
+}

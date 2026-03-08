@@ -1,0 +1,16 @@
+/* ==== FRONTMATTER ==== */
+
+.cm-atom.cm-hmd-frontmatter,.frontmatter.language-yaml .atrule{
+  font-weight:600;
+  color:rgb(255, 196, 0);
+}
+
+/* Edit mode */
+.cm-hmd-frontmatter {
+  font-size: inherit;
+  color: var(--text-muted);
+}
+
+.cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
+  color: var(--text-muted);
+}

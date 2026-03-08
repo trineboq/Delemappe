@@ -11,14 +11,12 @@
             "id": "0103699ddeba1135",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "_Informasjon/Opprett nytt obs-notat.md",
-                "mode": "source",
-                "source": false
+                "file": "Om observasjonssystemet/_apx/Do you trust the author of this vault.png"
               },
-              "icon": "lucide-file",
-              "title": "Opprett nytt obs-notat"
+              "icon": "lucide-image",
+              "title": "Do you trust the author of this vault"
             }
           }
         ]
@@ -194,24 +192,31 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0103699ddeba1135",
+  "active": "e399a72cb544ef45",
   "lastOpenFiles": [
-    "_Informasjon/Info-fil.md",
-    "_Informasjon/Opprett nytt obs-notat.md",
+    "Diverse info/Markdown.md",
+    "Om observasjonssystemet/Opprett nytt obs-notat.md",
+    "Om observasjonssystemet/_apx/Opprett nytt obs-notat.png",
     "README.md",
+    "Om observasjonssystemet/Tips - etter.md",
+    "Om observasjonssystemet/_apx/README-IMG-20260307142040824.jpeg",
+    "Om observasjonssystemet/_apx/README-IMG-20260307142008786.jpeg",
+    "Om observasjonssystemet/_apx/README-IMG-20260307141925662.jpeg",
+    "Om observasjonssystemet/_apx/README-IMG-20260307141912449.jpeg",
+    "Om observasjonssystemet/_apx/README-IMG-20260307141816950.jpeg",
+    "Om observasjonssystemet/_apx/README-IMG-20260307141750019.jpeg",
+    "Om observasjonssystemet/Last ned obsidian til mac.md",
+    "Om observasjonssystemet/_apx",
+    "Om observasjonssystemet/Kom i gang med observasjonssystemet.md",
+    "Om observasjonssystemet/Last ned obsidian til iphone.md",
+    "Om zotero",
+    "Diverse info",
     "Om observasjon/Tips - Før (forberedelser).md",
-    "Om observasjon/Tips - etter.md",
-    "Om observasjon",
-    "Apx/README-IMG-20260307141816950.jpeg",
-    "Apx/LastNedGithub1.png",
-    "Apx/README-IMG-20260307143117258.png",
-    "Apx/README-IMG-20260307143030993.png",
-    "Apx/README-IMG-20260307142855364.png",
-    "Apx/README-IMG-20260307142740959.png",
-    "Apx/README-IMG-20260307142721373.png",
-    "Apx/README-IMG-20260307142210732.jpeg",
-    "Apx/README-IMG-20260307142123546.jpeg",
-    "Apx/README-IMG-20260307142040824.jpeg",
+    "_Informasjon/Info-fil.md",
+    "Om observasjonssystemet",
+    "Om observasjonssystemet/_apx/LastNedGithub1.png",
+    "Om observasjonssystemet/_apx/README-IMG-20260307143117258.png",
+    "Om observasjonssystemet/_apx/README-IMG-20260307143030993.png",
     "007-tmp/Append/NewLine-TimeNow.md",
     "007-tmp/Append/NewScene.md",
     "007-tmp/Observasjonsmal.md",
@@ -234,13 +239,6 @@
     "007-tmp/Andre maler/flytt fil.md",
     "Test/251010Test.md",
     "001-Inbox/Spm-grenser samspill.md",
-    "001-Inbox/Forkortelser.md",
-    "001-Inbox/Untitled 1.md",
-    "001-Inbox/Untitled.md",
-    "Test/Untitled.md",
-    "Test",
-    "null",
-    "x",
-    "TEST"
+    "Test"
   ]
 }

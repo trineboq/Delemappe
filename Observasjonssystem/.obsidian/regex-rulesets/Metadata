@@ -1,0 +1,40 @@
+:: Lukk rosa
+"> \[!rosa\] "
+->"> [!rosa] "
+
+:: Tomt abstrakt
+":: *>{0,1} *$"->" xyzzæ"
+"\n.*xyzzæ"->""
+
+:: YAML
+"^status: uprosessert"->"status: venter"
+
+
+:: Lenker
+
+"\*\*Item type\*\*.*?Item Type: \[\[(.*)\]\]"->"**item type**:: $1"
+
+":: \[URL\]; "->":: "
+
+":: \[URL; "->":: "
+
+"; \[DOI\];"->"; "
+
+"; \[DOI;"->"; "
+
+":: *;"->":: "
+
+"(\[PDF\]){2,}"->"[PDF]"
+"\[(URL|DOI|PDF)\]\[.*?\]\((.*?)\); *"->"[$1]($2)"
+
+"; *; *"->"; "
+
+"\[+(_Leseliste|Lest|journal article|molit.*?|ferdig lest og markert|mo-ja|journal article|Arkiv|Lovverk|book|mo\/.*?|mo-.*?|book section|report|_Innboks|x_Rydde|innboks|mo\/litteratur-ja|mo\/litteratur-kanskje|nb|vil lese)\]+(, ){0,1}|thesis-00\/write\/"
+->""
+
+"name Rens metanotat\n(>* *)type command\n(>* *)action Commander: Rydd metadata"
+->"name Rens merknader
+$1type command
+$1action Commander: Rydd merknader 1"
+
+"(>> *\[!multi-column\] *\n>> *\n)>>> \[!blank-container\] *\n>> *\n(>>> \[!blank-container\] *\n)"->"$1$2"

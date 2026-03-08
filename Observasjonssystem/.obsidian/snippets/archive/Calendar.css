@@ -1,0 +1,44 @@
+
+/* === calendar === */
+.day.svelte-q3wqg9:active .filled.svelte-1widvzq,
+.active.svelte-q3wqg9 .filled.svelte-1widvzq,
+.active.today.svelte-q3wqg9 .filled.svelte-1widvzq {
+    fill: var(--text-on-accent);
+}
+/*overskriftsbar*/
+.nav.svelte-1vwr9dd.svelte-1vwr9dd {
+    align-items: center;
+    display: flex;
+    margin: 0.1em 0 0.6em;
+    padding: 0 8px;
+    width: 100%;
+}
+.title.svelte-1vwr9dd.svelte-1vwr9dd {
+    color: var(--color-text-title);
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.today.svelte-q3wqg9 {
+    box-shadow: inset 0 0 0 1px var(--color-accent);
+}
+
+.workspace-leaf-content[data-type=calendar] .view-content {
+    padding: 0px 0 0 0;
+}
+.reset-button.svelte-1vwr9dd.svelte-1vwr9dd {
+    line-height: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: var(--color-arrow);
+    font-size: var(--font-ui-smaller);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 1px 10px;
+    padding: 0px 0px;
+    text-transform: uppercase;
+}
+/*Årstall*/
+.year.svelte-1vwr9dd.svelte-1vwr9dd {
+    color: var(--color-accent-1);
+}

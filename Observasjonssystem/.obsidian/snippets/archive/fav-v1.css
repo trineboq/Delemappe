@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro|Noto+Sans+Mono|Poppins:wght@200|Source+Sans+Pro");
+body{
+    --h1-size:1.8em;
+    --h2-size:1.3em;
+    --h3-size:1.3em;
+    --h4-size:1.5em;
+    --h5-size:1.25em;
+    --h6-size:1.25em;
+    --h1-variant:all-small-caps;
+    --h2-variant:normal;
+    --h3-variant:normal;
+    --h4-variant:all-small-caps;
+    --h5-variant:normal;
+    --h6-variant:normal;
+    --h1-font: "Arial", sans-serif;
+    --h2-font: "Arial", sans-serif;
+    --h3-font: "Arial", sans-serif;
+    --h4-font: "Source serif pro", serif;
+    --h5-font: "Source serif pro", serif;
+    --h6-font: "Source serif pro", serif;
+    /* Code */
+    --code-normal: var(--text-muted);
+    --code-comment: var(--text-faint);
+    --code-function: rgb(228, 156, 0);
+    --code-important: var(--color-00orange);
+    --code-keyword: var(--color-00pink);
+    --code-operator: var(--color-00red);
+    --code-property:  rgb(0, 80, 228);
+    --code-punctuation: var(--text-muted);
+    --code-string: var(--color-00green);
+    --code-tag: var(--color-00red);
+    --code-value: var(--color-00purple);
+    --code-size: inherit;
+    --code-font-size: inherit;
+    --inline-code-background:rgb(255, 233, 240);
+    --inline-code-color: #FE0C0C;
+    --code-normal-inline: #FFB7C2;
+  
+    --code-background: rgba(229, 229, 255, 0.178);
+
+    --callout-padding: 0 0 0 0;
+    --callout-content-padding: 0;
+    --callout-border-width:2px;
+}
+
+/* ==== FRONTMATTER ==== */
+.cm-atom.cm-hmd-frontmatter,.frontmatter.language-yaml .atrule{
+    font-weight:600;
+    color:rgb(255, 196, 0);
+  }
+  /* Edit mode */
+  .cm-hmd-frontmatter {
+  font-size: inherit;
+  color: var(--text-muted);
+  }
+  .cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
+  color: var(--text-muted);
+  }
+  .cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
+    color: #ffee90;
+}
+
+/* ===== CALLOUTS ===== */
+
+.callout{
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    box-shadow: none;
+    background-color: rgba(var(--callout-color), 0.1);
+    padding: var(--callout-padding);
+    border-left: var(--size-2-3) solid rgba(var(--callout-color));
+}
+.theme-dark .callout{
+    box-shadow: none;
+    background-color: rgba(var(--callout-color), 0);
+    padding: var(--callout-padding);
+    border-left: var(--size-2-3) solid rgba(var(--callout-color));
+}
+.callout .callout-title {
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: rgba(var(--callout-color), 0.4);
+    align-items: center;
+    color: rgba(var(--callout-color));
+    font-family: Arial, Helvetica, sans-serif;
+}
+.callout .callout-content {
+    padding-left: 5px;
+    font-family: var(--font-text);
+}
+
+/*NB! Denne som lager rar hovereffekt i minimal:
+.markdown-source-view.mod-cm6 .cm-content>.cm-embed-block[contenteditable=false]{overflow-x:auto}*/
+
+.callout.is-collapsible .callout-fold svg.lucide-chevron-down {
+transform: scaleY(-1);
+}
+.callout.is-collapsed .callout-fold svg.lucide-chevron-down {
+transform: scaleY(1);
+}
+.callout-title .callout-title-inner {
+flex-grow: 1;
+}
+.code-border .markdown-rendered pre, .code-border .markdown-rendered p > code {
+outline: 1px solid var(--border-subtle-0);
+}
+/* KNAPPER*/
+.markdown-source-view.mod-cm6.is-live-preview.is-readable-line-width .cm-embed-block>.edit-block-button {
+width: 30px!important;
+padding-left: 7px!important;
+transform: none!important;
+margin-left: 0!important;
+}
+.callout-fold {
+width: 30px!important;
+padding-left: 7px!important;
+transform: none!important;
+opacity: 0.9;
+/* color: transparent; */
+}
+/* Plain, code og cite*/
+.callout[data-callout="cite"], .callout[data-callout="code"], .callout[data-callout="draft"] {
+    --callout-color: transparent;
+    border-left: 0;
+}
+/*Tittel og ikon*/
+.callout[data-callout="cite"] .callout-title, .callout[data-callout="code"] .callout-title, .callout[data-callout="draft"] .callout-title {
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0px;
+    align-items: center;
+}
+.callout[data-callout="cite"] .callout-icon, .callout[data-callout="code"] .callout-icon, .callout[data-callout="draft"] .callout-icon {
+    color: transparent;
+    height: 0px;
+    width: 0px;
+    margin: 0px;
+    padding: 0;
+    border: 0;
+}
+/*Innhold*/
+.callout[data-callout="cite"] .callout-content, .callout[data-callout="code"] .callout-content, .callout[data-callout="draft"].callout .callout-content {
+
+}
+.callout[data-callout="cite"] .callout-content {
+    font-style: italic;
+}
+.callout[data-callout="draft"] .callout-content, .callout[data-callout="cite"] .callout-content {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+.callout[data-callout="code"] .callout-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+.callout[data-callout="code"], .callout[data-callout="draft"] {
+    color: transparent;
+    background-color: transparent;
+    --callout-color: transparent;
+    border-color: transparent;
+}
+.theme-dark .callout[data-callout="cite"] .callout-content, 
+.theme-dark .callout[data-callout="cite"] .callout-title,
+.theme-dark .callout[data-callout="code"] .callout-content, 
+.theme-dark .callout[data-callout="code"] .callout-title, 
+.theme-dark .callout[data-callout="draft"] .callout-content, 
+.theme-dark .callout[data-callout="draft"],  .callout-title {
+    color: white;
+}
+.theme-light .callout[data-callout="cite"] .callout-content, 
+.theme-light .callout[data-callout="cite"] .callout-title, 
+.theme-light .callout[data-callout="code"] .callout-content, 
+.theme-light .callout[data-callout="code"] .callout-title, 
+.theme-light .callout[data-callout="draft"] .callout-content, 
+.theme-light .callout[data-callout="draft"] .callout-title {
+    color: black;
+}
+
+/* Multi-column */
+.callout[data-callout="multi-column"] {
+--callout-color: #7d7d7d00;
+font-family: var(--callout-font-family);
+}
+/* Blank-container */
+.callout[data-callout="blank-container"] {
+--callout-color: #7d7d7d00;
+padding: 10px;
+font-family: var(--callout-font-family);
+}
+
+/* Viktig */
+.callout[data-callout="viktig"] {
+    border:transparent;
+    font-family: "Source Serif Pro", serif;
+    background-color: #fddddd;
+    color: #ff4646;
+    font-style: italic;
+    font-size: 1.15em;
+    padding: 10px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.callout[data-callout="viktig"].callout-icon {
+    color: transparent;
+}
+
+/* ==== CSSCLASS ==== */
+.draft{
+  --h1-color: var(--font-text);
+  --h2-color: var(--font-text);
+  --h3-color: var(--font-text);
+  --h4-color: var(--font-text);
+  --h5-color:var(--font-text);
+  --h6-color: var(--font-text);
+  --font-monospace-theme: "Source Serif Pro", serif;
+  --font-monospace: "Open sans", sans-serif;
+  --font-text: "Source Serif Pro", serif;
+  --font-editor:var(--font-text);
+  --callout-font: var(--font-text);
+  --code-number-color: transparent;
+}
+.novel {
+--font-monospace-theme: "Source Serif Pro", serif;
+--font-monospace: "Open sans", sans-serif;
+--font-text: "Source Serif Pro", serif;
+--font-editor:var(--font-text);
+--callout-font: var(--font-text);
+--code-number-color: transparent;
+--blockquote-border-color: transparent;
+--blockquote-size:var(--h6-size);
+--blockquote-font-family: var(--font-text);
+--blockquote-color: var(--text-font-color);
+}
+
+.theme-light .cm-s-obsidian span.cm-footref, .theme-light .cm-s-obsidian span.cm-blockid {
+    display: inline-block;
+    font-size: 8px;
+    vertical-align: text-top;
+    color: rgba(187, 186, 186, 0.63);
+    margin-top: -0.2em;
+}
+.theme-dark .cm-s-obsidian span.cm-footref, .theme-dark .cm-s-obsidian span.cm-blockid {
+    display: inline-block;
+    font-size: 8px;
+    vertical-align: text-top;
+    color: rgba(60, 67, 102, 0.616);
+    margin-top: -0.2em;
+}
+
+.frontmatter-container {
+    padding: var(--size-4-2) 0 var(--size-4-4);
+    color: var(--text-accent);
+    position: relative;
+}
+.admonition-content-copy {
+    color: var(--text-accent);
+    cursor: pointer;
+    opacity: 0;
+    position: relative;
+    margin: 0;
+    right: 0;
+    top: 0;
+    transition: .3s opacity ease-in;
+    height: 10px;
+}
+
+.is-live-preview .admonition-content p {
+    line-height: 1,4;
+    break-before: 0;
+    margin: 0;
+}

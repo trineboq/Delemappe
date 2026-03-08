@@ -1,0 +1,83 @@
+.theme-light {
+
+  --background-modifier-border: transparent;
+  --background-modifier-border-hover: transparent;
+
+  --color-accent:rgb(255, 94, 0);
+  --color-accent-1: rgb(250, 190, 59);
+  --color-accent-2: rgb(255, 68, 130);
+  --color-accent-3: rgb(255, 144, 150);
+
+  --colorpicker: hsl(244, 100%, 85%);
+
+  /* Backgrounds */
+  --background-secondary: var(--color-accent-3);
+  --background-secondary-alt: var(--color-base-05);
+
+  /* Inputs */
+  --background-modifier-box-shadow: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+  --background-modifier-cover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.2);
+}
+
+.theme-light .vertical-tab-header {
+  background-color: rgb(255, 243, 243);
+}
+
+
+color-scheme: dark;
+
+--text-normal:#e6e3ff;
+--text-muted: #c1d0ee;
+--text-faint: #f28484;
+
+--text-on-accent-inverted: black;
+--text-selection: hsla(var(--color-accent-hsl), 0.2);
+
+--highlight-mix-blend-mode: darken;
+
+--mono-rgb-0: 255, 255, 255;
+--mono-rgb-100: 0, 0, 0;
+
+--color-base-00: #ffffff;
+--color-base-05: #fad7ba;
+--color-base-10: #5e55ac;
+--color-base-20: #7970c8;
+--color-base-25: #312b6b;
+--color-base-30: #47436d;
+--color-base-35: #515f7a;
+--color-base-40: #444164;
+--color-base-50: #c0bce9;
+--color-base-60: #aaa5d9;
+--color-base-70: #bbb7da;
+--color-base-100: #eeedf8;
+
+--color-accent-hsl: var(--accent-h),var(--accent-s),var(--accent-l);
+
+--color-accent: rgb(245, 109, 136);
+--color-accent-1:rgb(245, 240, 141);
+--color-accent-2:  rgb(255, 200, 137);
+--color-accent-3:  rgb(255, 159, 100);
+--color-accent-1-dark:#494882;
+--color-accent-2-dark: #c0bce9;
+--color-activated-tab-header-dark: #c0bce9;
+--background-activated-tab-header-dark: #6c73fa;
+--background-modifier-active-hover:rgb(245, 240, 141);
+
+
+  /* Backgrounds */
+
+--background-primary-alt:  #3d3b55;
+
+--background-secondary: #534d6a;
+--background-secondary-alt: #47436d;
+--h1-color:rgb(144, 163, 255); 
+--h2-color:rgb(252, 138, 138);
+--h3-color:rgb(170, 219, 150);
+--h4-color:rgb(255, 183, 125);
+--h5-color:rgb(255, 219, 234);
+--h6-color:rgb(202, 185, 241);
+
+--code-background: rgb(75, 72, 130);
+
+--background-secondary: rgb(75, 72, 130);
+--background-tertiary: rgb(75, 72, 130);

@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro|Noto+Sans+Mono|Poppins:wght@200|Source+Sans+Pro|Nanum+Myeongjo+Serif|inter");
+
+body.theme-light {
+
+  --h1-color: #4666ff;
+  --h2-color: #ff6e6e;
+  --h3-color: #92ca63;
+  --h4-color: #ff9f6c;
+  --h5-color:#ff92a2;
+  --h6-color: #a884da;
+
+  --text-normal:black;
+  --text-muted: rgb(71, 71, 71);
+  --comment-color:rgb(200, 200, 200);
+
+  --bold-color:rgb(237, 75, 121);
+  --italic-color: #7f93f8;
+  
+  /* Tags */
+  --tag-color: #fe0c0c;
+  --tag-background: #fdd0d6;
+  --tag-background-hover:  #fc7085;
+
+  /* LENKER */
+  --link-color: #ff4a4a;
+  --link-color-hover: rgb(255, 140, 125);
+  --link-external-color: #50d328;
+  --link-external-color-hover: #b6c7f9;
+  --link-unresolved-color: #ff92a2;
+  --link-unresolved-decoration-color: #ff92a2;
+
+  /* Code */
+  --code-normal: var(--text-muted);
+  --code-comment: var(--text-faint);
+  --code-function: rgb(228, 156, 0);
+  --code-important: var(--color-00orange);
+  --code-keyword: var(--color-00pink);
+  --code-operator: var(--color-00red);
+  --code-property:  rgb(0, 80, 228);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-00green);
+  --code-tag: var(--color-00red);
+  --code-value: var(--color-00purple);
+  --code-size: inherit;
+  --code-font-size: inherit;
+  --inline-code-background:rgb(255, 233, 240);
+  --inline-code-color: #FE0C0C;
+  --code-normal-inline: #FFB7C2;
+
+  --code-background: rgba(255, 248, 230, 0.384);
+
+  --file-icon-color:red;
+}
+body.theme-dark {
+  --h1-color: #B4C3FF;
+  --h2-color: #ffaaaa;
+  --h3-color: #bee4a0;
+  --h4-color: #f8ccb4;
+  --h5-color:#ffccdd;
+  --h6-color: #dfc8ff;
+  --interactive-accent:rgb(180, 180, 246);
+
+  --text-normal:rgb(238, 238, 238);
+  --text-muted:rgb(219, 222, 189);
+
+  --comment-color:rgb(113, 104, 104);
+  --bold-color:rgb(255, 202, 202);
+  --italic-color: rgb(180, 180, 246);
+
+  /* Tags */
+  --tag-color: #0906a4;
+  --tag-background: rgb(180, 180, 246);
+  --tag-background-hover:  #ffa7b4;
+  --file-icon-color:red;
+}
+body{
+  /* OVERSKRIFT OG TEKST 
+  --h1-font: 'Source Serif Pro', serif;
+  --h2-font: 'Source Serif Pro', serif;
+  --h3-font: 'Source Serif Pro', serif;
+  --h4-font: 'Arial', sans-serif;
+  --h5-font: 'Arial', sans-serif;
+  --h6-font: 'Arial', sans-serif;
+  
+  --h1-weight:600;
+  --h2-weight:600;
+  
+  --h4-weight:500;
+  --h5-weight:500;
+  --h6-weight:500;
+  --normal-weight:400;
+  --bold-weight:600;
+  */
+  --embed-block-shadow-hover: none !important;
+  --h1-size:1.9em;
+  --h1-weight:500 !important;
+
+  --h2-size:1.45em;
+
+  --h2-weight:400 !important;
+  --h3-size:1.4em;
+  --h3-weight:300;
+
+  --h4-size:1.68em;
+  --h5-size:1.3em;
+  --h6-size:1.25em;
+
+  --h1-variant:all-small-caps;
+  --h2-variant:normal;
+  --h3-variant:normal;
+  --h4-variant:all-small-caps;
+  --h5-variant:normal;
+  --h6-variant:normal;
+
+  --h1-style: normal;
+  --h2-style: normal;
+  --h3-style: italic;
+  --h4-style: normal;
+  --h5-style: normal;
+  --h6-style: italic;
+
+  --h1-line-height: 1;
+  --h2-line-height: 1;
+  --h3-line-height: 1;
+  --h4-line-height: 1;
+  --h5-line-height: 1;
+  --h6-line-height: 1;
+
+  --bold-weight: 600;
+  --normal-weight: 350;
+
+  --font-editor: "Inter";
+  --font-monospace: "Inter";
+  
+  /* Tags */
+
+  /* LENKER */
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-decoration-thickness: 0px;
+  --link-external-decoration: underline;
+  --link-external-filter: none;
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-filter: none;
+  --link-unresolved-decoration-style: solid;
+  /* DIVERSE 
+  --list-indent:  !important;
+  */
+  
+  --checklist-done-decoration: line-through !important;
+  
+  --p-spacing: 4px !important;
+}
+
+.inline-title {
+  font-weight: var(--inline-title-weight);
+  font-size: var(--inline-title-size);
+  line-height: var(--inline-title-line-height);
+  font-style: var(--inline-title-style);
+  font-variant: var(--inline-title-variant);
+  font-family: var(--inline-title-font);
+  margin-bottom: var(--inline-title-margin-bottom);
+  letter-spacing: -0.015em;
+  color: var(--inline-title-color);
+}
+
+/* ===== Tabell ===== */
+table {
+  font-family: var(--font-monospace);}
+
+/* ===== Kommentar ===== 
+.cm-s-obsidian span.cm-quote .cm-comment, .cm-meta {
+    color: var(--code-comment) !IMPORTANT;
+    display: none;
+}
+
+*/
+
+.cm-comment {
+  color: var(--comment-color) !IMPORTANT;
+  font-size: smaller;
+}
+
+/* ===== Blockquote ===== */
+body {
+  --blockquote-background-color: transparent;
+  --blockquote-mark: rgb(64, 43, 255);
+  
+  --blockquote-border-thickness: 2.5px;
+  --blockquote-border-color: var(--interactive-accent);
+
+  --blockquote-font-style: italic;
+  --blockquote-color: inherit;
+  --blockquote-font-family: "Source serif pro", serif;
+  --blockquote-size: 1em;
+}
+.cm-s-obsidian span.cm-quote {
+  font-family: var(--blockquote-font-family);
+  font-style: var(--blockquote-font-style);
+}
+.markdown-rendered blockquote {
+  font-size: var(--blockquote-size);
+  font-style: var(--blockquote-font-style);
+  background-color: var(--blockquote-background-color);
+  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  font-family: var(--blockquote-font-family);
+  padding: 0 0 0 10px;
+  margin-top: 0;
+}
+.markdown-source-view.mod-cm6.is-readable-line-width .HyperMD-quote, .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  font-style: normal;
+  font-family: "open sans", sans-serif;
+  font-size: var(--code-block-size);
+  padding-left: 15px;
+}
+/*Blokk-markør*/
+.cm-s-obsidian span.cm-formatting-quote, .cm-s-obsidian .hmd-inactive-line span.cm-formatting-quote {
+  color: var(--blockquote-mark);
+}
+
+/*Ramme*/
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
+.markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+  content: "\200b";
+  display: block;
+  width: var(--blockquote-width);
+  border-left: var(--blockquote-border-thickness) solid var(--blockquote-border-color);
+  color: transparent;
+  position: absolute;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before {
+  left: 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-blockquote-border {
+  display: inline-block;
+}
+
+/* ======== LISTER ======== 
+.markdown-source-view .mod-cm6 .is-live-preview 
+
+*/
+.markdown-rendered ul, .markdown-rendered ol {
+  padding-inline-start: var(--list-indent);
+  margin-block-start: var(--p-spacing);
+  margin-block-end: var(--p-spacing);
+}
+
+/*============ KODE ===============*/
+body.theme-light {
+  /* Code */
+  --code-background: rgb(255, 246, 211);
+  --code-copy-color:var(--interactive-accent);
+  
+  --code-normal: var(--text-muted);
+  --code-comment: var(--text-faint);
+  --code-function: rgb(228, 156, 0);
+  --code-important: orange;
+  --code-keyword: pink;
+  --code-operator: red;
+  --code-property: blue;
+  --code-punctuation: var(--text-muted);
+  --code-string: green;
+  --code-tag: red;
+  --code-value: purple;
+
+  --inline-code-background:rgb(255, 233, 240);
+  --inline-code-color: #FE0C0C;
+  --code-normal-inline: #FFB7C2;
+}
+body.theme-dark {
+  /* Code */
+  --code-background: rgba(89, 118, 104, 0.518);
+  --code-copy-color:var(--interactive-accent);
+}
+body {
+  --code-size: inherit;
+  --code-font-size: var(--text-font-size);
+  --code-font-family: "Inter", sans-serif;
+}
+
+
+/* ==== KODE CODE ==== */
+.cm-s-obsidian span.cm-inline-code {
+  color: var(--inline-code-color);
+  font-size: var(--code-font-size);
+  background-color: var(--inline-code-background);
+  vertical-align: baseline;
+}
+/* !!! DETTE ER KODEBLOKKEN !!! */
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  left: 0;
+  right: 0;
+  background-color: var(--code-background);
+  font-family: var(--code-font-family);
+  font-size: var(--code-font-size);
+  font-style: var(--code-style);
+}
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+/* Kopiknapp */
+.markdown-source-view.mod-cm6 .code-block-flair {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  z-index: 1;
+  display: inline-block;
+  padding: var(--size-4-2);
+  border-radius: var(--code-radius);
+  font-family: var(--font-interface);
+  font-size: var(--font-ui-smaller);
+  color: var(--code-copy-color);
+  cursor: var(--cursor);
+}
+
+/*====== Linje ======*/
+.markdown-source-view.mod-cm6 .hr {
+  display: flex;
+  align-items: center;
+  color: var(--interactive-accent) !important;
+}
+
+/* ===== Bilde ===== */
+
+img {
+  max-width: 80% !important;
+  cursor: zoom-in;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+  margin-left: 105px !important;
+  right: 0;
+  bottom: 0;
+}

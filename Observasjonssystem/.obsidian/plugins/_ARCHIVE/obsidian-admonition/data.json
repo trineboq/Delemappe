@@ -1,0 +1,425 @@
+{
+  "userAdmonitions": {
+    "pink": {
+      "type": "Pink",
+      "color": "255, 173, 209",
+      "icon": {
+        "name": "home",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "xpink": {
+      "type": "xPink",
+      "color": "255, 146, 162",
+      "icon": {
+        "type": "octicons",
+        "name": "dot"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "Magenta": {
+      "type": "Magenta",
+      "color": "254, 154, 189",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-list-video"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "xred": {
+      "type": "xRed",
+      "color": "255, 109, 109",
+      "icon": {
+        "type": "octicons",
+        "name": "x-circle-fill"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "red": {
+      "type": "Red",
+      "color": "254, 12, 12",
+      "icon": {
+        "name": "exclamation-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "viktig": {
+      "type": "Viktig",
+      "color": "254, 12, 12",
+      "icon": {
+        "name": "exclamation-circle",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "xOrange": {
+      "type": "xOrange",
+      "color": "255, 136, 74",
+      "icon": {
+        "name": "link",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "orange": {
+      "type": "Orange",
+      "color": "255, 183, 125",
+      "icon": {
+        "name": "list",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "xYellow": {
+      "type": "xYellow",
+      "color": "255, 234, 0",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-flag-triangle-left"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "yellow": {
+      "type": "Yellow",
+      "color": "255, 234, 0",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "xGreen": {
+      "type": "xGreen",
+      "color": "149, 212, 122",
+      "icon": {
+        "type": "octicons",
+        "name": "bookmark"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "green": {
+      "type": "Green",
+      "color": "149, 212, 122",
+      "icon": {
+        "name": "book",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "xcyan": {
+      "type": "Cyan",
+      "color": "115, 170, 221",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-quote"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "cyan": {
+      "type": "Cyan",
+      "color": "115, 170, 221",
+      "icon": {
+        "type": "octicons",
+        "name": "feed-person"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "blue": {
+      "type": "Blue",
+      "color": "70, 102, 255",
+      "icon": {
+        "name": "angle-double-right",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "xBlue": {
+      "type": "xBlue",
+      "color": "46, 81, 255",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-flag-triangle-left"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "purple": {
+      "type": "Purple",
+      "color": "148, 85, 236",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-quote"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "xPurple": {
+      "type": "xPurple",
+      "color": "202, 185, 241",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-flag-triangle-left"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "husk-gul": {
+      "type": "Husk-gul",
+      "color": "255, 240, 191",
+      "icon": {
+        "type": "octicons",
+        "name": "note"
+      },
+      "command": false,
+      "title": "NB!",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "husk-orange": {
+      "type": "Husk-orange",
+      "color": "250, 112, 0",
+      "icon": {
+        "name": "asterisk",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "NB!",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "multi-column": {
+      "type": "multi-column",
+      "color": "128, 224, 37",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "blank-container": {
+      "type": "blank-container",
+      "color": "9, 90, 96",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true
+    },
+    "plain": {
+      "type": "plain",
+      "color": "255, 255, 255",
+      "icon": {
+        "name": "angle-left",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Med egne ord / Utkast",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "plain2": {
+      "type": "plain2",
+      "color": "255, 255, 255",
+      "icon": {
+        "name": "angle-left",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Enkel",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "header": {
+      "type": "header",
+      "color": "255, 212, 163",
+      "icon": {
+        "name": "home",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "breadcrumbs",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "KI": {
+      "type": "KI",
+      "color": "192, 159, 254",
+      "icon": {
+        "name": "robot",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "code": {
+      "type": "code",
+      "color": "255, 255, 255",
+      "icon": {
+        "name": "code",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "cite": {
+      "type": "cite",
+      "color": "#7d7d7d",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-quote"
+      },
+      "command": false,
+      "title": "Sitat",
+      "injectColor": true,
+      "noTitle": true,
+      "copy": true
+    },
+    "web": {
+      "type": "web",
+      "color": "184, 205, 255",
+      "icon": {
+        "name": "internet-explorer",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Nettartikkel",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "center": {
+      "type": "center",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "lenke": {
+      "type": "lenke",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "link",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "clip": {
+      "type": "clip",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "draft": {
+      "type": "draft",
+      "color": "#7d7d7d",
+      "icon": {
+        "name": "ad",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": false,
+  "version": "10.3.2",
+  "autoCollapse": false,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": true,
+    "advanced": false
+  },
+  "icons": [],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": false,
+  "snippetPath": "custom-admonitions.aeb7de"
+}

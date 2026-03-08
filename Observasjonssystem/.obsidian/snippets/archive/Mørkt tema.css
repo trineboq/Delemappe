@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro|Noto+Sans+Mono|Poppins:wght@200|Source+Sans+Pro");
+
+body {
+  --background-modifier-border: transparent;
+  --background-modifier-border-hover: transparent;
+}
+
+.theme-dark {
+    color-scheme: dark;
+
+  --text-normal:#e6e3ff;
+  --text-muted: #c1d0ee;
+  --text-faint: #f28484;
+  
+  --text-on-accent-inverted: black;
+  --text-error: var(--color-00red);
+  --text-success: var(--color-00green);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+
+  --highlight-mix-blend-mode: darken;
+  
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  
+  --color-base-00: #3d3b55;
+  --color-base-05: #4a476b;
+  --color-base-10: #5e55ac;
+  --color-base-20: #7970c8;
+  --color-base-25: #312b6b;
+  --color-base-30: #47436d;
+  --color-base-35: #515f7a;
+  --color-base-40: #444164;
+  --color-base-50: #c0bce9;
+  --color-base-60: #aaa5d9;
+  --color-base-70: #bbb7da;
+  --color-base-100: #eeedf8;
+
+  --color-accent-hsl: var(--accent-h),var(--accent-s),var(--accent-l);
+
+  --color-accent: rgb(245, 109, 136);
+  --color-accent-1:rgb(245, 240, 141);
+  --color-accent-2:  rgb(255, 200, 137);
+  --color-accent-3:  rgb(255, 159, 100);
+  --color-accent-1-dark:#494882;
+  --color-accent-2-dark: #c0bce9;
+  --color-activated-tab-header-dark: #c0bce9;
+  --background-activated-tab-header-dark: #6c73fa;
+  --background-modifier-active-hover:rgb(245, 240, 141);
+
+
+    /* Backgrounds */
+  --background-primary:  #3e3c5d;
+  --background-primary-alt:  #3d3b55;
+
+  --background-secondary: #534d6a;
+  --background-secondary-alt: #47436d;
+  --h1-color:rgb(144, 163, 255); 
+  --h2-color:rgb(252, 138, 138);
+  --h3-color:rgb(170, 219, 150);
+  --h4-color:rgb(255, 183, 125);
+  --h5-color:rgb(255, 219, 234);
+  --h6-color:rgb(202, 185, 241);
+
+  --code-background: rgb(75, 72, 130);
+
+  --background-secondary: rgb(75, 72, 130);
+  --background-tertiary: rgb(75, 72, 130);
+}
+
+.theme-dark .dropdown {
+  background-color:rgb(59, 57, 112);
+/* background - transparent */
+}
+body .workspace-tabs:not(.mod-stacked) .workspace-leaf,
+body .workspace-tabs:not(.mod-stacked) .workspace-leaf-content,
+body .workspace-tabs:not(.mod-stacked) .view-header:not(.animate),
+body .workspace-tabs:not(.mod-stacked) .view-content:not(.vignette-radial, .vignette-linear, .animate),
+.sidebar-toggle-button,
+.mod-left-split .workspace-tab-header.has-active-menu,
+.mod-right-split .workspace-tab-header.has-active-menu,
+body .workspace-tab-header-container,
+.workspace>.workspace-split,
+.workspace-tabs.mod-top {
+    background-color: transparent !important;
+}
+
+body .workspace,
+.workspace-ribbon.mod-left:before,
+body:not(.is-translucent):not(.is-mobile) .sidebar-toggle-button.mod-left {
+    background-color: transparent;
+}
+
+.workspace-ribbon,
+.workspace-ribbon.mod-left.is-collapsed {
+    border-right: none;
+    background-color: transparent;
+}
+
+.workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+    background-color: transparent !important;
+    box-shadow: none;
+    overflow: visible;
+}
+
+body .view-header-title-container:not(.mod-at-start):before,
+body .view-header-title-container:not(.mod-at-end):after {
+    background: transparent;
+}
+
+/* Obs-docsx */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro|Noto+Sans+Mono|Poppins:wght@200|Source+Sans+Pro");
+
+body {
+  --background-modifier-border: transparent;
+  --background-modifier-border-hover: transparent;
+}
+
+.theme-dark {
+    color-scheme: dark;
+
+  --text-normal:#e6e3ff;
+  --text-muted: #c1d0ee;
+  --text-faint: #f28484;
+  --text-on-accent: rgb(248, 83, 83);
+  --text-on-accent-inverted: black;
+  --text-error: var(--color-00red);
+  --text-success: var(--color-00green);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+
+  --highlight-mix-blend-mode: darken;
+  
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  
+  --color-base-00: #3d3b55;
+  --color-base-05: #4a476b;
+  --color-base-10: #5e55ac;
+  --color-base-20: #7970c8;
+  --color-base-25: #312b6b;
+  --color-base-30: #47436d;
+  --color-base-35: #515f7a;
+  --color-base-40: #444164;
+  --color-base-50: #c0bce9;
+  --color-base-60: #aaa5d9;
+  --color-base-70: #bbb7da;
+  --color-base-100: #eeedf8;
+
+  --color-accent-hsl: var(--accent-h),var(--accent-s),var(--accent-l);
+
+  --color-accent: rgb(245, 109, 136);
+  --color-accent-1:rgb(245, 240, 141);
+  --color-accent-2:  rgb(255, 200, 137);
+  --color-accent-3:  rgb(255, 159, 100);
+  --color-accent-1-dark:#494882;
+  --color-accent-2-dark: #c0bce9;
+  --color-activated-tab-header-dark: #c0bce9;
+  --background-activated-tab-header-dark: #6c73fa;
+  --background-modifier-active-hover:rgb(245, 240, 141);
+
+
+    /* Backgrounds */
+  --background-primary:  #3e3c5d;
+  --background-primary-alt:  #3d3b55;
+
+  --background-secondary: #534d6a;
+  --background-secondary-alt: #47436d;
+  --h1-color:rgb(144, 163, 255); 
+  --h2-color:rgb(252, 138, 138);
+  --h3-color:rgb(170, 219, 150);
+  --h4-color:rgb(255, 183, 125);
+  --h5-color:rgb(255, 219, 234);
+  --h6-color:rgb(202, 185, 241);
+
+  --code-background: rgb(75, 72, 130);
+
+  --background-secondary: transparent;
+  --background-tertiary: rgb(75, 72, 130);
+  --workspace-background-translucent: hsla(calc(var(--accent-h) + 8),
+            calc(var(--accent-s) / 5.4),
+            calc(1.25*var(--accent-l) / 3.6), 0.6);
+}
+
+.theme-dark .dropdown {
+  background-color:rgb(59, 57, 112);
+/* background - transparent */
+}
+body .workspace-tabs:not(.mod-stacked) .workspace-leaf,
+body .workspace-tabs:not(.mod-stacked) .workspace-leaf-content,
+body .workspace-tabs:not(.mod-stacked) .view-header:not(.animate),
+body .workspace-tabs:not(.mod-stacked) .view-content:not(.vignette-radial, .vignette-linear, .animate),
+.sidebar-toggle-button,
+.mod-left-split .workspace-tab-header.has-active-menu,
+.mod-right-split .workspace-tab-header.has-active-menu,
+body .workspace-tab-header-container,
+.workspace>.workspace-split,
+.workspace-tabs.mod-top {
+    background-color: transparent !important;
+}
+
+body .workspace,
+.workspace-ribbon.mod-left:before,
+body:not(.is-translucent):not(.is-mobile) .sidebar-toggle-button.mod-left {
+    background-color: transparent;
+}
+
+.workspace-ribbon,
+.workspace-ribbon.mod-left.is-collapsed {
+    border-right: none;
+    background-color: transparent;
+}
+
+.workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+    background-color: transparent !important;
+    box-shadow: none;
+    overflow: visible;
+}
+
+body .view-header-title-container:not(.mod-at-start):before,
+body .view-header-title-container:not(.mod-at-end):after {
+    background: transparent;
+}
+
+/* ObsDoc 20230521 */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro|Noto+Sans+Mono|Poppins:wght@200|Source+Sans+Pro");
+
+body {
+  --background-modifier-border: transparent;
+  --background-modifier-border-hover: transparent;
+}
+
+.theme-dark {
+    color-scheme: dark;
+
+  --text-normal:#e6e3ff;
+  --text-muted: #c1d0ee;
+  --text-faint: #f28484;
+  --text-on-accent: rgb(248, 83, 83);
+  --text-on-accent-inverted: black;
+  --text-error: var(--color-00red);
+  --text-success: var(--color-00green);
+  --text-selection: hsla(var(--color-accent-hsl), 0.2);
+
+  --highlight-mix-blend-mode: darken;
+  
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  
+  --color-base-00: #3d3b55;
+  --color-base-05: #4a476b;
+  --color-base-10: #5e55ac;
+  --color-base-20: #7970c8;
+  --color-base-25: #312b6b;
+  --color-base-30: #47436d;
+  --color-base-35: #515f7a;
+  --color-base-40: #444164;
+  --color-base-50: #c0bce9;
+  --color-base-60: #aaa5d9;
+  --color-base-70: #bbb7da;
+  --color-base-100: #eeedf8;
+
+  --color-accent-hsl: var(--accent-h),var(--accent-s),var(--accent-l);
+
+  --color-accent: rgb(245, 109, 136);
+  --color-accent-1:rgb(245, 240, 141);
+  --color-accent-2:  rgb(255, 200, 137);
+  --color-accent-3:  rgb(255, 159, 100);
+  --color-accent-1-dark:#494882;
+  --color-accent-2-dark: #c0bce9;
+  --color-activated-tab-header-dark: #c0bce9;
+  --background-activated-tab-header-dark: #6c73fa;
+  --background-modifier-active-hover:rgb(245, 240, 141);
+
+
+    /* Backgrounds */
+  --background-primary:  #3e3c5d;
+  --background-primary-alt:  #3d3b55;
+
+  --background-secondary: #534d6a;
+  --background-secondary-alt: #47436d;
+  --h1-color:rgb(144, 163, 255); 
+  --h2-color:rgb(252, 138, 138);
+  --h3-color:rgb(170, 219, 150);
+  --h4-color:rgb(255, 183, 125);
+  --h5-color:rgb(255, 219, 234);
+  --h6-color:rgb(202, 185, 241);
+
+  --code-background: rgb(75, 72, 130);
+
+  --background-secondary: transparent;
+  --background-tertiary: rgb(75, 72, 130);
+  --workspace-background-translucent: hsla(calc(var(--accent-h) + 8),
+            calc(var(--accent-s) / 5.4),
+            calc(1.25*var(--accent-l) / 3.6), 0.6);
+}
+
+.theme-dark .dropdown {
+  background-color:rgb(59, 57, 112);
+/* background - transparent */
+}
+body .workspace-tabs:not(.mod-stacked) .workspace-leaf,
+body .workspace-tabs:not(.mod-stacked) .workspace-leaf-content,
+body .workspace-tabs:not(.mod-stacked) .view-header:not(.animate),
+body .workspace-tabs:not(.mod-stacked) .view-content:not(.vignette-radial, .vignette-linear, .animate),
+.sidebar-toggle-button,
+.mod-left-split .workspace-tab-header.has-active-menu,
+.mod-right-split .workspace-tab-header.has-active-menu,
+body .workspace-tab-header-container,
+.workspace>.workspace-split,
+.workspace-tabs.mod-top {
+    background-color: transparent !important;
+}
+
+body .workspace,
+.workspace-ribbon.mod-left:before,
+body:not(.is-translucent):not(.is-mobile) .sidebar-toggle-button.mod-left {
+    background-color: transparent;
+}
+
+.workspace-ribbon,
+.workspace-ribbon.mod-left.is-collapsed {
+    border-right: none;
+    background-color: transparent;
+}
+
+.workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
+    background-color: transparent !important;
+    box-shadow: none;
+    overflow: visible;
+}
+
+body .view-header-title-container:not(.mod-at-start):before,
+body .view-header-title-container:not(.mod-at-end):after {
+    background: transparent;
+}

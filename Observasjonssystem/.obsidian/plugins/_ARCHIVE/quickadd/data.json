@@ -1,0 +1,2097 @@
+{
+  "choices": [
+    {
+      "id": "dacb5c31-39ae-4c92-a06e-0d4ca75562dd",
+      "name": "Mobil-tastatur-handlinger",
+      "type": "Multi",
+      "command": false,
+      "choices": [
+        {
+          "id": "c7b1118a-0523-4a68-a724-873a20d86960",
+          "name": "Markør-start",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "Markør-start",
+            "id": "3425e1dd-552e-4a5c-8bc3-7c1a3827bf6d",
+            "commands": [
+              {
+                "name": "Tp.file.cursor start",
+                "type": "NestedChoice",
+                "id": "32c5c904-b757-4342-9932-40e53dd88c4c",
+                "choice": {
+                  "id": "f2f1b4dd-5c8f-4019-a41e-e5830c2d440e",
+                  "name": "Tp.file.cursor start",
+                  "type": "Capture",
+                  "command": false,
+                  "appendLink": false,
+                  "captureTo": "",
+                  "captureToActiveFile": true,
+                  "activeFileWritePosition": "top",
+                  "createFileIfItDoesntExist": {
+                    "enabled": false,
+                    "createWithTemplate": false,
+                    "template": ""
+                  },
+                  "format": {
+                    "enabled": true,
+                    "format": "<% tp.file.cursor(1)%>"
+                  },
+                  "insertAfter": {
+                    "enabled": false,
+                    "after": "",
+                    "insertAtEnd": false,
+                    "considerSubsections": false,
+                    "createIfNotFound": false,
+                    "createIfNotFoundLocation": "top"
+                  },
+                  "newLineCapture": {
+                    "enabled": false,
+                    "direction": "below"
+                  },
+                  "prepend": false,
+                  "task": false,
+                  "openFile": false,
+                  "fileOpening": {
+                    "location": "tab",
+                    "direction": "vertical",
+                    "mode": "default",
+                    "focus": true
+                  },
+                  "templater": {
+                    "afterCapture": "wholeFile"
+                  }
+                }
+              },
+              {
+                "name": "Templater: Jump to next cursor location",
+                "type": "Obsidian",
+                "id": "49ccfd83-0b37-4059-b2ca-96beaea83ed9",
+                "commandId": "templater-obsidian:jump-to-next-cursor-location"
+              }
+            ]
+          }
+        },
+        {
+          "id": "209661da-ac49-45c7-afcb-a2e5ee40564a",
+          "name": "Markør-start",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "Markør-start",
+            "id": "608db091-f983-49b6-819f-533216f78ab8",
+            "commands": [
+              {
+                "name": "Tp.file.cursor slutt",
+                "type": "NestedChoice",
+                "id": "ed7bd8ff-d7a6-45c8-952a-90c9d647d484",
+                "choice": {
+                  "id": "f2f1b4dd-5c8f-4019-a41e-e5830c2d440e",
+                  "name": "Tp.file.cursor slutt",
+                  "type": "Capture",
+                  "command": false,
+                  "appendLink": false,
+                  "captureTo": "",
+                  "captureToActiveFile": true,
+                  "activeFileWritePosition": "cursor",
+                  "createFileIfItDoesntExist": {
+                    "enabled": false,
+                    "createWithTemplate": false,
+                    "template": ""
+                  },
+                  "format": {
+                    "enabled": true,
+                    "format": "<% tp.file.cursor(1)%>"
+                  },
+                  "insertAfter": {
+                    "enabled": false,
+                    "after": "",
+                    "insertAtEnd": false,
+                    "considerSubsections": false,
+                    "createIfNotFound": false,
+                    "createIfNotFoundLocation": "top"
+                  },
+                  "newLineCapture": {
+                    "enabled": false,
+                    "direction": "below"
+                  },
+                  "prepend": true,
+                  "task": false,
+                  "openFile": false,
+                  "fileOpening": {
+                    "location": "tab",
+                    "direction": "vertical",
+                    "mode": "default",
+                    "focus": true
+                  },
+                  "templater": {
+                    "afterCapture": "wholeFile"
+                  }
+                }
+              },
+              {
+                "name": "Templater: Jump to next cursor location",
+                "type": "Obsidian",
+                "id": "27706eac-c32c-4262-aebb-c21779b1c9ce",
+                "commandId": "templater-obsidian:jump-to-next-cursor-location"
+              }
+            ]
+          }
+        },
+        {
+          "id": "1f958105-ea93-4552-b7d5-12fb22134d1d",
+          "name": "Markør-forrige paragraf slutt",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "Markør-forrige paragraf slutt",
+            "id": "efe1ff41-d2d3-4805-a4b0-b1514a0c2ac9",
+            "commands": [
+              {
+                "name": "Select active line",
+                "type": "EditorCommand",
+                "id": "a281b758-3f80-4bc4-8c42-fb8704b61397",
+                "editorCommandType": "Select active line"
+              },
+              {
+                "name": "Move caret left",
+                "type": "Obsidian",
+                "id": "0f4e8531-95f8-42bf-80ab-57060df8d31b",
+                "commandId": "editor:move-caret-left"
+              },
+              {
+                "name": "Move caret left",
+                "type": "Obsidian",
+                "id": "fac17d48-1731-444e-be47-2c36a3102be9",
+                "commandId": "editor:move-caret-left"
+              }
+            ]
+          }
+        },
+        {
+          "id": "a5a644e8-7756-458d-9a40-469728e05337",
+          "name": "Markør-neste paragraf start",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "Markør-neste paragraf start",
+            "id": "65a1adae-943a-4422-992d-d34c51e24441",
+            "commands": [
+              {
+                "name": "Select active line",
+                "type": "EditorCommand",
+                "id": "6993c6b7-8343-42dd-9920-a541c4e4c511",
+                "editorCommandType": "Select active line"
+              },
+              {
+                "name": "Move caret right",
+                "type": "Obsidian",
+                "id": "29d61b5c-2d36-490e-9ad8-4e0a833b65f3",
+                "commandId": "editor:move-caret-right"
+              },
+              {
+                "name": "Move caret right",
+                "type": "Obsidian",
+                "id": "bf7304b2-10b6-4b77-88d3-bb87f9419810",
+                "commandId": "editor:move-caret-right"
+              }
+            ]
+          }
+        },
+        {
+          "id": "0c5f6a90-fc31-40c0-9ac1-204772734b25",
+          "name": "Markør-paragraf start",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "Markør-paragraf start",
+            "id": "b8c19f6f-f764-469c-9170-05e78f6c0d91",
+            "commands": [
+              {
+                "name": "Select active line",
+                "type": "EditorCommand",
+                "id": "1b67ac4f-fa97-437c-8414-57239bd72fa4",
+                "editorCommandType": "Select active line"
+              },
+              {
+                "name": "Move caret left",
+                "type": "Obsidian",
+                "id": "225aca16-4116-4f27-85ec-fd5639d4ac1d",
+                "commandId": "editor:move-caret-left"
+              }
+            ]
+          }
+        },
+        {
+          "id": "6b960f49-4b50-4daf-a2c6-d7f19485e5aa",
+          "name": "Markør-paragraf slutt",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "Markør-paragraf slutt",
+            "id": "1545ee27-1368-49d0-adbc-a676028d60c9",
+            "commands": [
+              {
+                "name": "Select active line",
+                "type": "EditorCommand",
+                "id": "1c5326c2-d5db-4017-9109-532a5786847b",
+                "editorCommandType": "Select active line"
+              },
+              {
+                "name": "Move caret right",
+                "type": "Obsidian",
+                "id": "37e9b1d0-3d84-4457-bd49-d686e38b1bce",
+                "commandId": "editor:move-caret-right"
+              }
+            ]
+          }
+        },
+        {
+          "id": "21d504f6-9eb2-4196-a657-e24a683dfa35",
+          "name": "Slett avsnitt ",
+          "type": "Macro",
+          "command": true,
+          "runOnStartup": false,
+          "macro": {
+            "name": "Slett avsnitt ",
+            "id": "fda18c1d-1aec-422c-8149-e4f735b159b7",
+            "commands": [
+              {
+                "name": "Select active line",
+                "type": "EditorCommand",
+                "id": "d0261b55-5051-4142-a384-8aaed170cd44",
+                "editorCommandType": "Select active line"
+              },
+              {
+                "name": "Delete paragraph",
+                "type": "Obsidian",
+                "id": "959e6b21-211d-40b9-ba34-cc97a6a7f28f",
+                "commandId": "editor:delete-paragraph"
+              },
+              {
+                "name": "Move caret up",
+                "type": "Obsidian",
+                "id": "883d6745-c0e5-4ede-94cb-2ce61a8475cd",
+                "commandId": "editor:move-caret-up"
+              }
+            ]
+          }
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "31e33cd3-7524-4086-9779-5f5e5341b015",
+      "name": "Favoritt-templater",
+      "type": "Multi",
+      "command": true,
+      "choices": [
+        {
+          "id": "7a744127-b682-477e-8c76-9e0194498821",
+          "name": "Callouts-Meny",
+          "type": "Macro",
+          "command": true,
+          "macro": {
+            "id": "37a9e8fd-f761-40c4-bbc3-9d763ca75f77",
+            "name": "Callout-meny",
+            "commands": [
+              {
+                "name": "Capture template callout",
+                "type": "NestedChoice",
+                "id": "af767ad8-7e19-4aa6-b6a0-cb8953be2bbb",
+                "choice": {
+                  "id": "4feaed6b-3e4e-4a5c-b637-9fb1b70a18cf",
+                  "name": "Capture template callout",
+                  "type": "Capture",
+                  "command": false,
+                  "appendLink": false,
+                  "captureTo": "",
+                  "captureToActiveFile": true,
+                  "activeFileWritePosition": "cursor",
+                  "createFileIfItDoesntExist": {
+                    "enabled": false,
+                    "createWithTemplate": false,
+                    "template": ""
+                  },
+                  "format": {
+                    "enabled": true,
+                    "format": "{{TEMPLATE:07-Tmp/Actions/meny/Callout.md}}"
+                  },
+                  "insertAfter": {
+                    "enabled": false,
+                    "after": "",
+                    "insertAtEnd": false,
+                    "considerSubsections": false,
+                    "createIfNotFound": false,
+                    "createIfNotFoundLocation": "top"
+                  },
+                  "newLineCapture": {
+                    "enabled": false,
+                    "direction": "below"
+                  },
+                  "prepend": false,
+                  "task": false,
+                  "openFile": false,
+                  "fileOpening": {
+                    "location": "tab",
+                    "direction": "vertical",
+                    "mode": "default",
+                    "focus": true
+                  },
+                  "templater": {
+                    "afterCapture": "none"
+                  }
+                }
+              },
+              {
+                "name": "Templater: Jump to next cursor location",
+                "type": "Obsidian",
+                "id": "bb7d8cb6-2697-404d-8a55-c06c0b994c7d",
+                "commandId": "templater-obsidian:jump-to-next-cursor-location"
+              }
+            ]
+          },
+          "runOnStartup": false
+        },
+        {
+          "id": "4ed7fe51-a5e9-4b02-96be-9d8e9b7e71b1",
+          "name": "MCL",
+          "type": "Macro",
+          "command": true,
+          "macroId": ""
+        },
+        {
+          "id": "0bde9f05-7c8b-45c4-b35a-8128da5c64ba",
+          "name": "Blockquote+",
+          "type": "Macro",
+          "command": true,
+          "macro": {
+            "id": "b7789897-65ba-495e-972b-2b237fd8bf2c",
+            "name": "legg til blockquote",
+            "commands": [
+              {
+                "name": "Templater: Insert _tmp/Templater/regex-legg til blocquote-meny.md",
+                "type": "Obsidian",
+                "id": "840612b6-8a6a-492b-ae5a-9d084332147d",
+                "commandId": "templater-obsidian:_tmp/Templater/regex-legg til blocquote-meny.md"
+              }
+            ]
+          },
+          "runOnStartup": false
+        },
+        {
+          "id": "13eecb87-4666-4039-9886-94d59512ecc0",
+          "name": "Blockquote-",
+          "type": "Macro",
+          "command": true,
+          "macro": {
+            "id": "066f3d3c-685f-474c-8e42-ece3d7325354",
+            "name": "Fjern blockquote",
+            "commands": [
+              {
+                "name": "Templater: Insert _tmp/Templater/regex-fjern blocquote 1.md",
+                "type": "Obsidian",
+                "id": "1669b6cf-ba6a-4d08-a9e7-54e21bca1366",
+                "commandId": "templater-obsidian:_tmp/Templater/regex-fjern blocquote 1.md"
+              }
+            ]
+          },
+          "runOnStartup": false
+        }
+      ],
+      "collapsed": false
+    },
+    {
+      "id": "ae42ca61-f531-45c8-b7a7-228cb7f6cd4a",
+      "name": "Observasjon",
+      "type": "Multi",
+      "command": true,
+      "choices": [
+        {
+          "id": "4abbdc61-5d79-45d0-acc2-c56bb42ac3cd",
+          "name": "➕ Obs-Notat",
+          "type": "Template",
+          "command": true,
+          "templatePath": "07-Tmp/Observasjon.md",
+          "fileNameFormat": {
+            "enabled": false,
+            "format": ""
+          },
+          "folder": {
+            "enabled": false,
+            "folders": [],
+            "chooseWhenCreatingNote": false,
+            "createInSameFolderAsActiveFile": false,
+            "chooseFromSubfolders": true
+          },
+          "appendLink": false,
+          "openFile": true,
+          "fileOpening": {
+            "location": "reuse",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "fileExistsMode": "Append to the top of the file",
+          "setFileExistsBehavior": true
+        },
+        {
+          "id": "0e4522cf-59d4-42fc-a3df-a9c5ceb4857b",
+          "name": "Under # Observasjon",
+          "type": "Multi",
+          "command": false,
+          "choices": [
+            {
+              "id": "29a9aa97-1a48-46eb-b37d-6a6e50176aa2",
+              "name": "Standard info før observasjonen",
+              "type": "Macro",
+              "command": true,
+              "runOnStartup": false,
+              "macro": {
+                "name": "Standard info før observasjonen",
+                "id": "4d2d0ecb-0cad-4c3e-bf79-203c1e8d54c4",
+                "commands": [
+                  {
+                    "name": "Legg til standard-variabler under # Observasjon",
+                    "type": "NestedChoice",
+                    "id": "e6db5723-bf49-41d4-b456-f3783add72cb",
+                    "choice": {
+                      "id": "a829d52a-2d67-4867-b4bb-7c81ebd71831",
+                      "name": "Legg til standard-variabler under # Observasjon",
+                      "type": "Capture",
+                      "command": false,
+                      "appendLink": false,
+                      "captureTo": "",
+                      "captureToActiveFile": true,
+                      "activeFileWritePosition": "cursor",
+                      "createFileIfItDoesntExist": {
+                        "enabled": false,
+                        "createWithTemplate": false,
+                        "template": ""
+                      },
+                      "format": {
+                        "enabled": true,
+                        "format": "**Teams-ID:** <% tp.file.title.replace(/\\d+-/g, \"\") %>\n**Dato:** {{DATE:DD.MM.YYYY}}\n**:** \n**Barnehage:** {{GLOBAL_VAR:Barnehager}}\n**Tid fra:** {{TIME:HH:mm}}\n**Antall barn (I dag av Totalt):** {{value:Antall barn (I dag av Totalt)}}\n**Antall ansatte (I dag av Totalt):** {{value:Antall ansatte (I dag av Totalt)}}\n\n"
+                      },
+                      "insertAfter": {
+                        "enabled": true,
+                        "after": "# Observasjon",
+                        "insertAtEnd": false,
+                        "considerSubsections": false,
+                        "createIfNotFound": false,
+                        "createIfNotFoundLocation": "top"
+                      },
+                      "newLineCapture": {
+                        "enabled": false,
+                        "direction": "below"
+                      },
+                      "prepend": false,
+                      "task": false,
+                      "openFile": false,
+                      "fileOpening": {
+                        "location": "tab",
+                        "direction": "vertical",
+                        "mode": "default",
+                        "focus": true
+                      },
+                      "templater": {
+                        "afterCapture": "wholeFile"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "collapsed": false
+        },
+        {
+          "id": "4d6c1862-160d-4cfd-b8ca-067e26938181",
+          "name": "Under ## Beskrivelse av ..",
+          "type": "Multi",
+          "command": true,
+          "choices": [
+            {
+              "id": "41041dee-a492-479f-9e5b-302054960c37",
+              "name": "Legg til note om ... (Macro)",
+              "type": "Macro",
+              "command": true,
+              "runOnStartup": false,
+              "macro": {
+                "name": "Legg til note om ... (Macro)",
+                "id": "917eb0b1-839f-4085-b3a4-fadd16ed1c66",
+                "commands": [
+                  {
+                    "name": "...",
+                    "type": "NestedChoice",
+                    "id": "76ce6b55-212a-429e-b5c5-b30471cb6006",
+                    "choice": {
+                      "id": "71fd11d2-9c1d-4c6f-985e-a8b2607de94e",
+                      "name": "...",
+                      "type": "Capture",
+                      "command": false,
+                      "appendLink": false,
+                      "captureTo": "",
+                      "captureToActiveFile": true,
+                      "activeFileWritePosition": "cursor",
+                      "createFileIfItDoesntExist": {
+                        "enabled": false,
+                        "createWithTemplate": false,
+                        "template": ""
+                      },
+                      "format": {
+                        "enabled": true,
+                        "format": "{{VALUE:Note om ...}} ({{time}})\n"
+                      },
+                      "insertAfter": {
+                        "enabled": true,
+                        "after": "### ...",
+                        "insertAtEnd": false,
+                        "considerSubsections": false,
+                        "createIfNotFound": false,
+                        "createIfNotFoundLocation": "top"
+                      },
+                      "newLineCapture": {
+                        "enabled": false,
+                        "direction": "below"
+                      },
+                      "prepend": false,
+                      "task": false,
+                      "openFile": false,
+                      "fileOpening": {
+                        "location": "tab",
+                        "direction": "vertical",
+                        "mode": "default",
+                        "focus": true
+                      },
+                      "templater": {
+                        "afterCapture": "none"
+                      }
+                    }
+                  },
+                  {
+                    "name": "Ny deskriptiv linje (macro)",
+                    "type": "Choice",
+                    "id": "b0f3eca5-9877-48a5-955c-8284039006ab",
+                    "choiceId": "1cfc2736-9026-4f5e-b42b-b1187c4b43ac"
+                  },
+                  {
+                    "name": "Merk note under deskriptive notater og legg til ny linje med tid",
+                    "type": "NestedChoice",
+                    "id": "76e35c14-0afb-45b4-b04f-0d109a45bd3f",
+                    "choice": {
+                      "id": "15647370-06e8-4cad-98d6-ca3dbac395eb",
+                      "name": "Merk note under deskriptive notater og legg til ny linje med tid",
+                      "type": "Capture",
+                      "command": false,
+                      "appendLink": false,
+                      "captureTo": "",
+                      "captureToActiveFile": true,
+                      "activeFileWritePosition": "cursor",
+                      "createFileIfItDoesntExist": {
+                        "enabled": false,
+                        "createWithTemplate": false,
+                        "template": ""
+                      },
+                      "format": {
+                        "enabled": true,
+                        "format": "(Note om ...)\n**{{TIME:HH:mm:ss}}:** <% tp.file.cursor (1) %>"
+                      },
+                      "insertAfter": {
+                        "enabled": false,
+                        "after": "",
+                        "insertAtEnd": false,
+                        "considerSubsections": false,
+                        "createIfNotFound": false,
+                        "createIfNotFoundLocation": "top"
+                      },
+                      "newLineCapture": {
+                        "enabled": false,
+                        "direction": "below"
+                      },
+                      "prepend": false,
+                      "task": false,
+                      "openFile": false,
+                      "fileOpening": {
+                        "location": "tab",
+                        "direction": "vertical",
+                        "mode": "default",
+                        "focus": true
+                      },
+                      "templater": {
+                        "afterCapture": "wholeFile"
+                      }
+                    }
+                  },
+                  {
+                    "name": "Templater: Jump to next cursor location",
+                    "type": "Obsidian",
+                    "id": "67fd5202-cf1e-45d9-98fc-4c540dc21505",
+                    "commandId": "templater-obsidian:jump-to-next-cursor-location"
+                  }
+                ]
+              }
+            }
+          ],
+          "collapsed": false
+        },
+        {
+          "id": "f8df9d9a-41f0-47f9-ad94-340fd77a11c2",
+          "name": "Under ## Deskriptive notater",
+          "type": "Multi",
+          "command": true,
+          "choices": [
+            {
+              "id": "36a2c0c0-6021-4948-8848-f24c8f0aba3b",
+              "name": "Ny aktivitet (Makro)",
+              "type": "Macro",
+              "command": true,
+              "runOnStartup": false,
+              "macro": {
+                "name": "Ny aktivitet (Makro)",
+                "id": "380bcc41-f0e2-4205-bfeb-88a3f654d813",
+                "commands": [
+                  {
+                    "name": "Ny aktivitet",
+                    "type": "Choice",
+                    "id": "88ec5dd4-3ecd-44cb-8cb9-cde1a61cfb4f",
+                    "choiceId": "e9aef02d-df10-4191-acd4-3b6cd5b6a6f6"
+                  },
+                  {
+                    "name": "Templater: Jump to next cursor location",
+                    "type": "Obsidian",
+                    "id": "db819c27-21fc-4541-a2bc-23d0e3d7146e",
+                    "commandId": "templater-obsidian:jump-to-next-cursor-location"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "1cfc2736-9026-4f5e-b42b-b1187c4b43ac",
+              "name": "Ny deskriptiv linje (macro)",
+              "type": "Macro",
+              "command": true,
+              "runOnStartup": false,
+              "macro": {
+                "name": "Ny deskriptiv linje (macro)",
+                "id": "bba56db3-6e87-4b6a-a6f7-72d773609fc3",
+                "commands": [
+                  {
+                    "name": "Ny deskriptiv linje",
+                    "type": "Choice",
+                    "id": "fad0a94d-d4c9-40de-9aea-7f40f59ae591",
+                    "choiceId": "5bb3cc2f-75e5-4e75-87bd-518f9e23164a"
+                  },
+                  {
+                    "name": "Templater: Jump to next cursor location",
+                    "type": "Obsidian",
+                    "id": "23738b60-7cf6-4d21-b806-541ca2be3a88",
+                    "commandId": "templater-obsidian:jump-to-next-cursor-location"
+                  }
+                ]
+              }
+            }
+          ],
+          "collapsed": false
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "5cb89f06-ab49-45ac-a021-f391003d325e",
+      "name": "Base-Capture",
+      "type": "Multi",
+      "command": false,
+      "choices": [
+        {
+          "id": "c27f660b-9ad5-4c95-ba13-cb83161c1923",
+          "name": "Dagens Dato",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "**Dato:** {{DATE:DD.MM.YYYY}}\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "# Observasjon",
+            "insertAtEnd": false,
+            "considerSubsections": false,
+            "createIfNotFound": true,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        },
+        {
+          "id": "367407e8-e435-496f-839d-45a0b19f90be",
+          "name": "Tid Nå",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "**Tid fra:** {{TIME:HH:mm}}\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "# Observasjon",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": true,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        },
+        {
+          "id": "e47e9e6f-828b-4de5-87e0-1b87cea779bd",
+          "name": "Barnet (Note)",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "\n{{VALUE:Note om barnet}} ({{time}})\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "### Barnet",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        },
+        {
+          "id": "92250ddf-e65b-4fae-86ac-5a3c6f6165f5",
+          "name": "Barnegruppen (Note)",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "\n{{VALUE:Note om barnegruppen}} ({{time}})\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "### Barnegruppen",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        },
+        {
+          "id": "13ca54e7-86de-4ae4-9557-687d20148db0",
+          "name": "Ansatte (Note)",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "\n{{VALUE:Note om ansatte}} ({{time}})\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "### Ansatte",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        },
+        {
+          "id": "279b1d27-3f49-44a7-b6d0-43d3f9e917dd",
+          "name": "Fysisk utforming (Note)",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "\n{{VALUE:Note om fysisk utforming}} ({{time}})\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "### Fysisk utforming",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        },
+        {
+          "id": "709420f3-cf18-4706-82b1-5b521441dfe3",
+          "name": "Antall ansatte (I dag av Totalt)",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "**Antall ansatte (I dag av Totalt):** {{value:Antall ansatte (I dag av Totalt)}}\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "# Observasjon",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": true,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        },
+        {
+          "id": "0ec46b5f-fcaf-4657-aa01-6f09c9728333",
+          "name": "Barnehage",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "**Barnehage:** {{GLOBAL_VAR:Barnehager}}\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "# Observasjon",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": true,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        },
+        {
+          "id": "fd77dc1f-26f2-4155-8cb8-9aa3f012cc12",
+          "name": "Antall barn (i dag av totalt)",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "**Antall barn (I dag av Totalt):** {{value:Antall barn (I dag av Totalt)}}\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "# Observasjon",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": true,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        },
+        {
+          "id": "5bb3cc2f-75e5-4e75-87bd-518f9e23164a",
+          "name": "Ny deskriptiv linje",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "**{{TIME:HH:mm:ss}}:** <% tp.system.cursor (1) %>"
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "### Fysisk utforming",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": true,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        },
+        {
+          "id": "e9aef02d-df10-4191-acd4-3b6cd5b6a6f6",
+          "name": "Ny aktivitet",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "\n### {{GLOBAL_VAR:ObsSituasjoner}} - nB: nV: - {{TIME:HH:mm}}-\n**{{TIME:HH:mm:ss}}:** <% tp.system.cursor (1) %>"
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "### Fysisk utforming",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": true,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        }
+      ]
+    }
+  ],
+  "inputPrompt": "multi-line",
+  "devMode": false,
+  "templateFolderPath": "07-Tmp",
+  "announceUpdates": "none",
+  "version": "2.9.4",
+  "globalVariables": {
+    "Barnehager": "{{Value:Barneslottet,Bryn,Fagerholt,Frydenlund,Furustien,Gransbakken,Gransletta,Haugen,Haugenstien,Haugerud Sentrum,Haugerudhagan,Havnehagen,Hellerud,Hellerudtoppen,Jeriko,Karihaugen,Karlstua,Kløfterhagen,Knøttene,Kurland,Lia,Lindebergskogen,Lindebergstua,Linjen,Lohøgda,Lutvannskollen,Munkebekken,Ospa,Plassen,Scala,Smalvollskogen,Smedbakken,Solfjellet,Stjerneblokkveien,Stjernemyra,Stubberudlia,Sørhellinga,Teisen Vest,Teisentoppen,Trosterud senter,Trøste og Bære,Valhall,Vassenga,Åpen barnehage,Valle Hovin}}",
+    "ObsSituasjoner": "{{VALUE:Levering,Måltid,Lek inne,Lek ute,Pedagogisk aktivitet,Bordaktivitet,Toalett,Garderobe,Påkledning,Avkledning,Hvilestund,Ryddetid,Samlingsstund:Velg aktivitet}}"
+  },
+  "onePageInputEnabled": false,
+  "disableOnlineFeatures": true,
+  "enableRibbonIcon": true,
+  "showCaptureNotification": false,
+  "showInputCancellationNotification": false,
+  "enableTemplatePropertyTypes": false,
+  "ai": {
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true,
+    "providers": [
+      {
+        "name": "OpenAI",
+        "endpoint": "https://api.openai.com/v1",
+        "apiKey": "",
+        "models": [
+          {
+            "name": "text-davinci-003",
+            "maxTokens": 4096
+          },
+          {
+            "name": "gpt-3.5-turbo",
+            "maxTokens": 4096
+          },
+          {
+            "name": "gpt-3.5-turbo-16k",
+            "maxTokens": 16384
+          },
+          {
+            "name": "gpt-3.5-turbo-1106",
+            "maxTokens": 16385
+          },
+          {
+            "name": "gpt-4",
+            "maxTokens": 8192
+          },
+          {
+            "name": "gpt-4-32k",
+            "maxTokens": 32768
+          },
+          {
+            "name": "gpt-4-1106-preview",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4-turbo",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4o",
+            "maxTokens": 128000
+          },
+          {
+            "name": "gpt-4o-mini",
+            "maxTokens": 128000
+          }
+        ],
+        "modelSource": "auto"
+      }
+    ]
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true,
+    "addDefaultAIProviders": true,
+    "removeMacroIndirection": true,
+    "migrateFileOpeningSettings": true,
+    "setProviderModelDiscoveryMode": true
+  },
+  "macros": [
+    {
+      "name": "RX-Enkel",
+      "id": "15da90e8-7c10-4ccf-acc8-b84717e9b051",
+      "commands": [
+        {
+          "name": "Regex Pipeline: Enkel fiks",
+          "type": "Obsidian",
+          "id": "9e774259-688a-4e86-bf40-439f7022d299",
+          "commandId": "obsidian-regex-pipeline:ruleset: Enkel fiks"
+        },
+        {
+          "name": "Regex Pipeline: enkel fiks",
+          "type": "Obsidian",
+          "id": "0e3415eb-14a3-4d31-81af-53bc3ac84468",
+          "commandId": "obsidian-regex-pipeline:ruleset: enkel fiks"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "RX-Meta",
+      "id": "872e436d-ebb7-495c-8d08-395cbcdef5ab",
+      "commands": [
+        {
+          "name": "Regex Pipeline: Metadata",
+          "type": "Obsidian",
+          "id": "72bcdbb0-b1bd-4292-8ce3-722a913e9120",
+          "commandId": "obsidian-regex-pipeline:ruleset: Metadata"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "RX-Merk1",
+      "id": "60a4320a-2e76-43da-baf6-c28998434416",
+      "commands": [
+        {
+          "name": "Regex Pipeline: Merknader 1",
+          "type": "Obsidian",
+          "id": "01ed3a35-2da1-470a-9d16-8a1abe02e17b",
+          "commandId": "obsidian-regex-pipeline:ruleset: Merknader 1"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "RX-Apa",
+      "id": "7369aa61-c57c-459d-9253-1ba54d3b2f3d",
+      "commands": [
+        {
+          "name": "Regex Pipeline: apa til citekey",
+          "type": "Obsidian",
+          "id": "82dd25c3-738e-4750-a40f-813acf0cce9e",
+          "commandId": "obsidian-regex-pipeline:ruleset: apa til citekey"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "RX-Merk 2",
+      "id": "5437f322-fa00-4e1b-8130-ae4111fac95b",
+      "commands": [
+        {
+          "name": "Regex Pipeline: Merknader 2",
+          "type": "Obsidian",
+          "id": "3e5b67be-398b-497e-9477-204355d7b69f",
+          "commandId": "obsidian-regex-pipeline:ruleset: Merknader 2"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "RX-Linjeskift",
+      "id": "e61e37f5-5aab-4705-954e-a5b82fdcb479",
+      "commands": [
+        {
+          "name": "Regex Pipeline: Linjeskift",
+          "type": "Obsidian",
+          "id": "ba7b73d2-709b-454e-b2f3-470618bb6a8f",
+          "commandId": "obsidian-regex-pipeline:ruleset: Linjeskift"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "RX Span",
+      "id": "4d38bfd5-e396-42ac-b5f6-4a53a7fbe4b7",
+      "commands": [
+        {
+          "name": "Regex Pipeline: Span-lenke",
+          "type": "Obsidian",
+          "id": "f5583b23-022f-4096-82b5-ce3107fd10d1",
+          "commandId": "obsidian-regex-pipeline:ruleset: Span-lenke"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Zot-mobile",
+      "id": "a8960980-3d96-41d8-aa32-842af139dc67",
+      "commands": [
+        {
+          "name": "zot-online",
+          "type": "UserScript",
+          "id": "9db05e0d-1716-4e74-b50e-a3b47a729f90",
+          "path": "stm/scripts/zot-online.js",
+          "settings": {
+            "Zotero API Key": "qhs9Az3SAAsHdk24yOH8UiMj",
+            "Zotero User ID": "9410884",
+            "Annotation Format": "> [!note]\n> {{VALUE:quote}}\n\n{{VALUE:note}}",
+            "Author Format": "[[@{{VALUE:lastName}}-{{VALUE:year}}]]"
+          }
+        },
+        {
+          "name": "add-paper",
+          "type": "NestedChoice",
+          "id": "8a896790-b672-48c1-9f71-1e6ded1fea5a",
+          "choice": {
+            "id": "47403c4d-3a6b-4766-ad2d-cca720a322ed",
+            "name": "add-paper",
+            "type": "Template",
+            "command": false,
+            "templatePath": "templates/zotero-integration/z-add-paper.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "@{{VALUE:authors}}-{{VALUE:date}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Append to the top of the file",
+            "setFileExistsBehavior": true
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "z-Legg til notater",
+      "id": "bdb7f421-e52d-41a5-b190-708634742f4e",
+      "commands": [
+        {
+          "name": "Zotero Integration: Insert notes into current document",
+          "type": "Obsidian",
+          "id": "c5a4efc1-f944-4c7b-acf8-42d7fbad0c9a",
+          "commandId": "obsidian-zotero-desktop-connector:zdc-insert-notes"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "z-omfattende",
+      "id": "da5b3afc-f0a6-43bc-b82c-8c52333edf30",
+      "commands": [
+        {
+          "name": "Zotero Integration: Importer Alt",
+          "type": "Obsidian",
+          "id": "5a279b3f-00be-4301-a514-09a7984a00e5",
+          "commandId": "obsidian-zotero-desktop-connector:zdc-exp-Importer Alt"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "⚙️ Rens litteraturnotat",
+      "id": "b0fbd92b-7085-433a-9043-362d2a8a1cca",
+      "commands": [
+        {
+          "name": "Regex Pipeline: Tagger",
+          "type": "Obsidian",
+          "id": "e57b85e6-cf11-4951-b633-fa1ad84d4d0a",
+          "commandId": "obsidian-regex-pipeline:ruleset: Tagger"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "937a6ffc-504f-4b7d-9c88-475b7d78ce6b",
+          "time": 100
+        },
+        {
+          "name": "Regex Pipeline: Enkel fiks",
+          "type": "Obsidian",
+          "id": "c3224ab2-58dc-4a23-b594-e98a55479c0d",
+          "commandId": "obsidian-regex-pipeline:ruleset: Enkel fiks"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "fcc2526f-9341-41cb-861d-c4942cd0f37b",
+          "time": 100
+        },
+        {
+          "name": "Regex Pipeline: Metadata",
+          "type": "Obsidian",
+          "id": "6d6d8ce3-4809-445d-927d-cf95730bf0d3",
+          "commandId": "obsidian-regex-pipeline:ruleset: Metadata"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "2a64fcd1-966c-4ad2-889d-d621382511e9",
+          "time": 100
+        },
+        {
+          "name": "Regex Pipeline: Merknader 1",
+          "type": "Obsidian",
+          "id": "03644a52-135a-4d33-9dfd-04acbfef666b",
+          "commandId": "obsidian-regex-pipeline:ruleset: Merknader 1"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "c48ef802-3f1f-4321-bf39-7bf5f6ea56fe",
+          "time": 100
+        },
+        {
+          "name": "Regex Pipeline: Merknader 2",
+          "type": "Obsidian",
+          "id": "c90695cd-9046-467f-9b43-939bc8c20236",
+          "commandId": "obsidian-regex-pipeline:ruleset: Merknader 2"
+        },
+        {
+          "name": "Regex Pipeline: Merknader 1",
+          "type": "Obsidian",
+          "id": "0a441c25-8b93-4db5-80b1-2ee7896337e9",
+          "commandId": "obsidian-regex-pipeline:ruleset: Merknader 1"
+        },
+        {
+          "name": "Regex Pipeline: Merknader 2",
+          "type": "Obsidian",
+          "id": "23eb521a-ad26-4638-890c-556ca8eacdb2",
+          "commandId": "obsidian-regex-pipeline:ruleset: Merknader 2"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Siter",
+      "id": "ff95b121-d44f-4126-8724-b944ceafdc08",
+      "commands": [
+        {
+          "name": "Zotero Integration: Apa, norsk",
+          "type": "Obsidian",
+          "id": "e026d94e-4fc7-4ce7-9e20-b59b6e083317",
+          "commandId": "obsidian-zotero-desktop-connector:zdc-Apa, norsk"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Siter obs-lenke",
+      "id": "3bd7425d-af43-4355-9a27-0113f2f46889",
+      "commands": [
+        {
+          "name": "Citations: Insert Markdown citation",
+          "type": "Obsidian",
+          "id": "77532396-ef5d-48b7-a669-dc330d0bf94e",
+          "commandId": "obsidian-citation-plugin:insert-markdown-citation"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Hent bibliografi",
+      "id": "d89b95fe-079f-40ef-8ce5-a345815dc9bc",
+      "commands": [
+        {
+          "name": "Zotero Integration: Bibliography",
+          "type": "Obsidian",
+          "id": "5aaf4242-4edd-4c0c-8c8b-c0c8fc57001a",
+          "commandId": "obsidian-zotero-desktop-connector:zdc-Bibliography"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "2. ",
+      "id": "cf2a9f9a-8a5c-40d8-8d9e-ecd07b6719a5",
+      "commands": [
+        {
+          "name": "Templater: Insert extra/templater/inline-legg til utdrag.md",
+          "type": "Obsidian",
+          "id": "d0aedf48-c91a-425e-8c37-edc436431895",
+          "commandId": "templater-obsidian:extra/templater/inline-legg til utdrag.md"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "2a60a154-d0c0-4f10-87bf-529fd09a7ffe",
+          "time": 100
+        },
+        {
+          "name": "tittel limes inn nederst i filen",
+          "type": "NestedChoice",
+          "id": "18b200f1-c16c-4262-87c2-f41c12c5e2d6",
+          "choice": {
+            "id": "e6eaa010-7b75-4789-8933-b6a480b78a89",
+            "name": "tittel limes inn nederst i filen",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "\n<%tp.file.title%><%tp.file.cursor(1)%>"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": true,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "66985cb2-3fdb-4e24-bce4-b62a8fb15c9e",
+          "time": 100
+        },
+        {
+          "name": "Templater: Replace templates in the active file",
+          "type": "Obsidian",
+          "id": "9001e322-a3d7-433a-b4d4-bf2296cca006",
+          "commandId": "templater-obsidian:replace-in-file-templater"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "47266b6e-d449-4c30-a78a-37e85a0c63c9",
+          "time": 100
+        },
+        {
+          "name": "Select active line",
+          "type": "EditorCommand",
+          "id": "5d4c8a42-dee6-413d-92a9-c19bc1010a5f",
+          "editorCommandType": "Select active line"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "19b0416e-152e-4a9d-95de-150fd27c2ba2",
+          "time": 100
+        },
+        {
+          "name": "Cut",
+          "type": "EditorCommand",
+          "id": "14406494-e01f-4795-b2de-5d906ffa5853",
+          "editorCommandType": "Cut"
+        },
+        {
+          "name": "Navigate back",
+          "type": "Obsidian",
+          "id": "5e20deba-5137-4050-8f57-170705c6955f",
+          "commandId": "app:go-back"
+        },
+        {
+          "name": "Templater: Jump to next cursor location",
+          "type": "Obsidian",
+          "id": "7c7d8fb9-3c57-4611-a593-49204420219f",
+          "commandId": "templater-obsidian:jump-to-next-cursor-location"
+        },
+        {
+          "name": "Paste",
+          "type": "EditorCommand",
+          "id": "c5c92e46-a827-4869-a9fa-668f1c0803bc",
+          "editorCommandType": "Paste"
+        },
+        {
+          "name": "]]",
+          "type": "NestedChoice",
+          "id": "b834b02e-a424-4cb9-8024-9fc8718a6045",
+          "choice": {
+            "id": "4e0b6153-c775-4cd1-b6f1-e9a2ffdd95fd",
+            "name": "]]",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "]]"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Send utklipp/valgt 2",
+      "id": "2ccc9833-b805-4e15-8712-d72f51a87c1b",
+      "commands": [
+        {
+          "name": "Navigate back",
+          "type": "Obsidian",
+          "id": "190e59f2-7f02-42fc-a960-138364775982",
+          "commandId": "app:go-back"
+        },
+        {
+          "name": "Templater: Jump to next cursor location",
+          "type": "Obsidian",
+          "id": "373b9689-59d9-43fb-9a70-d19807bd2041",
+          "commandId": "templater-obsidian:jump-to-next-cursor-location"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "1",
+      "id": "bc7edcf4-fca6-4bdb-99a3-25c5637b26cd",
+      "commands": [
+        {
+          "name": "Copy",
+          "type": "EditorCommand",
+          "id": "f18491d4-0774-4a66-8d4e-ad89372a63dd",
+          "editorCommandType": "Copy"
+        },
+        {
+          "name": "Templater: Insert extra/templater/inline-send ut.md",
+          "type": "Obsidian",
+          "id": "4b7745dc-3b6d-4e9d-8d9c-19bc5d1d3544",
+          "commandId": "templater-obsidian:extra/templater/inline-send ut.md"
+        },
+        {
+          "name": "Quick switcher: Open quick switcher",
+          "type": "Obsidian",
+          "id": "419a93f7-ab90-4c49-981f-cec71101ca00",
+          "commandId": "switcher:open"
+        },
+        {
+          "name": "<%tp.file.cursor(1)%>",
+          "type": "Choice",
+          "id": "da81d801-e537-4fb2-a83b-1f119ebeedc6",
+          "choiceId": "3595e401-6580-40af-b184-7df41e6e70bf"
+        },
+        {
+          "name": "Templater: Jump to next cursor location",
+          "type": "Obsidian",
+          "id": "9f36177a-7d78-48fb-80f4-9c27e0f1addc",
+          "commandId": "templater-obsidian:jump-to-next-cursor-location"
+        },
+        {
+          "name": "Paste",
+          "type": "EditorCommand",
+          "id": "d3fabf15-11ae-4822-a973-fe3979a07ae0",
+          "editorCommandType": "Paste"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "⭐Flytt vagt innhold til annet notat",
+      "id": "52e96467-dedb-411e-a914-800f4eec679f",
+      "commands": [
+        {
+          "name": "Templater: Jump to next cursor location",
+          "type": "Obsidian",
+          "id": "a22e17a6-905a-476c-bc15-9ce958f08ca6",
+          "commandId": "templater-obsidian:jump-to-next-cursor-location"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "26191172-e4f2-4033-8874-9bb749f8a381",
+          "time": 300
+        },
+        {
+          "name": "legg til ad-plain",
+          "type": "NestedChoice",
+          "id": "42a2d2ce-8a08-4872-b740-c7618eae6c60",
+          "choice": {
+            "id": "58b516f6-42f0-4a8c-87b6-9bc90d870ec9",
+            "name": "legg til ad-plain",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "```ad-plain\n"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "8924ec86-0ec9-4a88-9053-573de017610b",
+          "time": 100
+        },
+        {
+          "name": "Templater: Jump to next cursor location",
+          "type": "Obsidian",
+          "id": "7afccd3b-2e2c-4bc3-b292-9230e41a7876",
+          "commandId": "templater-obsidian:jump-to-next-cursor-location"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "3396b390-d955-460e-8d34-afc672099e6b",
+          "time": 100
+        },
+        {
+          "name": "Avslutt block",
+          "type": "NestedChoice",
+          "id": "e2b583c8-0397-4b71-81cc-c27e922edf5b",
+          "choice": {
+            "id": "d3070ce1-323d-480f-ae47-ceee01c3db00",
+            "name": "Avslutt block",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "```"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Go to previous tab",
+          "type": "Obsidian",
+          "id": "a9c0ce30-9ae1-4e9b-80ae-e20d7a29c8e7",
+          "commandId": "workspace:previous-tab"
+        },
+        {
+          "name": "Templater: Jump to next cursor location",
+          "type": "Obsidian",
+          "id": "403b40e6-854b-491d-9402-66cb73b5cf3c",
+          "commandId": "templater-obsidian:jump-to-next-cursor-location"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "96f7f7f0-c3b7-4fad-a759-0fb12ee80d8a",
+          "time": 100
+        },
+        {
+          "name": "Select active line",
+          "type": "EditorCommand",
+          "id": "045c3bdd-9c9f-446e-9af9-aa9342d7b9c4",
+          "editorCommandType": "Select active line"
+        },
+        {
+          "name": "QuickAdd: Run QuickAdd",
+          "type": "Obsidian",
+          "id": "3c53d6ba-339c-4118-a52a-ddb31983b23c",
+          "commandId": "quickadd:runQuickAdd"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "z-metadata",
+      "id": "eb8d8109-a641-4f0f-9b97-bf410fa6928b",
+      "commands": [
+        {
+          "name": "Zotero Integration: Importer metadata",
+          "type": "Obsidian",
+          "id": "bfe135ff-6305-4c74-ab6e-9a77a1ea32de",
+          "commandId": "obsidian-zotero-desktop-connector:zdc-exp-Importer metadata"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "z-bok",
+      "id": "87f8924d-f790-4c12-b72f-b3c0bfc630ad",
+      "commands": [
+        {
+          "name": "Zotero Integration: Importer Bok",
+          "type": "Obsidian",
+          "id": "bd02e92d-1a43-409c-834d-c7d063bfff20",
+          "commandId": "obsidian-zotero-desktop-connector:zdc-exp-Importer Bok"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "z-nye",
+      "id": "694197bd-7b37-428f-bd44-1296a2533d86",
+      "commands": [
+        {
+          "name": "Zotero Integration: Importer nye merknader",
+          "type": "Obsidian",
+          "id": "584d6e5f-1e08-4316-9882-49ce92792ded",
+          "commandId": "obsidian-zotero-desktop-connector:zdc-exp-Importer nye merknader"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "📥 Hent Notater",
+      "id": "5759398b-1753-45a1-b5ae-1629c0cfffd7",
+      "commands": [
+        {
+          "name": "Zotero Integration: Importer notater",
+          "type": "Obsidian",
+          "id": "b46f0cf0-bf12-493c-a716-48439119305d",
+          "commandId": "obsidian-zotero-desktop-connector:zdc-exp-Importer notater"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Ny embedlenke",
+      "id": "7fc6e99a-e4cb-4100-88aa-caefbd226fda",
+      "commands": [
+        {
+          "name": "Select active line",
+          "type": "EditorCommand",
+          "id": "c41c7a9d-44a6-4e1c-96b5-a2f502fb9f24",
+          "editorCommandType": "Select active line"
+        },
+        {
+          "name": "Mal for embed-oppsett",
+          "type": "NestedChoice",
+          "id": "19dbfb10-7cef-4887-b75c-05cec1fb8fb9",
+          "choice": {
+            "id": "a05090b4-c9e4-49f5-9814-22bd4da0fa42",
+            "name": "Mal for embed-oppsett",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "###### [[{{selected}}#<%tp.file.title%>]]\n`````ad-orange\ncollapse: closed\ntitle: Embed\n![[{{selected}}#<%tp.file.title%>]]\n`````\n"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Templater: Replace templates in the active file",
+          "type": "Obsidian",
+          "id": "93c66f4e-25ba-450b-8a58-95c49fcab032",
+          "commandId": "templater-obsidian:replace-in-file-templater"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "📥 Hent enkle merknader",
+      "id": "98358e80-09fe-4669-aacd-73855e5750c9",
+      "commands": [
+        {
+          "name": "Zotero Integration: Inporter enkel",
+          "type": "Obsidian",
+          "id": "458ff8cf-34f6-462a-8665-b2eb7bf7afb1",
+          "commandId": "obsidian-zotero-desktop-connector:zdc-exp-Inporter enkel"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "📥 Hent sentrale begreper",
+      "id": "515d190c-9a3e-439c-9f1e-0afc3889c436",
+      "commands": [
+        {
+          "name": "Zotero Integration: Importer Avansert",
+          "type": "Obsidian",
+          "id": "5e3cf661-3060-4a9b-80de-1919141d53d8",
+          "commandId": "obsidian-zotero-desktop-connector:zdc-exp-Importer Avansert"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Fjern blockquote",
+      "id": "066f3d3c-685f-474c-8e42-ece3d7325354",
+      "commands": [
+        {
+          "name": "Templater: Insert _tmp/Templater/regex-fjern blocquote 1.md",
+          "type": "Obsidian",
+          "id": "1669b6cf-ba6a-4d08-a9e7-54e21bca1366",
+          "commandId": "templater-obsidian:_tmp/Templater/regex-fjern blocquote 1.md"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "legg til blockquote",
+      "id": "b7789897-65ba-495e-972b-2b237fd8bf2c",
+      "commands": [
+        {
+          "name": "Templater: Insert _tmp/Templater/regex-legg til blocquote-meny.md",
+          "type": "Obsidian",
+          "id": "840612b6-8a6a-492b-ae5a-9d084332147d",
+          "commandId": "templater-obsidian:_tmp/Templater/regex-legg til blocquote-meny.md"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Callout-meny",
+      "id": "37a9e8fd-f761-40c4-bbc3-9d763ca75f77",
+      "commands": [
+        {
+          "name": "Templater: Insert _tmp/Templater/aa1-appnd-admonition-meny.md",
+          "type": "Obsidian",
+          "id": "565b7db4-ff0c-40ae-86ad-52529be496df",
+          "commandId": "templater-obsidian:_tmp/Templater/aa1-appnd-admonition-meny.md"
+        }
+      ],
+      "runOnStartup": false
+    }
+  ]
+}

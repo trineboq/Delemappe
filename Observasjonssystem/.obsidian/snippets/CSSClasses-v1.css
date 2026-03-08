@@ -1,0 +1,130 @@
+/* ======================= GRUNNKODE ================================== */
+.wide-note {
+  --file-line-width: 100%;
+  --img-max-width: 100%;
+}
+.note {
+  --h1-font: "Open sans", sans-serif;
+  --h2-font: "Open sans", sans-serif;
+  --h3-font: "Open sans", sans-serif;
+  --h4-font: "Open sans", sans-serif;
+  --h5-font: "Open sans", sans-serif;
+  --h6-font: "Open sans", sans-serif;
+  --font-monospace-theme: "Open sans", sans-serif;
+  --font-monospace: "Open sans", sans-serif;
+  --font-text: "Open sans", sans-serif;
+  --font-size: inherit;
+  --file-line-width: 70%;
+  --img-max-width: 60%;
+}
+.novel {
+  --callout-font-family: "Source serif pro", serif;
+  --code-number-color: transparent;
+  --embed-max-height: 500px;
+  --font-editor: var(--font-text);
+  --font-monospace-theme: "Source Serif Pro", serif;
+  --font-monospace: "Open sans", sans-serif;
+  --font-size: inherit;
+  --font-text: "Source Serif Pro", serif;
+  --h1-font: "Source Serif Pro", serif;
+  --h1-size: 2.1em;
+  --h2-font: "Source Serif Pro", serif;
+  --h3-font: "Source Serif Pro", serif;
+  --h4-font: "Source Serif Pro", serif;
+  --h5-font: "Source Serif Pro", serif;
+  --h6-font: "Source Serif Pro", serif;
+  --file-line-width: 70%;
+  --img-max-width: 60%;
+}
+.draft {
+  --blockquote-border-color: transparent;
+  --blockquote-font-family: "Source Serif Pro", serif;
+  --blockquote-size:var(--h6-size);
+  --blockquote-background-color:transparent;
+
+  --bold-weight:600;
+
+  --code-number-color: transparent;
+
+  --embed-max-height: 500px;
+  --file-line-width: 70%;
+  --img-max-width: 60%;
+
+  --font-draft: "Source serif pro", serif;
+  --font-editor: var(--font-text);
+  --font-interface: "Inter", sans-serif;
+  --font-mono: "Arial", sans-serif;
+  --font-monospace-theme: "Source Serif Pro", serif;
+  --font-monospace: "Open sans", sans-serif;
+  --font-note: "Source serif pro", serif;
+  --font-text: "Source Serif Pro", serif;
+  --font-text: var(--font-note);
+
+  --h1-font: "Source Serif Pro", serif;
+  --h1-size:2em;
+  --h1-style:normal;
+  --h1-variant:all-small-caps;
+  --h1-weight:600;
+  --h2-font: "Source serif pro", serif;
+  --h2-size:1.5em;
+  --h2-style:normal;
+  --h2-variant:normal;
+  --h2-weight:500;
+  --h3-font: "Source serif pro", serif;
+  --h3-size:1.5em;
+  --h3-style:italic;
+  --h3-variant:normal;
+  --h3-weight:500;
+  --h4-font: "Source serif pro", serif;
+  --h4-size:1.6em;
+  --h4-style:normal;
+  --h4-variant:all-small-caps;
+  --h4-weight:400;
+  --h5-font: "Source Serif Pro", serif;
+  --h5-size:1.25em;
+  --h5-style:normal;
+  --h5-variant:normal;
+  --h5-weight:400;
+  --h6-font: "Source Serif Pro", serif;
+  --h6-size:1.25em;
+  --h6-style:italic;
+  --h6-variant:normal;
+  --h6-weight:300;
+  --inline-title-color: var(--color-accent-2);
+  --inline-title-font: var(--font-mono);
+  --inline-title-size: 1em;
+  --inline-title-style: normal;
+  --inline-title-variant: normal;
+  --inline-title-weight: 300;
+  --normal-weight:300;
+  --bold-weight: 600;
+  --code-number-color: transparent;
+
+
+    
+    --tag-decoration: none;
+    --tag-decoration-hover: none;
+}
+/* ======================= WIDE-NOTE ============================== */
+/* ======================= NOTE =================================== */
+/* ======================= NOVEL ================================== */
+.novel .cm-line {
+  line-height: var(--line-height);
+  font-family: var(--font-draft);
+}
+.novel .callout[data-callout="blank-container"] {
+  font-family:"Source Serif Pro", serif;
+}
+.novel .cm-gutterElement .cm-lineNumbers, .draft .cm-gutterElement{
+  color: transparent;
+}
+/* ======================= DRAFT ================================== */
+.draft .cm-s-obsidian span.cm-quote {
+  color: var(--text-color);
+  font-family: var(--blockquote-font-family);
+  font-style: italic;
+}
+/* ======================= EKSTRA ================================== */
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-line, .markdown-source-view.mod-cm6.is-readable-line-width .cm-content {
+    max-width: 100%;
+}

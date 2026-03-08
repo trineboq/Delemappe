@@ -35,7 +35,7 @@
     "editor:open-search-replace",
     "editor:configure-toolbar"
   ],
-  "attachmentFolderPath": "./",
+  "attachmentFolderPath": "./_apx",
   "newFileLocation": "root",
   "newFileFolderPath": "001-Inbox",
   "trashOption": "local",

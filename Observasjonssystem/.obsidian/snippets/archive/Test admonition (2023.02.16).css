@@ -1,0 +1,38 @@
+.admonition {
+    margin-top: var(--admonition-margin-top);
+    margin-bottom: var(--admonition-margin-bottom);
+    margin-left: 10;
+    margin-right: 10;
+    padding: 5;
+    overflow: visible;
+    color: var(--text-normal);
+    page-break-inside: auto;
+    border-top: 0rem solid rgba(255, 255, 255, 0);
+    border-bottom: 0rem solid rgba(255, 255, 255, 0);
+    border-color: 0rem solid rgba(255, 255, 255, 0);
+    border-left: 0rem solid rgba(255, 255, 255, 0);
+    border-right: 0rem solid rgba(255, 255, 255, 0);
+    border-radius: 0.3rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(255, 255, 255, 0);
+ }
+ .admonition-title {
+    position: static;
+    padding: 0rem 0em;
+    font-weight: 200;
+ }
+ .admonition-title-content {
+    display: inherit;
+    justify-content: center;
+    margin-top: 2 !important;
+    margin-bottom: 2 !important;
+    background-color: rgba(var(--admonition-color), 0.1);
+ }
+ .admonition-title-icon {
+    color: rgb(var(--admonition-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.3em 0 0em;
+    min-width: 0.1em;
+    width: min-content;
+ }

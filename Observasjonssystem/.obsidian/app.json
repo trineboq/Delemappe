@@ -1,0 +1,23 @@
+{
+  "spellcheck": false,
+  "tabSize": 2,
+  "attachmentFolderPath": "./_apx",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "trashOption": "local",
+  "uriCallbacks": true,
+  "showInlineTitle": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "01-Inbox",
+  "promptDelete": false,
+  "mobileToolbarCommands": [
+    "editor:paste",
+    "editor:copy",
+    "editor:cut",
+    "editor:attach-file",
+    "insert-current-date",
+    "insert-current-time",
+    "editor:context-menu",
+    "editor:configure-toolbar"
+  ]
+}

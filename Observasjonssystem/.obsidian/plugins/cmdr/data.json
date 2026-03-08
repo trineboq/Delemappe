@@ -1,0 +1,87 @@
+{
+  "confirmDeletion": false,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [
+    {
+      "id": "editor:follow-link",
+      "icon": "lucide-link",
+      "name": "Follow link under cursor",
+      "mode": "any",
+      "color": "#fa0000"
+    }
+  ],
+  "fileMenu": [
+    {
+      "id": "app:go-back",
+      "icon": "lucide-a-large-small",
+      "name": "Navigate back",
+      "mode": "mobile",
+      "color": "#d00101"
+    }
+  ],
+  "leftRibbon": [],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [
+    {
+      "id": "templater-obsidian:create-07-Tmp/New/Observasjonsmal.md",
+      "icon": "lucide-plus-circle",
+      "name": "Templater: Create New/Observasjonsmal",
+      "mode": "any",
+      "color": "#379136"
+    },
+    {
+      "id": "templater-obsidian:create-new-note-from-template",
+      "icon": "templater-icon",
+      "name": "Templater: Create new note from template",
+      "mode": "any",
+      "color": "#388f39"
+    },
+    {
+      "id": "app:open-settings",
+      "icon": "lucide-settings",
+      "name": "Open settings",
+      "mode": "any",
+      "color": "#1714e1"
+    },
+    {
+      "id": "editor:toggle-source",
+      "icon": "lucide-code-2",
+      "name": "Toggle Live Preview/Source mode",
+      "mode": "any",
+      "color": "#1120e8"
+    },
+    {
+      "id": "command-palette:open",
+      "icon": "lucide-terminal-square",
+      "name": "Command palette: Open command palette",
+      "mode": "any"
+    },
+    {
+      "id": "app:delete-file",
+      "icon": "lucide-trash-2",
+      "name": "Delete current file",
+      "mode": "any",
+      "color": "#ff0000"
+    }
+  ],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": []
+  },
+  "spacing": 8,
+  "advancedToolbar": {
+    "rowHeight": 30,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 30,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 2
+  }
+}

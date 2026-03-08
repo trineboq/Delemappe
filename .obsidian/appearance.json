@@ -1,20 +1,8 @@
 {
-  "cssTheme": "Border",
+  "cssTheme": "GitHub Theme",
   "enabledCssSnippets": [
-    "Blockquote-class",
-    "Callout-Class",
-    "Code-Class",
-    "custom-admonitions.588ebe",
-    "Embed-Class",
-    "Frontmatter-Class",
-    "Note-Class",
-    "supercharged-links-gen",
     "supercharged-links-gen copy",
-    "MCL Gallery Cards",
-    "MCL Multi Column",
-    "MCL Wide Views",
-    "Text-class",
-    "callout-class-sanctum"
+    "Callout-Class"
   ],
   "baseFontSize": 13
 }

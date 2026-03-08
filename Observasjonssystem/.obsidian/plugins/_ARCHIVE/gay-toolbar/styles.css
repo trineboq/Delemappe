@@ -1,0 +1,579 @@
+.button-settings {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring {
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 36px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.ring .inner {
+  width: unset;
+}
+
+.ui-button {
+  border-radius: 50%;
+  width: unset;
+  height: unset;
+  padding: 0.3rem;
+}
+
+.central-item {
+  background-color: color-mix(
+    in srgb,
+    var(--background-primary) 50%,
+    transparent
+  );
+  padding: 0.4rem;
+  border-radius: 8px;
+  pointer-events: none;
+  gap: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.central-item * {
+  pointer-events: all;
+}
+.central-item > :first-child {
+  font-size: x-small;
+  width: 10ch;
+  align-self: start;
+}
+.central-item > small {
+  font-size: xx-small;
+  max-width: 10ch;
+  /* text-wrap-mode: nowrap; */
+  /* align-self: center; */
+  text-align: center;
+  word-wrap: break-word;
+  /* overflow-x: scroll; */
+  flex-shrink: 1;
+}
+
+/* small {
+  max-width: 10ch;
+  word-wrap: break-word;
+  text-align: center;
+} */
+
+.slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slot > * {
+  width: 100%;
+  height: 100%;
+}
+
+.tap-icon > svg {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 80%;
+  height: 80%;
+}
+.tap-icon-no-press > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.press-icon > svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 45%;
+  height: 45%;
+}
+.swipe-icon > svg {
+  width: 100%;
+  height: 100%;
+}
+
+.gay-button {
+  position: relative;
+  display: flex; /* fixes misalignment-on-iphone bug */
+  border: 0.35rem solid transparent;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15) !important;
+}
+.gay-button-border {
+  border: var(--button-border-width) solid transparent;
+}
+.gay-button-tap {
+  z-index: var(--layer-popover);
+  opacity: 0.4;
+}
+.gay-button-tap::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--swipe-ring-background);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: swipeRing var(--press-delay) ease forwards;
+}
+.gay-button-tap::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--button-press-background);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: tapRing var(--press-delay) ease forwards;
+}
+
+.gay-button-press {
+  z-index: 2;
+}
+.gay-button-press::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--button-press-background);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  animation: pressRing 0.2s ease forwards;
+}
+
+/*=====================================================================*/
+
+@keyframes swipeRing {
+  0% {
+    width: 5rem;
+    height: 5rem;
+  }
+  100% {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+@keyframes tapRing {
+  0% {
+    width: 3rem;
+    height: 3rem;
+  }
+  100% {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+@keyframes pressRing {
+  0% {
+    width: 6rem;
+    height: 6rem;
+  }
+  50% {
+    width: 8rem;
+    height: 8rem;
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-1.5deg) scale(1);
+  }
+  25% {
+    transform: rotate(1.5deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(-1.5deg) scale(0.99);
+  }
+  75% {
+    transform: rotate(1.5deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(-1.5deg) scale(1);
+  }
+}
+
+/* Animated Ball Trail Styles */
+.animated-ball {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform, opacity;
+  z-index: 1000;
+}
+
+.animated-ball-trail {
+  position: absolute;
+  pointer-events: none;
+  will-change: transform, opacity;
+  z-index: 1000;
+}
+
+/* Performance optimizations for animations */
+.animated-ball,
+.animated-ball-trail {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Touch gesture optimization */
+.touch-manager {
+  touch-action: none;
+}
+
+@import "./button-settings.css";
+@import "./grid.css";
+@import "./settings.css";
+
+div[style*="position: absolute"] > svg,
+div[style*="position: fixed"] > svg {
+  display: block;
+}
+
+.full-size {
+  width: 100%;
+  height: 100%;
+}
+
+.gay-toolbar-container {
+  transition: bottom 0.05s linear;
+  max-height: 80%;
+}
+.gay-toolbar {
+  /* From https://css.glass */
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* make settings scrollable */
+  display: flex;
+  flex-direction: column; /* Stack X and Y vertically */
+  max-height: 100%; /* Prevent B from exceeding its container */
+}
+
+/* REACT COLOR PALETTE */
+.rcp-root {
+  --rcp-background-color: #121212;
+  --rcp-field-input-color: #ffffff;
+  --rcp-field-input-border-color: #242424;
+  --rcp-field-label-color: #808080;
+}
+.rcp {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--rcp-background-color);
+  border-radius: 10px;
+}
+.rcp-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px;
+}
+.rcp-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rcp-interactive {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  touch-action: none;
+}
+.rcp-interactive[aria-disabled="true"] {
+  cursor: unset;
+  pointer-events: none;
+}
+.rcp-saturation {
+  cursor: all-scroll;
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(to bottom, transparent, black),
+    linear-gradient(to right, white, transparent);
+  border-radius: 10px 10px 0 0;
+}
+.rcp-saturation-cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 100%;
+  box-shadow: 0 0 15px #00000026;
+  transform: translate(-10px, -10px);
+}
+.rcp-hue {
+  cursor: ew-resize;
+  position: relative;
+  width: 100%;
+  height: 12px;
+  background-image: linear-gradient(
+    to right,
+    red,
+    #ff0,
+    #0f0,
+    #0ff,
+    #00f,
+    #f0f,
+    red
+  );
+  border-radius: 10px;
+}
+.rcp-hue-cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 100%;
+  box-shadow: 0 0 15px #00000026;
+  transform: translate(-10px, -4px);
+}
+.rcp-alpha {
+  cursor: ew-resize;
+  position: relative;
+  width: 100%;
+  height: 12px;
+  border-radius: 10px;
+}
+.rcp-alpha-cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 100%;
+  box-shadow: 0 0 15px #00000026;
+  transform: translate(-10px, -4px);
+}
+.rcp-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rcp-fields-floor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+.rcp-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.rcp-field-input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  text-align: center;
+  color: var(--rcp-field-input-color);
+  background-color: transparent;
+  border: 2px solid var(--rcp-field-input-border-color);
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 0;
+}
+.rcp-field-input:read-only {
+  opacity: 0.8;
+}
+.rcp-field-label {
+  font-size: 14px;
+  text-align: center;
+  color: var(--rcp-field-label-color);
+}
+
+.gay-settings-container {
+  position: relative;
+  border: solid 1px #ccc;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.gay-settings-container > :first-child {
+  width: min(450px, 100%);
+}
+
+.gay-settings-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  width: 100%;
+  position: sticky;
+  bottom: 0px;
+  pointer-events: none;
+}
+.gay-settings-footer > * {
+  pointer-events: auto;
+}
+
+.gay-settings-footer .float-right {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+}
+
+.settings-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.toolbar-setting-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Make specific text blocks wrap */
+.toolbar-setting-wrapper label,
+.toolbar-setting-wrapper p,
+.toolbar-setting-wrapper button {
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.coffee-plea {
+  grid-column: 1 / -1;
+}
+.buy-me-a-coffee-button {
+  display: flex;
+  align-items: center;
+  background-color: #ffdd00;
+  border-radius: 30px;
+  padding: 8px 20px;
+  color: #000000;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+.buy-me-a-coffee-button:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.buy-me-a-coffee-emoji {
+  margin-right: 10px;
+}
+
+.settings-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 8px;
+}
+
+.gay-input-label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.gay-input {
+  display: flex;
+  justify-content: start;
+}
+.gay-input input {
+  margin-inline: 6px;
+}
+
+.gay-input-numeric {
+  margin-right: 8px;
+  text-align: space-between;
+}
+
+.gay-input-color {
+  height: auto;
+  margin-right: 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px grey;
+}
+
+.gay-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: var(--layer-modal);
+}
+.gay-modal {
+  position: absolute;
+  width: 85%;
+  height: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-y: auto;
+  background-color: var(--background-primary);
+}
+.gay-modal > * {
+  max-width: 100%;
+}
+
+.gay-config-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.gay-config-panel {
+  padding: 16px;
+  border-top: 1px solid var(--background-modifier-border);
+}
+.gay-config-panel > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.gay-config-panel > span > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.gay-config-panel > img {
+  width: 100%;
+}
+
+#color-picker-presets button {
+  all: unset;
+  display: flex;
+  width: 26px;
+  height: 26px;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 5px;
+}
+

@@ -1,0 +1,9 @@
+.database-plugin__th {
+  color: var(--text-faint);
+  font-weight: 500;
+  font-size: var(--dbfolder-font-size);
+  cursor: pointer;
+  background-color: var(--background-primary);
+  display: table-cell;
+  z-index: 1;
+}

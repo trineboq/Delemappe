@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "f9b5932c74f867a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "480aca9c317753ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0694cc44091ce5f4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "060472072e7439ff",
+    "type": "split",
+    "children": [
+      {
+        "id": "1df9170f2d4872df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5f0964a166554d5b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "7b742bd9359bdbf1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5ff8c22895f80816",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "28d262f0391acd7d",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "recent-files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 303.5
+  },
+  "right": {
+    "id": "85e88efb3c2be585",
+    "type": "split",
+    "children": [
+      {
+        "id": "719cf2d6747e6e53",
+        "type": "tabs",
+        "dimension": 66.11570247933885,
+        "children": [
+          {
+            "id": "79b7db94d1db21bd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "INFO/Fysisk utforming/Sjekkliste-Fysisk utforming.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Sjekkliste-Fysisk utforming"
+            }
+          },
+          {
+            "id": "13d15bd6a15bff93",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "INFO/Fysisk utforming/Sjekkliste-Fysisk utforming.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Sjekkliste-Fysisk utforming"
+            }
+          }
+        ]
+      },
+      {
+        "id": "c5388d50a0198c59",
+        "type": "tabs",
+        "dimension": 33.88429752066116,
+        "children": [
+          {
+            "id": "405fde8551dc8753",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "INFO/Fysisk utforming/Sjekkliste-Fysisk utforming.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Sjekkliste-Fysisk utforming"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-regex-pipeline:Regex Rulesets": false
+    }
+  },
+  "active": "5f0964a166554d5b",
+  "lastOpenFiles": [
+    "INFO/Fysisk utforming/Fysisk miljø.md",
+    "INFO/Observasjon som metode/Ansatte.md",
+    "01-Inbox/Untitled.md",
+    "INFO/Fysisk utforming/Sjekkliste-Fysisk utforming.md",
+    "INFO/Fysisk utforming/Miljørettet helsevern.md",
+    "INFO/Forvaltning/Begreper.md",
+    "INFO/Fysisk utforming",
+    "INFO/Observasjon som metode/Diverse spørsmål observasjon.md",
+    "INFO/Forvaltning/Ulovfestede forvaltningsmessige prinsipper.md",
+    "INFO/Forvaltning/Enkeltvedtak-31.md",
+    "INFO/Undersøkelser/Barnehagens innhold.md",
+    "INFO/Undersøkelser/Tilsyn (Nyttige tips med overføring til saksbehandling).md",
+    "INFO/Undersøkelser/Spørsmål-37.md",
+    "INFO/Undersøkelser/Spesialpedagogisk hjelp.md",
+    "INFO/Undersøkelser/Saksbehandling av bhl § 37.md",
+    "INFO/Undersøkelser/Særskilt tilrettelegging.md",
+    "INFO/Undersøkelser/Intervjuteknikk (tilsyn).md",
+    "INFO/Observasjon som metode/Tips (Før).md",
+    "INFO/Tips-Forkortelser.md",
+    "INFO/Undersøkelser/Undersøkelsesprosessen (§ 37).md",
+    "INFO/Forvaltning",
+    "INFO/Observasjonssystemet/Toolbar.md",
+    "INFO/Observasjonssystemet/Toolbar 2.md",
+    "INFO/Tips-Forkortelser 2.md",
+    "INFO/Observasjon som metode/Tips - etter.md",
+    "INFO/Observasjonsnotat-Test.md",
+    "INFO/Om observasjon.md",
+    "INFO/Informasjon til ansatte om observasjon.md",
+    "INFO/Undersøkelser",
+    "INFO/Intervju og samtale",
+    "INFO/Observasjon som metode/_apx/qklg_pd_mod4_exp2_doc_observ.pdf",
+    "INFO/Observasjonssystemet/_apx/README-IMG-20260307141750019.jpeg",
+    "INFO/Observasjonssystemet/_apx/Do you trust the author of this vault.png",
+    "INFO/Observasjonssystemet/_apx/LastNedTelefon1.jpeg",
+    "INFO/Observasjonssystemet/_apx/Opprett nytt obs-notat.png",
+    "INFO/Observasjonssystemet/_apx/Opprett nytt obs-notat-1.png",
+    "INFO/Observasjonssystemet/_apx",
+    "INFO/Observasjon som metode",
+    "INFO/Observasjonssystemet",
+    "INFO/Observasjon som metode/_apx",
+    "INFO/Observasjonssystemet/_apx/LastNedGithub2.png",
+    "INFO/Observasjonssystemet/_apx/LastNedGithub1.png",
+    "INFO/Observasjonssystemet/_apx/README-IMG-20260307143117258.png",
+    "INFO/Observasjonssystemet/_apx/README-IMG-20260307143030993.png",
+    "INFO/Observasjonssystemet/_apx/README-IMG-20260307142855364.png",
+    "INFO/apx"
+  ]
+}

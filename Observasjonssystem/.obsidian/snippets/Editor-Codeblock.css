@@ -1,0 +1,248 @@
+/* ============ KODE CODE ============ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro|Noto+Sans+Mono|Poppins:wght@200|Source+Sans+Pro");
+
+body {
+  --font-monospace: ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-monospace-theme: var(--font-monospace);
+  --code-normal: var(--text-muted);
+  --code-comment: var(--text-faint);
+  --code-function: rgb(228, 156, 0);
+  --code-important: var(--color-00orange);
+  --code-keyword: var(--color-00pink);
+  --code-operator: var(--color-00red);
+  --code-property:  rgb(0, 80, 228);
+  --code-punctuation: var(--text-muted);
+  --code-string: var(--color-00green);
+  --code-tag: var(--color-00red);
+  --code-value: var(--color-00purple);
+  --code-size: inherit;
+  --code-font-size: var(--font-ui-small);
+  --code-normal-inline: #FFB7C2;
+
+  --codeblock-color: var(--code-background);
+}
+.theme-light {
+  --code-background: rgb(249, 240, 226);
+  --text-muted:rgb(111, 111, 111);
+  --code-number-color: rgb(250, 155, 3);
+}
+.theme-dark{
+  --code-background: rgb(75, 67, 127);
+  --text-muted:rgb(228, 228, 228);
+  --code-number-color: rgb(0, 26, 255);
+}
+.note {
+  --code-number-color: rgb(182, 181, 181);
+}
+.novel {
+  --code-background: transparent;
+  --code-style: italic;
+  --code-font-size: inherit;
+  --code-number-color: transparent;
+}
+.draft {
+  
+}
+.theme-light.draft{
+
+}
+.theme-dark .draft{
+
+}
+
+/* ============ KODE CODE ============ */
+.HyperMD-codeblock-begin {
+  counter-reset:codeblock-line-numbers;
+}
+/* !!! DETTE ER KODEBLOKKEN !!! */
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  left: 0;
+  right: 0;
+  background-color: var(--code-background);
+  font-family: var(--font-monospace-theme);
+  font-size: var(--code-font-size);
+  font-style: var(--code-style);
+}
+/* KNAPP */
+.markdown-source-view.mod-cm6 .edit-block-button, .markdown-source-view.mod-cm6 .code-block-flair {}
+.markdown-source-view.mod-cm6 .edit-block-button {
+  color: var(--text-muted);
+  opacity: 0;
+  padding: 13px;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  display: flex;
+  border-radius: var(--radius-s);
+  cursor: var(--cursor);
+}
+.markdown-source-view.mod-cm6 .code-block-flair {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  z-index: 1;
+  display: inline-block;
+  padding: 10px;
+  border-radius: var(--radius-s);
+  font-family: var(--font-interface);
+  font-size: 10px;
+  color: rgb(105, 98, 98);
+  cursor: var(--cursor);
+}
+/*Nummerering*/
+body:not(code[class*="language"]) .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin,.HyperMD-codeblock-end){
+  padding-left:0px;
+}
+.HyperMD-codeblock:not(.HyperMD-codeblock-begin,.HyperMD-codeblock-end)::before{
+  counter-increment:codeblock-line-numbers;
+  content: counter(codeblock-line-numbers);
+  font-size:.75em;
+  line-height:2;
+  text-align:right;
+  height:100%;
+  width:1.7em;
+  color: var(--cTX04);
+  background-color: transparent;
+  position:absolute;
+  left:0;
+  padding-right:1.4em;
+  color: var(--code-number-color);
+}
+.markdown-rendered code {
+  color: var(--code-normal);
+  font-family: var(--font-monospace);
+  background-color: var(--code-background);
+  border-radius: var(--radius-s);
+  font-size: var(--code-font-size);
+  padding: 0.1em 0.25em;
+}
+.cm-s-obsidian .cm-templater-command.cm-string, .cm-s-obsidian .cm-templater-command.cm-string-2{
+  color:#FE0C0C;
+} /* Tallet i aktiv linje*/
+.markdown-rendered pre {
+  position: relative;
+  padding: var(--size-4-2) var(--size-4-4);
+  min-height: 38px;
+  background-color: var(--code-background);
+  border-radius: var(--radius-s);
+  white-space: var(--code-white-space);
+  overflow-x: auto;
+}
+.markdown-rendered pre code {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+.markdown-rendered pre:not(:hover) > button.copy-code-button {
+  display: none;
+}
+.markdown-rendered button.copy-code-button {
+  margin: 6px;
+  padding: 6px 8px;
+  height: auto;
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  font-family: var(--font-interface);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* ======= NUMMERERING ========== */
+body:not(code[class*="language"]) .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin,.HyperMD-codeblock-end){
+  padding-left:30px;
+}
+.HyperMD-codeblock:not(.HyperMD-codeblock-begin,.HyperMD-codeblock-end)::before{
+  counter-increment:codeblock-line-numbers;
+  content: counter(codeblock-line-numbers);
+  font-size:.75em;
+  line-height:2;
+  text-align:center;
+  height:100%;
+  width:1.7em;
+  background-color: transparent;
+  position:absolute;
+  left:0;
+  padding-right:1.4em;
+  color: var(--code-number-color);
+}
+.markdown-rendered code {
+  color: var(--code-normal);
+  font-family: var(--font-monospace);
+  background-color: var(--code-background);
+  border-radius: var(--radius-s);
+  font-size: var(--code-font-size);
+  padding: 0.1em 0.25em;
+}
+.markdown-rendered pre {
+  position: relative;
+  padding: var(--size-4-2) var(--size-4-4);
+  min-height: 38px;
+  background-color: var(--code-background);
+  border-radius: var(--radius-s);
+  white-space: var(--code-white-space);
+  overflow-x: auto;
+}
+.markdown-rendered pre code {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+.markdown-rendered pre:not(:hover) > button.copy-code-button {
+  display: none;
+}
+.markdown-rendered button.copy-code-button {
+  margin: 3px;
+  padding: 6px 8px;
+  height: auto;
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  font-family: var(--font-interface);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cm-s-obsidian .HyperMD-codeblock {
+  font-family: var(--font-monospace);
+  font-size: var(--code-size);
+}
+.code-block-lang-name {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: var(--text-normal);
+  font-size: 8px;
+  margin-left: 4px;
+  user-select: none;
+}
+.code-block-linenum-wrap {
+  position: absolute;
+  top: 1em;
+  left: 0px;
+  min-width: 4em;
+  font-size: var(--font-ui-smaller);
+  line-height: 1.5em;
+  counter-reset: line-num;
+  text-align: center;
+  border-right: transparent;
+  user-select: none;
+  pointer-events: none;
+  background-color: inherit;
+  color: var(--code-number-color);
+}
+/* Tekst etter nummerering */
+.markdown-source-view.mod-cm6 .cm-hmd-codeblock {
+  margin-left: 0px
+}
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock:not(.HyperMD-list-line) {
+    padding-inline-start: 28px;
+}
+
+/*TEMPLATER*/
+.cm-s-obsidian .templater-inline .cm-templater-command, .cm-s-obsidian .templater-command-bg {
+  --background-primary-alt:var();
+  background-color: var(--code-background);
+}

@@ -1,0 +1,137 @@
+
+.is-mobile {
+  --tab-font-size: 8px;
+
+  --background-modifier-border: transparent;
+  --background-modifier-border-hover: transparent;
+
+  --font-ui-smaller: calc(var(--font-text-size) * 0.6);
+  --font-ui-small: calc(var(--font-text-size) * 0.7);
+  --font-ui-medium: calc(var(--font-text-size) * 0.8);
+  --font-ui-large: calc(var(--font-text-size) * 0,9);
+
+  /* Workspace størrelser og marginer */
+  --icon-s: 10px;
+  --icon-m: 10px;
+  --icon-l: 10px;
+
+  --input-height: 25px;
+
+  --ribbon-width: 20px;
+
+  --size-2-1: 2px;
+  --size-2-2: 4px;
+  --size-2-3: 6px;
+  --size-4-1: 4px;
+  --size-4-2: 8px;
+  --size-4-3: 10px;
+  --size-4-4: 12px;
+  --size-4-5: 16px;
+  --size-4-6: 20px;
+  --size-4-8: 25px;
+  --size-4-9: 30px;
+  --size-4-10: 10px;
+  --size-4-12: 20px;
+  --size-4-16: 30px;
+  --size-4-18: 40px;
+
+  --view-header-height: 30px;
+
+  --mobile-toolbar-height: 10px;
+  
+  --mobile-sidebar-width: 100px;
+
+  --swatch-height: 10px;
+  --swatch-width: 10px;
+  --swatch-radius: 10px;
+
+  --toggle-width: 30px;
+  --toggle-radius: 10px;
+  --toggle-thumb-radius: 10px;
+  
+  --slider-thumb-height: 15px;
+
+  --prompt-input-height: 10px;
+
+  --toggle-thumb-height: 10px;
+  --toggle-thumb-width: 10px;
+
+
+  /* Farger på elementer i WS */
+  
+  --caret-color: rgb(47, 0, 255); /*Dette er fargen på blinketingen i skrivefelt */
+
+/*
+  --nav-item-padding: var(--size-2-3) var(--size-4-2) var(--size-2-3) var(--size-4-6);
+
+  --file-margins: 10px;
+  --nav-item-parent-padding:10px;
+  --nav-item-size: 5px;
+
+  
+  --mobile-sidebar-max-width: 300px;
+  
+  --bases-header-height: 50px;
+  --system-status-background: var(--background-primary);
+
+  
+  --search-clear-button-size: 16px;
+  --search-icon-size: 20px;
+  --settings-home-background: var(--background-secondary);
+
+  --slider-thumb-width: 24px;
+  --slider-thumb-y: -9px;
+  --slider-track-height: 6px;
+  --swatch-shadow: none;
+
+  --file-margins: var(--size-4-2) var(--size-4-6);
+  --background-modifier-form-field: var(--interactive-normal);
+  --background-modifier-form-field-hover: var(--interactive-hover);
+  --keyboard-background: var(--background-primary);
+  --checkbox-size: 17px;
+*/
+
+}
+.theme-light.is-mobile {
+  --bold-color: #fe0c0c;
+  --bold-colors: #fe0c0c;
+  --color-accent-1: rgb(250, 59, 59);
+  --color-accent-2: rgb(255, 68, 130);
+  --color-accent-3: rgb(255, 144, 150);
+  --color-accent: rgb(255, 94, 0);
+  --colorpicker: hsl(244, 100%, 85%);
+  --h1-color: #4666ff;
+  --h2-color: #fe0c0c;
+  --h3-color: #7ec445;
+  --h4-color: #ff884a;
+  --h5-color: #ff92a2;
+  --h6-color: #9455ec;
+  --italic-colors: #4666ff;
+  --itallic-color: #4666ff;
+  --text-faint:;
+}
+.theme-dark .is-mobile {
+  --background-primary: rgb(47, 47, 74);/* bakgrunnsfarge */
+  --bold-color: #fdaeae;
+  --bold-colors: var(--bold-color);
+  --code-comment:;
+  --color-accent-1: rgb(250, 190, 59);
+  --color-accent-2: rgb(158, 174, 252);
+  --color-accent-3: rgb(255, 144, 150);
+  --color-accent: rgb(249, 198, 154);
+  --colorpicker: hsl(244, 100%, 85%);
+  --h1-color: #bec8f8;
+  --h2-color: #fdaeae;
+  --h3-color: #7ec445;
+  --h4-color: #ff884a;
+  --h5-color: #ff92a2;
+  --h6-color: #ccacf8;
+  --inline-title-color: var(--color-accent-2);
+  --italic-color: #a9b6f7;
+  --italic-colors: var(--italic-color);
+  --ribbon-background-collapsed: rgb(67, 67, 106);/* Ribbon */
+  --text-faint:;
+  --text-highlight-bg: #ffb192;
+  --text-normal:white;
+  --titlebar-background:: rgb(47, 47, 74);/* bakgrunnsfarge */
+}

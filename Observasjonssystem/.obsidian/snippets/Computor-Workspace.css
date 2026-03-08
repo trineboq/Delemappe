@@ -1,0 +1,253 @@
+/* ===== Størrelsesvariabler ===== */
+body:not(.is-mobile) {
+    --file-line-width: 900px;
+    --file-folding-offset: 24px;
+    --file-margins: var(--size-4-8);
+    --file-header-font-weight: 600;
+    --file-header-justify: left;
+
+    --status-bar-text-color:var(--text-accent);
+/*
+    --file-header-border: var(--border-width) solid transparent;
+
+    --card-shadow-light: 0px 0px 8px hsla(var(--accent-h), 18%, 80%, 0.4), 0px 0px 6px hsla(var(--accent-h), 18%, 80%, 0.2);
+    --card-shadow-dark: 0px 0px 0px 1px var(--background-modifier-border);
+    --card-border-radius-light: 8px;
+    --card-border-radius-dark: 8px;
+    --card-shadow-border-radius-light: calc(var(--card-border-radius-light) - 1px);
+    --card-shadow-border-radius-dark: calc(var(--card-border-radius-dark) - 1px);
+*/}
+body:not(.is-mobile) .workspace-tab-header-spacer {
+
+/* 
+    display: flex;
+    flex-grow: 0;
+*/}
+
+/* ====== status bar ====== */
+body:not(.is-mobile) .status-bar {
+    padding: 2px 16px 2px 5px;
+    font-size: 10px;
+/* STATUS BAR - OK
+    border: none;
+    background-color: transparent;
+    width: calc(100% - 44px);
+    min-height: 16px;
+*/}
+
+/* ==== tab ==== */
+.is-hidden-frameless .titlebar-button-container.mod-right {
+
+/*
+    height: 34px;
+    margin-top: 6px;
+*/}
+/* tab layout */
+.titlebar .titlebar-button-container.mod-right:not(.is-mobile) {
+
+/*
+    margin-right: 10px;
+*/}
+
+.workspace-tab-header {
+    height: 28px;
+    border-bottom-right-radius:6px !important;
+    border-bottom-left-radius:6px !important;
+/*
+    cursor: var(--cursor);
+*/}
+.workspace-split.mod-root .workspace-tab-header.is-active::before, 
+.workspace-split.mod-root .workspace-tab-header.is-active::after {
+  display: none;
+/* DETTE ER OMRÅDET FØR OG ETTER AKTIV TAB
+*/}
+.workspace-tab-header-container,
+.workspace-tabs.mod-top .workspace-tab-header-container,
+.workspace-ribbon.mod-left:before {
+    height: 40px;
+/*
+    border-bottom: 1px solid transparent;
+    height: 32px;
+*/}
+.workspace .mod-root .workspace-tab-header-inner::after:not(.is-mobile) {
+
+/*
+    background-color: var(--divider-color);
+*/}
+.mod-root .workspace-tab-header-inner:not(.is-mobile) {
+
+/*
+    padding: 10 4px 0 6px
+*/}
+.workspace .mod-root .workspace-tab-header:not(.is-mobile),
+.workspace .mod-root .workspace-tab-header:first-child:not(.is-mobile) {
+
+/*
+  padding: 0 1px 0 0px
+*/}
+.mod-root .workspace-tab-header-container-inner:not(.is-mobile) {
+
+/*
+    margin: 0px;
+    padding: 0px 4px 4px 6px;
+    height: 30px;
+
+*/}
+.workspace-tab-header-container:not(.is-mobile),
+.workspace-tabs.mod-top .workspace-tab-header-container:not(.is-mobile),
+.workspace-ribbon.mod-left:before:not(.is-mobile) {
+
+/*
+    border-bottom: 1px solid transparent;
+    height: 33px;
+
+*/}
+body:not(.is-grabbing):not(.is-fullscreen).is-hidden-frameless:not(.is-mobile) .mod-top .workspace-tab-header-container {
+
+/*
+    -webkit-app-region: drag;
+    margin-top: 6px;
+
+*/}
+
+/* Knapper */
+
+body:not(.is-mobile) .workspace-tab-header-container-inner {
+
+/*
+    display: flex;
+    flex: 0 1 auto;
+    overflow: auto;
+    margin: 6px -5px calc(var(--tab-outline-width) * -1); 
+    padding: 1px 15px 0; 
+*/
+}
+body:not(.is-mobile) .workspace-tab-header {
+
+/*
+    padding: 2px;
+    margin: 0px;
+    padding-bottom: 10px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+*/}
+body:not(.is-mobile) > div.app-container > div.horizontal-main-container > div > div.workspace-ribbon.side-dock-ribbon.mod-left > div.sidebar-toggle-button.mod-left > div {
+
+/*
+    padding-top: 16px;
+    color: var(--color-accent-1);
+*/}
+body:not(.is-mobile) > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-header-container > div.workspace-tab-header-new-tab > span,
+body:not(.is-mobile) > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-vertical.mod-root > div > div.workspace-tab-header-container > div.workspace-tab-header-tab-list > span  {
+
+/*
+    padding-bottom: 22px;
+    color: var(--color-accent-1);
+
+*/}
+.mod-macos.is-hidden-frameless:not(.is-popout-window) .sidebar-toggle-button.mod-right {
+
+/*
+    padding-right: 16px;
+
+*/}
+
+body:not(.is-mobile):not(.is-hidden-frameless):not(.is-popout-window) .sidebar-toggle-button.mod-right {
+
+/*
+    margin-right: -8px;
+
+*/}
+body:not(.is-mobile) .sidebar-toggle-button.mod-right,
+body:not(.is-mobile) .sidebar-toggle-button.mod-left,
+body:not(.is-mobile) > div.app-container > div.horizontal-main-container > div > div.workspace-split.mod-horizontal.mod-left-split > div.workspace-tabs.mod-top.mod-top-left-space > div.workspace-tab-header-container > div.workspace-tab-header-container-inner {
+
+/*
+    padding-top: 0px;
+
+*/}
+
+/* tab style */
+body:not(.is-mobile) {
+/*
+    --border-radius-activated-tab-header-light: 6px;
+    --border-radius-activated-tab-header-dark: 6px;
+    --color-activated-tab-header-light: var(--text-normal);
+    --color-activated-tab-header-dark: var(--text-normal);
+    --background-activated-tab-header-light: var(--background-primary);
+    --shadow-activated-tab-header-light: none;
+    --background-activated-tab-header-dark: var(--background-modifier-active-hover);
+    --shadow-activated-tab-header-dark: none;
+*/}
+body:not(.is-mobile).theme-light.color-to-tab-icon-light .mod-root .workspace-tab-header.is-active svg,
+body:not(.is-mobile).theme-light :is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+body.theme-light .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+
+/*
+    color: var(--color-accent-2) !important;
+    --icon-opacity: 1;
+*/}
+body.theme-dark.color-to-tab-icon-dark .mod-root .workspace-tab-header.is-active svg,
+body.theme-dark :is(.mod-left-split, .mod-right-split) .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
+body.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+
+/*
+    color: var(--color-activated-tab-header-dark) !important;
+    --icon-opacity: 1;
+*/}
+
+body:not(.is-mobile) .workspace-tab-header .workspace-tab-header-inner {
+
+/*
+    border-radius: 10px;
+    color:rgb(181, 177, 177);
+*/}
+
+body:not(.is-mobile).theme-dark .workspace-tab-header .workspace-tab-header-inner {
+
+/*
+    border-radius: var(--border-radius-activated-tab-header-dark);
+*/}
+
+body:not(.is-mobile) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner {
+
+/*
+    background: var(--color-accent-1-light);
+    box-shadow: none;
+    border-radius: 10px;
+    opacity: 0.8;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+
+*/}
+
+body:not(.is-mobile).theme-dark .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner {
+
+/*
+    background: var(--color-accent-1-dark);
+    box-shadow: none;
+    border-radius: 10px;
+*/}
+
+
+
+/* =========== Knapper over høyre marg ================ */
+.mod-left-split .workspace-tab-header-container-inner,
+.mod-right-split .workspace-tab-header-container-inner {
+    gap: 2px;
+/*
+    padding: 1px 0 0px;
+    margin: 0px 0px 0px 0px;
+*/}
+
+/* =========== SØKEFELT =========== */
+.search-input-container input {
+    padding-inline-start: 8px !important;
+/*
+    display: block;
+    width: 100%;
+*/}
+
+/* =========== ... =========== */

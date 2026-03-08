@@ -1,0 +1,85 @@
+{
+  "callouts": {
+    "custom": [],
+    "settings": {
+      "quote": [
+        {
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "255, 175, 161"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "251, 157, 157"
+          }
+        }
+      ],
+      "warning": [
+        {
+          "changes": {
+            "color": "255, 94, 41"
+          }
+        }
+      ],
+      "faq": [
+        {
+          "changes": {
+            "icon": "lucide-info",
+            "color": "77, 197, 52"
+          }
+        }
+      ],
+      "multi-column-flex-height": [
+        {
+          "changes": {}
+        },
+        {
+          "condition": {
+            "colorScheme": "light"
+          },
+          "changes": {
+            "color": "255, 255, 255"
+          }
+        },
+        {
+          "condition": {
+            "colorScheme": "dark"
+          },
+          "changes": {
+            "color": "87, 87, 87"
+          }
+        }
+      ],
+      "info": [
+        {
+          "changes": {
+            "color": "87, 118, 255"
+          }
+        }
+      ],
+      "seealso": [
+        {
+          "changes": {
+            "icon": "lucide-lightbulb",
+            "color": "77, 109, 255"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidianFallbackForced": false,
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}

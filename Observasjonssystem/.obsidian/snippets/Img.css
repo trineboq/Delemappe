@@ -1,0 +1,13 @@
+/* ===== BILDER ===== */
+body{
+  --img-max-width: 70%;
+  --img-max-height: auto;
+}
+
+img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 80% !important;
+  max-height: 300px !important;
+}

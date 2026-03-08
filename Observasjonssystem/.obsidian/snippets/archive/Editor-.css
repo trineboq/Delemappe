@@ -1,0 +1,30 @@
+/* ======================= . ============================= */
+.theme-light {
+
+}
+.theme-dark {
+
+}
+body {
+
+}
+.note {
+
+}
+.novel {
+  
+}
+.draft {
+  
+}
+.theme-light.draft{
+
+}
+.theme-dark .draft{
+
+}
+.callout[data-callout="plain"] .callout-content, .callout[data-callout="cite"] .callout-content, .callout[data-callout="code"] .callout-content {
+
+}
+/*  */
+

@@ -1,0 +1,547 @@
+/* ===== CALLOUTS ===== */
+/* NB! Denne som lager rar hovereffekt i minimal: .markdown-source-view.mod-cm6 .cm-content>.cm-embed-block[contenteditable=false]{overflow-x:auto} */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro|Noto+Sans+Mono|Poppins:wght@200|Source+Sans+Pro");
+
+body {
+  --callout-font-family: var(--font-text);
+  --callout-font-size: inherit;
+  --callout-border-width: 0px;
+  --callout-border-opacity: 0.25;
+  --callout-padding: 0 0 0 0;
+  --callout-radius: var(--radius-s);
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
+  --callout-title-color: inherit;
+  --callout-title-padding: 20px;
+  --callout-title-size: inherit;
+  --callout-content-padding: 0;
+
+  --callout-content-background: ;
+
+  --callout-bug: ;
+  --callout-default: ;
+  --callout-error: ;
+  --callout-example: ;
+  --callout-fail: ;
+  --callout-important: ;
+  --callout-info: 255, 131, 150;
+  --callout-question: ;
+  --callout-success: ;
+  --callout-summary: ;
+  --callout-tip: ;
+  --callout-todo: ;
+  --callout-warning: ;
+  --callout-quote: ;
+  --rgb01-pink: 255, 131, 150;
+  --rgb01-red: 239, 62, 91;
+  --rgb01-orange:255, 136, 74;
+  --rgb01-yellow: 241 250 140;
+  --rgb01-green: 116, 195, 101;
+  --rgb01-cyan: 153, 153, 255;
+  --rgb01-blue: 70, 102, 255;
+  --rgb01-purple: 148, 85, 236;
+}
+
+.callout {
+  overflow: hidden;
+
+  border-style: transparent;
+  border-color: rgba(var(--callout-color), var(--callout-border-opacity));
+  border-width: var(--callout-border-width);
+  border-radius: var(--callout-radius);
+
+  margin: 1em 0;
+
+  mix-blend-mode: var(--callout-blend-mode);
+
+  background-color: rgba(var(--callout-color), 0.1) !important;
+  padding: var(--callout-padding);
+  font-family:var(--callout-font-family);
+  font-size: var(--callout-font-size);
+  border-left: var(--size-2-3) solid rgba(var(--callout-color));
+  box-shadow: none !important;
+  --bold-color: rgb(var(--callout-color));
+  --italic-color: rgb(var(--callout-color));
+  --highlight-color: rgb(var(--callout-color));
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-left: 2.5px solid rgba(var(--callout-color));
+  
+  padding: 0;
+  margin: 0;
+
+  --list-indent:15px;
+}
+
+.callout, .callout .is-collapsible.is-collapsed, .callout .is-collapsible {
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-width: var(--callout-border-width);
+  background-color: rgba(var(--callout-color), 0.1);
+  padding: var(--callout-padding);
+  font-family:var(--callout-font-family);
+  box-shadow: none;
+  border-left: var(--size-2-3) solid rgba(var(--callout-color));
+}
+
+/* FØR OG ETTER */ .markdown-source-view.mod-cm6 .callout {margin-bottom: 8px;margin-top: 8px;}
+
+/* TITTEL */
+.callout .callout-title {
+  padding-left: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background-color: rgba(var(--callout-color), 0.15);
+  align-items: center;
+  font-family: var(--font-text);
+  --font-text: "Inter", sans-serif;
+
+  /*
+  
+  
+  align-items: center !Important;
+  color: rgb(var(--callout-color)) !important;
+  align-items: center;
+  --text-normal: rgb(var(--callout-color));
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(var(--callout-color), 0.3);
+*/
+}
+.callout-content .callout-title {
+  color: rgb(var(--callout-color))!important;
+  --bold-weight: 600;
+  padding-top: 8px;
+  /*
+  background-color: transparent !important;
+  
+*/
+}
+
+/* ==================== IKON ======================== */
+.callout .callout-icon{
+  width: 15px;
+  margin-left: 3px;
+  color:rgba(var(--callout-color), 0.6);
+
+/* 
+  flex: 0 0 auto;
+  display: flex;
+  padding-left: 7px;
+  padding-right: 3px;
+  margin-right: 10px;
+  align-items: center;
+*/}
+
+
+/* INNHOLD */
+/*
+  :first-child
+  .callout-content:last-child {} 
+*/
+.callout .callout-content {
+  --tag-size: var(smaller);
+  background-color: rgba(var(--callout-color), 0.01);
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.2em;
+  font-family: var(--font-note);
+  font-size: inherit;
+
+  align-items: center;
+
+  --img-max-width: 50%;
+  --blockquote-border-color: transparent !important;
+  --font-text: "Inter", sans-serif;
+
+  --h1-font: var(--font-text);
+  --h2-font: var(--font-text);
+  --h3-font: var(--font-text);
+  --h4-font: var(--font-text);
+  --h5-font: var(--font-text);
+  --h6-font: var(--font-text);
+  --h1-variant:normal;
+  --h2-variant:normal;
+  --h3-variant:normal;
+  --h4-variant:normal;
+  --h5-variant:normal;
+  --h6-variant:normal;
+  --h1-size:1.3em;
+  --h2-size:1.3em;
+  --h3-size:1.3em;
+  --h4-size:1.3em;
+  --h5-size:1.3em;
+  --h6-size:1.3em;
+
+  overflow-x: unset !important;
+  font-family: var(--font-text);
+  line-break: loose !important;
+  padding-left: 12px!important;
+  padding-right: 12px!important;
+/*
+
+*/}
+
+.callout-content .callout {
+  background-color: transparent !important;
+  border-left: none !important;
+
+/*
+  border-left: none;
+  
+  border-bottom: 3px solid rgba(var(--callout-color), 0.3) !important;
+  border-radius: 0px;
+  --bold-color: rgb(var(--callout-color));
+*/}
+
+
+
+
+
+
+.callout:not(.admonition).drop-shadow {
+  box-shadow: none;
+}
+/* .markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block>div, .markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block>mjx-container, .markdown-source-view.mod-cm6.is-readable-line-width .mod-empty,.markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block>div, .markdown-source-view.mod-cm6.is-readable-line-width .cm-embed-block>mjx-container, .markdown-source-view.mod-cm6.is-readable-line-width .mod-empty {width: calc(var(--line-width-adaptive) - var(--folding-offset))!important}*/
+
+.novel .callout .callout-content {
+  font-family: var(--font-draft);
+}
+
+
+.markdown-source-view.mod-cm6 .edit-block-button {
+  padding: 3px;
+  top: 0px!important;
+  opacity: 0;
+  background-color: transparent!important;
+  cursor: var(--cursor);
+  width: 28px;
+  height: 28px;
+/*
+  position: absolute;
+  display: flex;
+  color: transparent;
+  border-radius: var(--radius-s);
+  transition: none !important;
+*/}
+
+/* KNAPPER */
+.markdown-source-view.mod-cm6.is-live-preview.is-readable-line-width .cm-embed-block>.edit-block-button {
+  width: 30px!important;
+  padding-left: 7px!important;
+  transform: none!important;
+  margin-left: 0!important;
+}
+
+.callout-fold {
+  width: 30px!important;
+  padding-left: 7px!important;
+  transform: none!important;
+  opacity: 0.9;
+  /* color: transparent; */
+}
+
+.callout.is-collapsible .callout-fold svg.lucide-chevron-down {transform: scaleY(-1);}
+.callout.is-collapsed .callout-fold svg.lucide-chevron-down {transform: scaleY(1);}
+.callout-title .callout-title-inner {flex-grow: 1;}
+.code-border .markdown-rendered pre, .code-border .markdown-rendered p > code {outline: 1px solid var(--border-subtle-0);}
+
+
+/* === CUSTOM ADMONITIONS === *//* .callout.is-collapsible{} .callout.is-collapsible.is-collapsed:hover{none} .callout.is-collapsible.callout-fold.svg-icon{} .callout.is-collapsible.is-collapsed.callout-title.callout-fold.svg-icon{} .callout-fold.svg-icon svg.svg-icon .callout-title {height: var(--icon-size);width: var(--icon-size);stroke-width: var(--icon-stroke);}*/
+
+.callout[data-callout="multi-column"] {--callout-color: #7d7d7d00;font-family: var(--callout-font-family);}
+
+.callout[data-callout="blank-container"] {--callout-color: #7d7d7d00;padding: 10px;font-family: var(--callout-font-family);}
+
+.callout[data-callout="plain"] {font-size: inherit;font-family: "Source serif pro", serif;font-style: italic;margin: 30px;}
+.callout[data-callout="plain"] .callout-title {color:#000;font-size: inherit;font-family: var(--font-draft);font-style: normal;justify-content: center;}
+.callout[data-callout="plain"] .admonition-title-icon {color: transparent;}
+
+.callout[data-callout="viktig"] {border:transparent;font-weight: 200;font-family: var(--font-draft);background-color: #fddddd;color: #ff4646;font-style: italic;}
+.callout[data-callout="viktig"].callout-content {padding: 20px;font-size: var(--h5-size);font-family: var(--font-draft);font-weight: 200;}
+.callout[data-callout="viktig"].callout-icon {color: transparent;}
+
+.callout[data-callout="draft"], .callout[data-callout="cite"], .callout[data-callout="code"] {
+  --callout-color: 0, 0, 250 !important;
+  background-color: transparent !important;
+  line-height: 1.4em !important;
+  border: none !important;
+  --callout-title-color: rgb(var(--callout-color));
+  --bold-color: rgb(var(--callout-color));
+  --italic-color: rgb(var(--callout-color));
+  --callout-icon: none !important;
+  --block-quote-size: 1em;
+/*
+
+*/}
+
+.callout[data-callout="draft"] .callout-title, 
+.callout[data-callout="cite"] .callout-title, 
+.callout[data-callout="code"] .callout-title {
+  background-color: transparent !important;
+  padding-left: 0 !important;
+  margin-left: 0px !important;
+  gap: 0;
+  border: none !important;
+  --callout-border-width: 0 !important;
+  --callout-color:;
+}
+
+.callout[data-callout="code"], .callout[data-callout="code"] .callout-content { 
+  font-family: "Inter", sans-serif !important;
+  --bold-color: inherit;
+  --italic-color: inherit;}
+
+.callout[data-callout="draft"] .callout-content, 
+.callout[data-callout="cite"] .callout-content {  
+  font-family: "Source Serif Pro", serif;}
+
+.callout[data-callout="multi-column"], .callout[data-callout="blank-container"]{
+  --callout-color: var(--background-primary) !important;
+  --bold-color: inherit;
+  --italic-color: inherit;
+  --blockquote-border-thickness: 2px;
+  --blockquote-border-color: var(--interactive-accent) !important;
+}
+
+
+
+.callout[data-callout="meta"],
+.callout[data-callout="faq"], 
+.callout[data-callout="KI"], 
+.callout[data-callout="link"], 
+.callout[data-callout="header"], 
+.callout[data-callout="info"],
+.callout[data-callout="Viktig"],
+.callout[data-callout="web"],
+.callout[data-callout="clip"],
+.callout[data-callout="lecture"],
+.callout[data-callout="lecturenb"] {
+  border: none !important;
+  background-color: rgba(var(--callout-color), 0.1) !important;
+  --bold-color: rgb(var(--callout-color)) !important;
+}
+
+.callout[data-callout="faq"] .callout-title,
+.callout[data-callout="meta"] .callout-title, 
+.callout[data-callout="KI"] .callout-title, 
+.callout[data-callout="link"] .callout-title, 
+.callout[data-callout="header"] .callout-title,
+.callout[data-callout="info"] .callout-title, 
+.callout[data-callout="Viktig"] .callout-title, 
+.callout[data-callout="web"] .callout-title, 
+.callout[data-callout="clip"] .callout-title {
+  --text-normal: rgb(var(--callout-color));
+  background-color: transparent !important;
+  padding-left: 0;
+  color: var(--bold-color) !important;
+}
+
+.callout[data-callout="faq"] .callout-icon,
+.callout[data-callout="meta"] .callout-icon, 
+.callout[data-callout="KI"] .callout-icon, 
+.callout[data-callout="link"] .callout-icon, 
+.callout[data-callout="header"] .callout-icon,
+.callout[data-callout="info"] .callout-icon, 
+.callout[data-callout="Viktig"] .callout-icon, 
+.callout[data-callout="web"] .callout-icon, 
+.callout[data-callout="clip"] .callout-icon {
+  color: rgb(var(--callout-color));
+}
+
+
+.callout[data-callout="faq"] .callout-content,
+.callout[data-callout="meta"] .callout-content, 
+.callout[data-callout="KI"] .callout-content, 
+.callout[data-callout="link"] .callout-content, 
+.callout[data-callout="header"] .callout-content,
+.callout[data-callout="info"] .callout-content, 
+.callout[data-callout="Viktig"] .callout-content, 
+.callout[data-callout="web"] .callout-content, 
+.callout[data-callout="clip"] .callout-content {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.callout[data-callout="lecture"],
+.callout[data-callout="lecturenb"] {
+  --bold-color: red;
+  --italic-color: orange;
+  border: none !important;
+}
+
+.callout[data-callout="lecture"] .callout-content,
+.callout[data-callout="lecturenb"] .callout-content {
+  --blockquote-border-thickness: 2px !important;
+  --blockquote-border-color: rgb(var(--callout-color)) !important;
+  --blockquote-font-style: italic;
+  --blockquote-color: inherit;
+  --blockquote-background-color: transparent !important;
+}
+.callout[data-callout="lecturenb"] .callout-content {
+  border: none !important;
+  font-size: calc(var(--font-text-size) + 1px) !important;
+  color: #ff4646;
+}
+
+
+.callout[data-callout="lecture"] .callout-title,
+.callout[data-callout="lecturenb"] .callout-title{
+  --text-normal: rgb(236, 14, 14) ;
+  background-color: transparent !important;
+  font-weight: 800 !important;
+  border: none !important;
+}
+
+.callout[data-callout="lecture"] .callout-icon, .callout[data-callout="lecture"] .svg-icon,
+.callout[data-callout="lecturenb"] .callout-icon {
+  color: rgb(236, 14, 14);
+  border: none !important;
+}
+
+.callout[data-callout="Viktig"] .callout-title {
+  background-color: transparent !important;
+  font-size: 0.9em;
+  font-family: "inter", sans-serif;
+  padding-left: 7px;}
+.callout[data-callout="Viktig"] .callout-content {
+  font-family: "Source Serif Pro", serif;
+  background-color: transparent;
+  color: #ff4646;
+  font-style: italic;
+  font-size: calc(var(--font-text-size) + 3px) !important;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;}
+
+.callout[data-callout="header"]{
+  --callout-color: 232, 21, 56;
+  border: none;}
+.callout[data-callout="header"] .callout-title {
+  background-color: transparent;}
+
+.callout[data-callout="header"] .callout-content:not(.admonition-content) {
+
+  /*
+    line-height: 1.2em !important;
+    border-left: none;
+    font-style: normal;
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em !important;
+    display: ;
+    margin-bottom: 1px !important;
+    margin-block-end: 1px;
+    margin-block-start: 1px;
+    margin-top: 0px !important;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+  */}
+  
+
+.callout[data-callout="info"] .callout-content {
+  padding-left: 17px;
+  padding-right: 17;}
+
+.callout[data-callout="center"] {
+  --bold-color: inherit;
+  --italic-color: inherit;
+  background-color: transparent !important;
+  padding-left: 0 !important;
+  margin-left: 0px !important;
+  gap: 0;
+  border: none !important;
+  --callout-border-width: 0 !important;
+  --callout-color:;
+}
+.callout[data-callout="center"] .callout-title {
+  padding-left: 0;
+  --bold-color: inherit;
+  --italic-color: inherit;
+  background-color: transparent !important;
+  padding-left: 0 !important;
+  margin-left: 0px !important;
+  gap: 0;
+  border: none !important;
+  --callout-border-width: 0 !important;
+  --callout-color:;
+}
+.callout[data-callout="center"] .callout-content {
+  vertical-align: middle;
+  text-align: center;
+  --bold-color: inherit;
+  --italic-color: inherit;
+  
+}
+
+/*   
+.callout[data-callout=""] {}
+.callout[data-callout=""] .callout-title {}
+.callout[data-callout=""] .callout-content {}
+.callout[data-callout=""] .callout-icon,
+.callout[data-callout=""] .callout-icon .svg-icon {}
+
+SENTRERING:
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: var(--img-max-width) !important;
+  max-height: var(--img-max-height) !important;
+
+FJERNE IKON:
+  color: transparent;
+  width: 0 !important;
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+
+STØRRE FONT
+  font-size: calc(var(--font-text-size) + 1px) !important;
+
+  --text-normal: rgb(var(--callout-color));
+  font-weight: 600 !important;
+
+.callout[data-callout="link"] {}
+.callout[data-callout="meta"]{}
+.callout[data-callout="info"]{}
+*/
+
+
+.callout[data-callout="draft"] .callout-icon,
+.callout[data-callout="draft"] .callout-icon .svg-icon, 
+.callout[data-callout="cite"] .callout-icon, 
+.callout[data-callout="cite"] .callout-icon .svg-icon, 
+.callout[data-callout="code"] .callout-icon,
+.callout[data-callout="code"] .callout-icon .svg-icon, 
+.callout[data-callout="center"] .callout-icon,
+.callout[data-callout="center"] .callout-icon .svg-icon {
+  color: transparent;
+  width: 0 !important;
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0 !important;
+}
+
+/* === CUSTOM ADMONITIONS === 
+
+.callout.is-collapsible{
+
+}
+.callout.is-collapsible.is-collapsed:hover{
+  none
+}
+
+.callout.is-collapsible.callout-fold.svg-icon{
+
+}
+.callout.is-collapsible.is-collapsed.callout-title.callout-fold.svg-icon{
+}
+.callout-fold.svg-icon
+
+svg.svg-icon .callout-title {
+    height: var(--icon-size);
+    width: var(--icon-size);
+    stroke-width: var(--icon-stroke);
+}
+
+*/
