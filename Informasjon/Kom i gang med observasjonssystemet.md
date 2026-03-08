@@ -14,13 +14,6 @@ Oppsummert fremgangsmåte:
 	- unzip 
 	- flytt "Observasjonssystem" til obsidian-mappe i icloud drive
 
-
-
-
-### 
-
-
-
 ### "Honorable mentions" 
 Her har jeg samlet lenker til andre plugins, temaer, snippets m.m. som gjør dette systemet mulig:
 
