@@ -1,10 +1,10 @@
 1. Gå til obsidian sin hjemmeside ([obsidian](https://obsidian.md/download) ) - Her finner du lenker til alle mulige platformer (windows, PC, mac m.m.)
 2. Last ned appen til datamaskinen
 3. Åpne et finder-vindu 
-   ![127](Informasjon/_apx/README-IMG-20260307142721373.png) 
+   ![127](https://github.com/trineboq/Delemappe/blob/main/Informasjon/_apx/README-IMG-20260307142721373.png) 
 
 4. Gå til iCloud Drive. 
-   ![301](Informasjon/_apx/README-IMG-20260307142740959.png)
+   ![301](https://github.com/trineboq/Delemappe/blob/main/Informasjon/_apx/README-IMG-20260307142740959.png)
 
 
 5. Kontroller at obsidian-mappen er synkronisert til iCloud fra iPhone - og åpne mappen
