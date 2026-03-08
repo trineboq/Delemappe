@@ -13,10 +13,15 @@
 
 ![136](https://github.com/trineboq/Delemappe/blob/main/Informasjon/_apx/README-IMG-20260307142855364.png)
 
-7. Åpne mappen "Tab-observasjonssystem" (som du opprettet på telefon tidligere) 
+7. Åpne nedlastninger-mappen med "Delemappe" (som du lastet ned tidligere via [README](https://github.com/trineboq/Delemappe)-veiledningen) 
 
-8. Hvis mappen fremstår å være tom (se bildet under) bruk hurtigtast: `⌘` + `⇪` + `.` (trykk samtidig på knappene command, shift og punktum på tastaturet)
-   ![](https://github.com/trineboq/Delemappe/blob/main/Informasjon/_apx/README-IMG-20260307143030993.png)  ![](Informasjon/_apx/README-IMG-20260307143117258.png)
+8. Unzip mappen (hvis ikke du har gjort det allerede) og åpne mappen "Delemappe"
+9. Flytt mappen "Observasjonssystem" over til mappen obsidian
+10. Åpne obsidian (programmvare)
+11. Velg "Open folder as vault" og bla deg frem til "Observasjonssystem" (iCloud Drive > Obsidian > Observasjonssystem)
 
- 
-9. Slett mappen ".obsidian"
+Du kan nå begynne å bruke observasjonssystemet
+
+**Tips:** I observasjonssystem-mappen er det en egen mappe med tips til hvordan du kan bruke dette.
+
+**Viktig!** Du bør ikke endre navn på maler-mappen
