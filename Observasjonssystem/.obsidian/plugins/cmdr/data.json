@@ -26,7 +26,7 @@
   "statusBar": [],
   "pageHeader": [
     {
-      "id": "templater-obsidian:create-07-Tmp/New/Observasjonsmal.md",
+      "id": "templater-obsidian:create-Xtra-MALER/New/Observasjonsmal.md",
       "icon": "lucide-plus-circle",
       "name": "Templater: Create New/Observasjonsmal",
       "mode": "any",
@@ -40,11 +40,10 @@
       "color": "#388f39"
     },
     {
-      "id": "app:open-settings",
-      "icon": "lucide-settings",
-      "name": "Open settings",
-      "mode": "any",
-      "color": "#1714e1"
+      "id": "command-palette:open",
+      "icon": "lucide-terminal-square",
+      "name": "Command palette: Open command palette",
+      "mode": "any"
     },
     {
       "id": "editor:toggle-source",
@@ -52,19 +51,6 @@
       "name": "Toggle Live Preview/Source mode",
       "mode": "any",
       "color": "#1120e8"
-    },
-    {
-      "id": "command-palette:open",
-      "icon": "lucide-terminal-square",
-      "name": "Command palette: Open command palette",
-      "mode": "any"
-    },
-    {
-      "id": "app:delete-file",
-      "icon": "lucide-trash-2",
-      "name": "Delete current file",
-      "mode": "any",
-      "color": "#ff0000"
     }
   ],
   "macros": [],

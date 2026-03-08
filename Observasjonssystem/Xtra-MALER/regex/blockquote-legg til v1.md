@@ -1,0 +1,1 @@
+<%tp.file.selection().replace(/^/gm, ">").replace(/>([a-zæøåA-ZÆØÅ\[\(])/gm, "> $1").replace(/ +>/gm, ">")%>

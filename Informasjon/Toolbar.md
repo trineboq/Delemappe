@@ -25,4 +25,4 @@ Andre linje fra venstre til høyer - beskrivelse av kommando kort trykk (og even
 16. 
 
 **Templater-tekst-maler:**
-Bruker mal fra mappen "007-tmp/Txt/". Disse kjennetegnes ved at de legger til et enkelt ord som er vanlig i mine observasjoner.
+Bruker mal fra mappen "Xtra-MALER/Txt/". Disse kjennetegnes ved at de legger til et enkelt ord som er vanlig i mine observasjoner.

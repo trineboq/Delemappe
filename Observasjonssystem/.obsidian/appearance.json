@@ -19,7 +19,6 @@
     "MCL Gallery Cards",
     "MCL Multi Column",
     "MCL Wide Views",
-    "Mobile-v1",
     "custom-admonitions.affbad",
     "class-admonitions-v1",
     "CSSClasses-v1",
@@ -31,7 +30,8 @@
     "Editor-table",
     "Editor-table-v1",
     "Editor-v1",
-    "Embed-Class"
+    "Embed-Class",
+    "Mobile-v1"
   ],
   "theme": "system",
   "cssTheme": ""

@@ -4,7 +4,7 @@ Når du skal bruke systemet i observasjon må du først lage et observasjonsnota
 Trykk på pluss øverst i notatrute:
 ![alt text](Informasjon/_apx/Opprett%20nytt%20obs-notat.png)
 
-> Denne oppretter nytt notat fra malen [Observasjonsmal](Observasjonssystem/007-tmp/Nytt%20notat/Observasjonsmal.md) i mappen "007-tmp".
+> Denne oppretter nytt notat fra malen [Observasjonsmal](Observasjonssystem/Xtra-MALER/Nytt%20notat/Observasjonsmal.md) i mappen "Xtra-MALER".
 
 Når du trykker på pluss blir du først bedt om å legge til en identifikasjon:
 ![alt text](Informasjon/_apx/Opprett%20nytt%20obs-notat-1.png)

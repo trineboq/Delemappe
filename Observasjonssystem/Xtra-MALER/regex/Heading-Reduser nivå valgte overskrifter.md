@@ -1,0 +1,1 @@
+<%tp.file.selection().replace(/^(#+ )/gm, "#$1")%>

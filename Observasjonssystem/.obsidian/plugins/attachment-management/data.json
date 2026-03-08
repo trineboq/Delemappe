@@ -10,10 +10,10 @@
   "dateFormat": "YYYYMMDDHHmmssSSS",
   "excludeExtensionPattern": "",
   "autoRenameAttachment": true,
-  "excludedPaths": "07-tmp;INFO",
+  "excludedPaths": "Xtra-MALER;Info",
   "excludePathsArray": [
-    "07-tmp",
-    "INFO"
+    "Xtra-MALER",
+    "Info"
   ],
   "excludeSubpaths": true,
   "originalNameStorage": [],

@@ -15,12 +15,14 @@ body:not(.is-mobile) {
 /* Listepunkt */
 .theme-light {
   --bullet-list-color:black;
+  --list-marker-color: black;
 }
 .theme-dark {
   --bullet-list-color:white;
+  --list-marker-color: white;
 }
 .cm-s-obsidian .cm-formatting-list {
-  color: black !important;
+  color: var(--list-marker-color) !important;
 }
 
 /*

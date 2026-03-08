@@ -1,0 +1,1 @@
+<% tp.system.suggester(["List-card", "grid-liste", "kolonneliste"], ["#mcl/list-card", "#mcl/list-grid", "#mcl/list-column"]) %>

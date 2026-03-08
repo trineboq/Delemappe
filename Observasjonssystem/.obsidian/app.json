@@ -8,7 +8,7 @@
   "uriCallbacks": true,
   "showInlineTitle": true,
   "newFileLocation": "folder",
-  "newFileFolderPath": "01-Inbox",
+  "newFileFolderPath": "Info",
   "promptDelete": false,
   "mobileToolbarCommands": [
     "editor:paste",

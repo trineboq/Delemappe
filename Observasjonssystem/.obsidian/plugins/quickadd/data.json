@@ -1,20 +1,20 @@
 {
   "choices": [
     {
-      "id": "5cb89f06-ab49-45ac-a021-f391003d325e",
-      "name": "Observasjonsmeny",
+      "id": "59dadd14-59d6-47cf-9bab-1159b37f766f",
+      "name": "Ny linje",
       "type": "Multi",
-      "command": true,
+      "command": false,
       "choices": [
         {
           "id": "e9aef02d-df10-4191-acd4-3b6cd5b6a6f6",
-          "name": "Ny aktivitet",
+          "name": "Ny aktivitet (Bunn) ⏭️",
           "type": "Capture",
           "command": true,
           "appendLink": false,
           "captureTo": "",
           "captureToActiveFile": true,
-          "activeFileWritePosition": "cursor",
+          "activeFileWritePosition": "bottom",
           "createFileIfItDoesntExist": {
             "enabled": false,
             "createWithTemplate": false,
@@ -22,7 +22,7 @@
           },
           "format": {
             "enabled": true,
-            "format": "\n### {{GLOBAL_VAR:ObsSituasjoner}} - Antall barn: {{value:Antall barn}} Antall voksne: {{value:Antall ansatte}} - {{TIME:HH:mm}}-\n**{{TIME:HH:mm:ss}}:** <% tp.system.cursor (1) %>"
+            "format": "\n### {{GLOBAL_VAR:ObsSituasjoner}}; Antall barn: {{value:Antall barn}}; Antall voksne: {{value:Antall ansatte}}; Fra kl: {{TIME:HH:mm}}; Til kl: \n**{{TIME:HH:mm:ss}}:** {{value:Hvem hvor hva (første beskrivelse i ny aktivitet)}} <%tp.file.cursor(2)%>"
           },
           "insertAfter": {
             "enabled": false,
@@ -33,7 +33,7 @@
             "createIfNotFoundLocation": "top"
           },
           "newLineCapture": {
-            "enabled": true,
+            "enabled": false,
             "direction": "below"
           },
           "prepend": false,
@@ -46,17 +46,18 @@
             "focus": true
           },
           "templater": {
-            "afterCapture": "wholeFile"
+            "afterCapture": "none"
           }
         },
         {
-          "id": "5bb3cc2f-75e5-4e75-87bd-518f9e23164a",
-          "name": "Ny deskriptiv linje (bunn)",
+          "id": "ed1fd49e-1e3b-422c-96eb-a13974f1e620",
+          "name": "Ny deskriptiv (Bunn) ⏱️",
           "type": "Capture",
           "command": true,
           "appendLink": false,
           "captureTo": "",
           "captureToActiveFile": true,
+          "captureToCanvasNodeId": "",
           "activeFileWritePosition": "cursor",
           "createFileIfItDoesntExist": {
             "enabled": false,
@@ -65,7 +66,7 @@
           },
           "format": {
             "enabled": true,
-            "format": "**{{TIME:HH:mm:ss}}:** <% tp.file.cursor() %>"
+            "format": "**{{TIME:HH:mm:ss}}:** {{value:Beskriv det du ser, og hører}} <%tp.file.cursor(2)%>"
           },
           "insertAfter": {
             "enabled": false,
@@ -89,17 +90,18 @@
             "focus": true
           },
           "templater": {
-            "afterCapture": "wholeFile"
+            "afterCapture": "none"
           }
         },
         {
-          "id": "c27f660b-9ad5-4c95-ba13-cb83161c1923",
-          "name": "Legg til info for obs",
+          "id": "da9d1275-7c52-478f-ab41-524743de39f3",
+          "name": "Ny Notatmarkør (Bunn) 🗒️",
           "type": "Capture",
           "command": true,
           "appendLink": false,
           "captureTo": "",
           "captureToActiveFile": true,
+          "captureToCanvasNodeId": "",
           "activeFileWritePosition": "cursor",
           "createFileIfItDoesntExist": {
             "enabled": false,
@@ -108,14 +110,146 @@
           },
           "format": {
             "enabled": true,
-            "format": "**Teams-ID:** <% tp.file.title.replace(/\\d+-/g, \"\") %>\n**Dato:** {{DATE:DD.MM.YYYY}}\n**Barnehage:** {{GLOBAL_VAR:Barnehager}}\n**Tid fra:** {{TIME:HH:mm}}\n**Antall barn (I dag av Totalt):** {{value:Antall barn (I dag av Totalt)}}\n**Antall ansatte (I dag av Totalt):** {{value:Antall ansatte (I dag av Totalt)}}\n"
+            "format": "**{{TIME:HH:mm:ss}}:** ;**{{GLOBAL_VAR:DeskriptivTagg}}:**; {{value:Notat om dette}} <%tp.file.cursor(2)%>"
           },
           "insertAfter": {
+            "enabled": false,
+            "after": "### Fysisk utforming",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": true,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "none"
+          }
+        },
+        {
+          "id": "e43dbaa4-56d3-44e2-a2a3-fb81a0171bb6",
+          "name": "Ny aktivitet (under)",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "captureToCanvasNodeId": "",
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
             "enabled": true,
-            "after": "# Observasjon",
+            "format": "\n### {{GLOBAL_VAR:ObsSituasjoner}}; Antall barn: <%tp.file.cursor(1)%>; Antall ansatte: <%tp.file.cursor(2)%>; Fra kl: {{TIME:HH:mm}}; Til kl: \n**{{TIME:HH:mm:ss}}:** {{value:Hvem hvor hva (første beskrivelse i ny aktivitet)}} <%tp.file.cursor(3)%>"
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "### Fysisk utforming",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": true,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          }
+        },
+        {
+          "id": "bedaabd4-fa55-4b86-aac9-49b07d272dde",
+          "name": "Ny Notatmarkør (Under) 🗒️",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "captureToCanvasNodeId": "",
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "**{{TIME:HH:mm:ss}}:** ;**{{GLOBAL_VAR:DeskriptivTagg}}:**; "
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "### Fysisk utforming",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": true,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "none"
+          }
+        },
+        {
+          "id": "8808ecb4-99ad-4c05-9802-bdff581ff9b1",
+          "name": "Inline DeskriptivTagg",
+          "type": "Capture",
+          "command": true,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "captureToCanvasNodeId": "",
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": " ;**{{GLOBAL_VAR:DeskriptivTagg}}:**; <%tp.file.cursor()%>"
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "",
             "insertAtEnd": false,
             "considerSubsections": false,
-            "createIfNotFound": true,
+            "createIfNotFound": false,
             "createIfNotFoundLocation": "top",
             "inline": false,
             "replaceExisting": false,
@@ -139,479 +273,249 @@
           }
         },
         {
-          "id": "48216e3f-6e0b-4a1d-ac76-1a724ef25e90",
-          "name": "Notat (Barn)",
-          "type": "Macro",
+          "id": "160ecfcd-046b-4ba6-84ba-2e076954bf59",
+          "name": "Ny deskriptiv (Under)",
+          "type": "Capture",
           "command": true,
-          "runOnStartup": false,
-          "macro": {
-            "name": "Notat (Barn)",
-            "id": "9f3ee0c2-2b87-4cec-ad7e-51a620e95f48",
-            "commands": [
-              {
-                "name": "Notat",
-                "type": "NestedChoice",
-                "id": "e06fd764-769c-4552-9188-dc975b34b415",
-                "choice": {
-                  "id": "63a8c683-8b9b-4fa3-afd2-5f42a26b4486",
-                  "name": "Notat",
-                  "type": "Capture",
-                  "command": false,
-                  "appendLink": false,
-                  "captureTo": "",
-                  "captureToActiveFile": true,
-                  "activeFileWritePosition": "cursor",
-                  "createFileIfItDoesntExist": {
-                    "enabled": false,
-                    "createWithTemplate": false,
-                    "template": ""
-                  },
-                  "format": {
-                    "enabled": true,
-                    "format": "{{VALUE:Note om barnet}} ({{time}})\n"
-                  },
-                  "insertAfter": {
-                    "enabled": true,
-                    "after": "### Barnet",
-                    "insertAtEnd": true,
-                    "considerSubsections": false,
-                    "createIfNotFound": false,
-                    "createIfNotFoundLocation": "top",
-                    "inline": false,
-                    "replaceExisting": false,
-                    "blankLineAfterMatchMode": "auto"
-                  },
-                  "newLineCapture": {
-                    "enabled": false,
-                    "direction": "below"
-                  },
-                  "prepend": false,
-                  "task": false,
-                  "openFile": false,
-                  "fileOpening": {
-                    "location": "tab",
-                    "direction": "vertical",
-                    "mode": "default",
-                    "focus": true
-                  },
-                  "templater": {
-                    "afterCapture": "none"
-                  }
-                }
-              }
-            ]
-          }
-        },
-        {
-          "id": "d6723809-642f-42af-b453-d36306106088",
-          "name": "Notat (Ansatt)",
-          "type": "Macro",
-          "command": true,
-          "runOnStartup": false,
-          "macro": {
-            "name": "Notat (Ansatt)",
-            "id": "70671df1-376e-4f75-b02c-0bbecff11e31",
-            "commands": [
-              {
-                "name": "Notat",
-                "type": "NestedChoice",
-                "id": "e4a18cdb-fd82-4cd4-a809-368c32a5a6e9",
-                "choice": {
-                  "id": "63a8c683-8b9b-4fa3-afd2-5f42a26b4486",
-                  "name": "Notat",
-                  "type": "Capture",
-                  "command": false,
-                  "appendLink": false,
-                  "captureTo": "",
-                  "captureToActiveFile": true,
-                  "activeFileWritePosition": "cursor",
-                  "createFileIfItDoesntExist": {
-                    "enabled": false,
-                    "createWithTemplate": false,
-                    "template": ""
-                  },
-                  "format": {
-                    "enabled": true,
-                    "format": "{{VALUE:Note om Ansatte:}} ({{time}})\n"
-                  },
-                  "insertAfter": {
-                    "enabled": true,
-                    "after": "### Ansatte",
-                    "insertAtEnd": true,
-                    "considerSubsections": false,
-                    "createIfNotFound": false,
-                    "createIfNotFoundLocation": "top",
-                    "inline": false,
-                    "replaceExisting": false,
-                    "blankLineAfterMatchMode": "auto"
-                  },
-                  "newLineCapture": {
-                    "enabled": false,
-                    "direction": "below"
-                  },
-                  "prepend": false,
-                  "task": false,
-                  "openFile": false,
-                  "fileOpening": {
-                    "location": "tab",
-                    "direction": "vertical",
-                    "mode": "default",
-                    "focus": true
-                  },
-                  "templater": {
-                    "afterCapture": "none"
-                  }
-                }
-              }
-            ]
-          }
-        },
-        {
-          "id": "802716fb-7fd7-4291-ab49-5df4a1548dd4",
-          "name": "Notat (Barnegruppa)",
-          "type": "Macro",
-          "command": true,
-          "runOnStartup": false,
-          "macro": {
-            "name": "Notat (Barnegruppa)",
-            "id": "5c71ba8b-4400-4827-94da-b73cf56f39c9",
-            "commands": [
-              {
-                "name": "Notat",
-                "type": "NestedChoice",
-                "id": "79df8ee4-1714-40fd-887d-986e09e0c9ec",
-                "choice": {
-                  "id": "63a8c683-8b9b-4fa3-afd2-5f42a26b4486",
-                  "name": "Notat",
-                  "type": "Capture",
-                  "command": false,
-                  "appendLink": false,
-                  "captureTo": "",
-                  "captureToActiveFile": true,
-                  "activeFileWritePosition": "cursor",
-                  "createFileIfItDoesntExist": {
-                    "enabled": false,
-                    "createWithTemplate": false,
-                    "template": ""
-                  },
-                  "format": {
-                    "enabled": true,
-                    "format": "{{VALUE:Note om Barnegruppa:}} ({{time}})\n"
-                  },
-                  "insertAfter": {
-                    "enabled": true,
-                    "after": "### Barnegruppen",
-                    "insertAtEnd": true,
-                    "considerSubsections": false,
-                    "createIfNotFound": false,
-                    "createIfNotFoundLocation": "top",
-                    "inline": false,
-                    "replaceExisting": false,
-                    "blankLineAfterMatchMode": "auto"
-                  },
-                  "newLineCapture": {
-                    "enabled": false,
-                    "direction": "below"
-                  },
-                  "prepend": false,
-                  "task": false,
-                  "openFile": false,
-                  "fileOpening": {
-                    "location": "tab",
-                    "direction": "vertical",
-                    "mode": "default",
-                    "focus": true
-                  },
-                  "templater": {
-                    "afterCapture": "none"
-                  }
-                }
-              }
-            ]
-          }
-        },
-        {
-          "id": "182052dd-1ac4-4388-b1af-25f216c08fd3",
-          "name": "Notat (Fysisk utforming)",
-          "type": "Macro",
-          "command": true,
-          "runOnStartup": false,
-          "macro": {
-            "name": "Notat (Fysisk utforming)",
-            "id": "d0b4a4e2-febc-46a1-b8cf-bf3d70cb6832",
-            "commands": [
-              {
-                "name": "Notat",
-                "type": "NestedChoice",
-                "id": "24656ecb-d9d7-4433-8e59-d4f3e65222d7",
-                "choice": {
-                  "id": "63a8c683-8b9b-4fa3-afd2-5f42a26b4486",
-                  "name": "Notat",
-                  "type": "Capture",
-                  "command": false,
-                  "appendLink": false,
-                  "captureTo": "",
-                  "captureToActiveFile": true,
-                  "activeFileWritePosition": "cursor",
-                  "createFileIfItDoesntExist": {
-                    "enabled": false,
-                    "createWithTemplate": false,
-                    "template": ""
-                  },
-                  "format": {
-                    "enabled": true,
-                    "format": "{{VALUE:Note om fysisk utforming}} <% tp.file.cursor(1) %>({{time}})\n"
-                  },
-                  "insertAfter": {
-                    "enabled": true,
-                    "after": "### Fysisk utforming",
-                    "insertAtEnd": true,
-                    "considerSubsections": false,
-                    "createIfNotFound": false,
-                    "createIfNotFoundLocation": "top",
-                    "inline": false,
-                    "replaceExisting": false,
-                    "blankLineAfterMatchMode": "auto"
-                  },
-                  "newLineCapture": {
-                    "enabled": false,
-                    "direction": "below"
-                  },
-                  "prepend": false,
-                  "task": false,
-                  "openFile": false,
-                  "fileOpening": {
-                    "location": "tab",
-                    "direction": "vertical",
-                    "mode": "default",
-                    "focus": true
-                  },
-                  "templater": {
-                    "afterCapture": "none"
-                  }
-                }
-              },
-              {
-                "name": "cursor",
-                "type": "NestedChoice",
-                "id": "bd16e944-9727-4284-8635-d907672296ee",
-                "choice": {
-                  "id": "aeb7c00e-237c-4228-8f45-5ca8d3bba429",
-                  "name": "cursor",
-                  "type": "Capture",
-                  "command": false,
-                  "appendLink": false,
-                  "captureTo": "",
-                  "captureToActiveFile": true,
-                  "activeFileWritePosition": "cursor",
-                  "createFileIfItDoesntExist": {
-                    "enabled": false,
-                    "createWithTemplate": false,
-                    "template": ""
-                  },
-                  "format": {
-                    "enabled": true,
-                    "format": "<% tp.file.cursor(2) %>"
-                  },
-                  "insertAfter": {
-                    "enabled": false,
-                    "after": "",
-                    "insertAtEnd": false,
-                    "considerSubsections": false,
-                    "createIfNotFound": false,
-                    "createIfNotFoundLocation": "top",
-                    "inline": false,
-                    "replaceExisting": false,
-                    "blankLineAfterMatchMode": "auto"
-                  },
-                  "newLineCapture": {
-                    "enabled": false,
-                    "direction": "below"
-                  },
-                  "prepend": true,
-                  "task": false,
-                  "openFile": false,
-                  "fileOpening": {
-                    "location": "tab",
-                    "direction": "vertical",
-                    "mode": "default",
-                    "focus": true
-                  },
-                  "templater": {
-                    "afterCapture": "wholeFile"
-                  }
-                }
-              }
-            ]
-          }
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "captureToCanvasNodeId": "",
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "**{{TIME:HH:mm:ss}}:** "
+          },
+          "insertAfter": {
+            "enabled": false,
+            "after": "### Fysisk utforming",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top"
+          },
+          "newLineCapture": {
+            "enabled": true,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "wholeFile"
+          },
+          "isDndShadowItem": true
         }
       ],
       "collapsed": false
     },
     {
-      "id": "4994ddc0-f9a5-45cc-bd03-aae6a6666942",
-      "name": "txt",
-      "type": "Capture",
+      "id": "cff3180e-2e4a-4d1d-83f6-03910b5c2bea",
+      "name": "Div Format",
+      "type": "Multi",
       "command": false,
-      "appendLink": false,
-      "captureTo": "",
-      "captureToActiveFile": true,
-      "activeFileWritePosition": "cursor",
-      "createFileIfItDoesntExist": {
-        "enabled": false,
-        "createWithTemplate": false,
-        "template": ""
-      },
-      "format": {
-        "enabled": true,
-        "format": " r"
-      },
-      "insertAfter": {
-        "enabled": false,
-        "after": "",
-        "insertAtEnd": false,
-        "considerSubsections": false,
-        "createIfNotFound": false,
-        "createIfNotFoundLocation": "top",
-        "inline": false,
-        "replaceExisting": false,
-        "blankLineAfterMatchMode": "auto"
-      },
-      "newLineCapture": {
-        "enabled": false,
-        "direction": "below"
-      },
-      "prepend": false,
-      "task": false,
-      "openFile": false,
-      "fileOpening": {
-        "location": "tab",
-        "direction": "vertical",
-        "mode": "default",
-        "focus": true
-      },
-      "templater": {
-        "afterCapture": "none"
-      }
+      "choices": [
+        {
+          "id": "01be70cd-ace7-4dcc-a60f-7876a0642097",
+          "name": "Spørsmålformat",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "captureToCanvasNodeId": "",
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "> **{{VALUE:Spørsmål til senere (trenger ikke spm.tegn)}}?**\n> \n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## Spørsmål",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top",
+            "inline": false,
+            "replaceExisting": false,
+            "blankLineAfterMatchMode": "auto"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "none"
+          }
+        },
+        {
+          "id": "7c0a8932-eeed-437a-97af-b05834b5e3ae",
+          "name": "Info-Format",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "captureToCanvasNodeId": "",
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "> {{VALUE:Ansatte informerer før/under/etter (med klokkeslett)}} ({{TIME}})\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## Informasjon fra ansatte",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top",
+            "inline": false,
+            "replaceExisting": false,
+            "blankLineAfterMatchMode": "auto"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "none"
+          }
+        },
+        {
+          "id": "e77ef54c-726e-4815-9408-89080a981810",
+          "name": "Notat-tagg Format",
+          "type": "Capture",
+          "command": false,
+          "appendLink": false,
+          "captureTo": "",
+          "captureToActiveFile": true,
+          "captureToCanvasNodeId": "",
+          "activeFileWritePosition": "cursor",
+          "createFileIfItDoesntExist": {
+            "enabled": false,
+            "createWithTemplate": false,
+            "template": ""
+          },
+          "format": {
+            "enabled": true,
+            "format": "#{{GLOBAL_VAR:NoteTagg}} {{VALUE:Notat:}} ({{time}})\n"
+          },
+          "insertAfter": {
+            "enabled": true,
+            "after": "## Mine notater",
+            "insertAtEnd": true,
+            "considerSubsections": false,
+            "createIfNotFound": false,
+            "createIfNotFoundLocation": "top",
+            "inline": false,
+            "replaceExisting": false,
+            "blankLineAfterMatchMode": "auto"
+          },
+          "newLineCapture": {
+            "enabled": false,
+            "direction": "below"
+          },
+          "prepend": false,
+          "task": false,
+          "openFile": false,
+          "fileOpening": {
+            "location": "tab",
+            "direction": "vertical",
+            "mode": "default",
+            "focus": true
+          },
+          "templater": {
+            "afterCapture": "none"
+          }
+        }
+      ],
+      "collapsed": true
     },
     {
-      "id": "3972e0a2-996d-48b5-97ac-00c57362e7d5",
-      "name": "Ansatte tilrettelegger",
-      "type": "Capture",
-      "command": true,
-      "appendLink": false,
-      "captureTo": "",
-      "captureToActiveFile": true,
-      "activeFileWritePosition": "cursor",
-      "createFileIfItDoesntExist": {
-        "enabled": false,
-        "createWithTemplate": false,
-        "template": ""
-      },
-      "format": {
-        "enabled": true,
-        "format": " ;**Ansatte tilrettelegger:**; "
-      },
-      "insertAfter": {
-        "enabled": false,
-        "after": "",
-        "insertAtEnd": false,
-        "considerSubsections": false,
-        "createIfNotFound": false,
-        "createIfNotFoundLocation": "top",
-        "inline": false,
-        "replaceExisting": false,
-        "blankLineAfterMatchMode": "auto"
-      },
-      "newLineCapture": {
-        "enabled": false,
-        "direction": "below"
-      },
-      "prepend": false,
-      "task": false,
-      "openFile": false,
-      "fileOpening": {
-        "location": "tab",
-        "direction": "vertical",
-        "mode": "default",
-        "focus": true
-      },
-      "templater": {
-        "afterCapture": "none"
-      }
-    },
-    {
-      "id": "995b6a1b-f5e6-406b-8d52-f4274ee0b2a1",
-      "name": "Macro",
+      "id": "1d972be4-ee00-45e4-95e7-597c373621b3",
+      "name": "Linje start",
       "type": "Macro",
-      "command": false,
+      "command": true,
       "runOnStartup": false,
       "macro": {
-        "name": "Macro",
-        "id": "cf21d666-210e-4e84-b9c3-3f2da0790465",
+        "name": "Linje start",
+        "id": "3944df58-c091-49b8-b72a-be698c615c9d",
         "commands": [
           {
-            "name": "Untitled Capture Choice",
-            "type": "NestedChoice",
-            "id": "d7318f6d-b7c2-4f2a-861e-c14fe64b29ea",
-            "choice": {
-              "id": "f8f2f2f0-1845-44eb-a881-10a96adcd360",
-              "name": "Untitled Capture Choice",
-              "type": "Capture",
-              "command": false,
-              "appendLink": false,
-              "captureTo": "",
-              "captureToActiveFile": false,
-              "activeFileWritePosition": "cursor",
-              "createFileIfItDoesntExist": {
-                "enabled": false,
-                "createWithTemplate": false,
-                "template": ""
-              },
-              "format": {
-                "enabled": false,
-                "format": ""
-              },
-              "insertAfter": {
-                "enabled": false,
-                "after": "",
-                "insertAtEnd": false,
-                "considerSubsections": false,
-                "createIfNotFound": false,
-                "createIfNotFoundLocation": "top",
-                "inline": false,
-                "replaceExisting": false,
-                "blankLineAfterMatchMode": "auto"
-              },
-              "newLineCapture": {
-                "enabled": false,
-                "direction": "below"
-              },
-              "prepend": false,
-              "task": false,
-              "openFile": false,
-              "fileOpening": {
-                "location": "tab",
-                "direction": "vertical",
-                "mode": "default",
-                "focus": true
-              },
-              "templater": {
-                "afterCapture": "none"
-              }
-            }
+            "name": "Select active line",
+            "type": "EditorCommand",
+            "id": "ef00cba6-5114-452e-a570-cf971356b7d8",
+            "editorCommandType": "Select active line"
           },
           {
-            "name": "Go to last line",
+            "name": "Move caret left",
             "type": "Obsidian",
-            "id": "f2a8dcdb-3fba-436d-9266-3100fa99557a",
-            "commandId": "editor:go-end"
+            "id": "237c8588-c51a-48c1-943b-1a2301a336f8",
+            "commandId": "editor:move-caret-left"
+          }
+        ]
+      }
+    },
+    {
+      "id": "16199ed4-2e89-48d0-b7f0-ab349274523b",
+      "name": "Linje slutt",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Linje slutt",
+        "id": "10b1ffa0-fd5b-4713-beff-02dcba11b35b",
+        "commands": [
+          {
+            "name": "Select active line",
+            "type": "EditorCommand",
+            "id": "3abd108c-30da-4963-b5f6-c13c40261136",
+            "editorCommandType": "Select active line"
           },
           {
-            "name": "Templater: Jump to next cursor location",
+            "name": "Move caret right",
             "type": "Obsidian",
-            "id": "ec0773af-8ac7-4358-9f5f-4f0ab00ad2ea",
-            "commandId": "templater-obsidian:jump-to-next-cursor-location"
+            "id": "165662fc-703d-47c0-ab07-85c82e94b5c2",
+            "commandId": "editor:move-caret-right"
           }
         ]
       }
@@ -757,77 +661,28 @@
       }
     },
     {
-      "id": "1d972be4-ee00-45e4-95e7-597c373621b3",
-      "name": "Linje start",
+      "id": "35e3f22b-de1a-499b-a296-2411b55d2e15",
+      "name": "Legg til spørsmål",
       "type": "Macro",
       "command": true,
       "runOnStartup": false,
       "macro": {
-        "name": "Linje start",
-        "id": "3944df58-c091-49b8-b72a-be698c615c9d",
+        "name": "Legg til spørsmål",
+        "id": "b329d462-940e-4301-92d9-5bf9238047e7",
         "commands": [
           {
-            "name": "Select active line",
-            "type": "EditorCommand",
-            "id": "ef00cba6-5114-452e-a570-cf971356b7d8",
-            "editorCommandType": "Select active line"
-          },
-          {
-            "name": "Move caret left",
-            "type": "Obsidian",
-            "id": "237c8588-c51a-48c1-943b-1a2301a336f8",
-            "commandId": "editor:move-caret-left"
-          }
-        ]
-      }
-    },
-    {
-      "id": "16199ed4-2e89-48d0-b7f0-ab349274523b",
-      "name": "Linje slutt",
-      "type": "Macro",
-      "command": true,
-      "runOnStartup": false,
-      "macro": {
-        "name": "Linje slutt",
-        "id": "10b1ffa0-fd5b-4713-beff-02dcba11b35b",
-        "commands": [
-          {
-            "name": "Select active line",
-            "type": "EditorCommand",
-            "id": "3abd108c-30da-4963-b5f6-c13c40261136",
-            "editorCommandType": "Select active line"
-          },
-          {
-            "name": "Move caret right",
-            "type": "Obsidian",
-            "id": "165662fc-703d-47c0-ab07-85c82e94b5c2",
-            "commandId": "editor:move-caret-right"
-          }
-        ]
-      }
-    },
-    {
-      "id": "56cec2af-94dc-4b34-af10-db2d63f391ff",
-      "name": "Parantes",
-      "type": "Macro",
-      "command": true,
-      "runOnStartup": false,
-      "macro": {
-        "name": "Parantes",
-        "id": "162bddc4-61e2-4d3b-a632-d00f1353c8dc",
-        "commands": [
-          {
-            "name": "Untitled Capture Choice",
+            "name": "Legg til cursorplassering for senere",
             "type": "NestedChoice",
-            "id": "88f7355c-e55a-4f96-a2f4-348578b40e60",
+            "id": "5ca3d45d-c302-487d-907c-ed0262519360",
             "choice": {
-              "id": "ba4d8f61-9c53-444c-b6fe-b69ea6a33d4e",
-              "name": "Untitled Capture Choice",
+              "id": "42df7d49-1ed3-422c-91fa-884196414a32",
+              "name": "Legg til cursorplassering for senere",
               "type": "Capture",
               "command": false,
               "appendLink": false,
               "captureTo": "",
               "captureToActiveFile": true,
+              "captureToCanvasNodeId": "",
               "activeFileWritePosition": "cursor",
               "createFileIfItDoesntExist": {
                 "enabled": false,
@@ -836,7 +691,7 @@
               },
               "format": {
                 "enabled": true,
-                "format": "(<% tp.file.cursor() %>)"
+                "format": "<%tp.file.cursor(1)%>"
               },
               "insertAfter": {
                 "enabled": false,
@@ -868,10 +723,604 @@
             }
           },
           {
+            "name": "Spørsmålformat",
+            "type": "Choice",
+            "id": "72f5d51a-2cb0-4ec9-a0cb-eaf1311e49f2",
+            "choiceId": "01be70cd-ace7-4dcc-a60f-7876a0642097"
+          },
+          {
             "name": "Templater: Jump to next cursor location",
             "type": "Obsidian",
-            "id": "0763077f-dc01-49ae-a84c-0ed126bec94c",
+            "id": "8e172039-0a94-4d57-bfd7-e207397ed0cc",
             "commandId": "templater-obsidian:jump-to-next-cursor-location"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5f36a713-1e27-4a79-8284-98850aa752ea",
+      "name": "Legg til notat (med tagg)",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Legg til notat (med tagg)",
+        "id": "03020f80-cb9d-4016-b274-e6c03c6dfb32",
+        "commands": [
+          {
+            "name": "Legg til cursorplassering for senere",
+            "type": "NestedChoice",
+            "id": "4aa617ac-06e2-472c-a1ec-5ca8b34ec71a",
+            "choice": {
+              "id": "42df7d49-1ed3-422c-91fa-884196414a32",
+              "name": "Legg til cursorplassering for senere",
+              "type": "Capture",
+              "command": false,
+              "appendLink": false,
+              "captureTo": "",
+              "captureToActiveFile": true,
+              "captureToCanvasNodeId": "",
+              "activeFileWritePosition": "cursor",
+              "createFileIfItDoesntExist": {
+                "enabled": false,
+                "createWithTemplate": false,
+                "template": ""
+              },
+              "format": {
+                "enabled": true,
+                "format": "<%tp.file.cursor(1)%>"
+              },
+              "insertAfter": {
+                "enabled": false,
+                "after": "",
+                "insertAtEnd": false,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top",
+                "inline": false,
+                "replaceExisting": false,
+                "blankLineAfterMatchMode": "auto"
+              },
+              "newLineCapture": {
+                "enabled": false,
+                "direction": "below"
+              },
+              "prepend": false,
+              "task": false,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "templater": {
+                "afterCapture": "none"
+              }
+            }
+          },
+          {
+            "name": "Notat-tagg Format",
+            "type": "Choice",
+            "id": "20a5f427-8942-47a7-988b-8a0ae6c40ebc",
+            "choiceId": "e77ef54c-726e-4815-9408-89080a981810"
+          },
+          {
+            "name": "Templater: Jump to next cursor location",
+            "type": "Obsidian",
+            "id": "ecb093c2-6a55-432f-929b-85eff4a70dcd",
+            "commandId": "templater-obsidian:jump-to-next-cursor-location"
+          }
+        ]
+      }
+    },
+    {
+      "id": "21fe5355-217b-4813-a826-e4acc2db710d",
+      "name": "Legg til info fra ansatte",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Legg til info fra ansatte",
+        "id": "83772910-4a2a-44b3-b117-3cff6496317d",
+        "commands": [
+          {
+            "name": "Info-Format",
+            "type": "Choice",
+            "id": "6357a077-cce4-4f2e-88c3-5966f483b651",
+            "choiceId": "7c0a8932-eeed-437a-97af-b05834b5e3ae"
+          }
+        ]
+      }
+    },
+    {
+      "id": "429f0b1a-db73-4354-b937-a89d7c621d27",
+      "name": "Gå til siste notat",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Gå til siste notat",
+        "id": "e3a8eb5a-5567-4435-b69b-7ba9099f0434",
+        "commands": [
+          {
+            "name": "plasser tpCursor2 der du er",
+            "type": "NestedChoice",
+            "id": "4f05bbab-ee23-48aa-a830-90dbec14fef9",
+            "choice": {
+              "id": "ad1b9dc2-a300-480e-9a75-ae5f993ed9be",
+              "name": "plasser tpCursor2 der du er",
+              "type": "Capture",
+              "command": false,
+              "appendLink": false,
+              "captureTo": "",
+              "captureToActiveFile": true,
+              "captureToCanvasNodeId": "",
+              "activeFileWritePosition": "cursor",
+              "createFileIfItDoesntExist": {
+                "enabled": false,
+                "createWithTemplate": false,
+                "template": ""
+              },
+              "format": {
+                "enabled": true,
+                "format": "<%tp.file.cursor(2)%>"
+              },
+              "insertAfter": {
+                "enabled": false,
+                "after": "",
+                "insertAtEnd": false,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top",
+                "inline": false,
+                "replaceExisting": false,
+                "blankLineAfterMatchMode": "auto"
+              },
+              "newLineCapture": {
+                "enabled": false,
+                "direction": "below"
+              },
+              "prepend": false,
+              "task": false,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "templater": {
+                "afterCapture": "none"
+              }
+            }
+          },
+          {
+            "name": "Plasser tpCursor1 i MineNotater-overskrift",
+            "type": "NestedChoice",
+            "id": "ab695294-3032-42cf-9468-7ad944fe3db1",
+            "choice": {
+              "id": "27d27e15-7a68-4c69-9ad8-695bc603fd95",
+              "name": "Plasser tpCursor1 i MineNotater-overskrift",
+              "type": "Capture",
+              "command": false,
+              "appendLink": false,
+              "captureTo": "",
+              "captureToActiveFile": true,
+              "captureToCanvasNodeId": "",
+              "activeFileWritePosition": "cursor",
+              "createFileIfItDoesntExist": {
+                "enabled": false,
+                "createWithTemplate": false,
+                "template": ""
+              },
+              "format": {
+                "enabled": true,
+                "format": "<%tp.file.cursor(1)%>"
+              },
+              "insertAfter": {
+                "enabled": true,
+                "after": "## Mine notater",
+                "insertAtEnd": false,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top",
+                "inline": true,
+                "replaceExisting": false,
+                "blankLineAfterMatchMode": "auto"
+              },
+              "newLineCapture": {
+                "enabled": false,
+                "direction": "below"
+              },
+              "prepend": false,
+              "task": false,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "templater": {
+                "afterCapture": "none"
+              }
+            }
+          },
+          {
+            "name": "Templater: Jump to next cursor location",
+            "type": "Obsidian",
+            "id": "70b0bbeb-56c4-47da-93a2-419e5d6c251c",
+            "commandId": "templater-obsidian:jump-to-next-cursor-location"
+          }
+        ]
+      }
+    },
+    {
+      "id": "51979bab-d6cf-4009-aa01-a442ea6124f9",
+      "name": "Gå til siste Info",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Gå til siste Info",
+        "id": "fddd9aaa-0339-4dc2-a6df-37184b67e1e7",
+        "commands": [
+          {
+            "name": "plasser tpCursor2 der du er",
+            "type": "NestedChoice",
+            "id": "6d34d30f-cb4f-4f98-bd22-98a9bd342857",
+            "choice": {
+              "id": "ad1b9dc2-a300-480e-9a75-ae5f993ed9be",
+              "name": "plasser tpCursor2 der du er",
+              "type": "Capture",
+              "command": false,
+              "appendLink": false,
+              "captureTo": "",
+              "captureToActiveFile": true,
+              "captureToCanvasNodeId": "",
+              "activeFileWritePosition": "cursor",
+              "createFileIfItDoesntExist": {
+                "enabled": false,
+                "createWithTemplate": false,
+                "template": ""
+              },
+              "format": {
+                "enabled": true,
+                "format": "<%tp.file.cursor(2)%>"
+              },
+              "insertAfter": {
+                "enabled": false,
+                "after": "",
+                "insertAtEnd": false,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top",
+                "inline": false,
+                "replaceExisting": false,
+                "blankLineAfterMatchMode": "auto"
+              },
+              "newLineCapture": {
+                "enabled": false,
+                "direction": "below"
+              },
+              "prepend": false,
+              "task": false,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "templater": {
+                "afterCapture": "none"
+              }
+            }
+          },
+          {
+            "name": "Plasser tpCursor1 i Info-overskrift",
+            "type": "NestedChoice",
+            "id": "76792407-ffeb-4151-a078-3c55f9c17f5e",
+            "choice": {
+              "id": "27d27e15-7a68-4c69-9ad8-695bc603fd95",
+              "name": "Plasser tpCursor1 i Info-overskrift",
+              "type": "Capture",
+              "command": false,
+              "appendLink": false,
+              "captureTo": "",
+              "captureToActiveFile": true,
+              "captureToCanvasNodeId": "",
+              "activeFileWritePosition": "cursor",
+              "createFileIfItDoesntExist": {
+                "enabled": false,
+                "createWithTemplate": false,
+                "template": ""
+              },
+              "format": {
+                "enabled": true,
+                "format": "<%tp.file.cursor(1)%>"
+              },
+              "insertAfter": {
+                "enabled": true,
+                "after": "## Informasjon fra ansatte",
+                "insertAtEnd": false,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top",
+                "inline": true,
+                "replaceExisting": false,
+                "blankLineAfterMatchMode": "auto"
+              },
+              "newLineCapture": {
+                "enabled": false,
+                "direction": "below"
+              },
+              "prepend": false,
+              "task": false,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "templater": {
+                "afterCapture": "none"
+              }
+            }
+          },
+          {
+            "name": "Templater: Jump to next cursor location",
+            "type": "Obsidian",
+            "id": "e15ecfef-b1f7-43e8-a55d-3b74767bf2c5",
+            "commandId": "templater-obsidian:jump-to-next-cursor-location"
+          }
+        ]
+      }
+    },
+    {
+      "id": "64340162-284a-4ea9-848c-68cfc2a2838e",
+      "name": "Gå til siste spørsmål",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Gå til siste spørsmål",
+        "id": "8ee8452f-d4cb-4e0d-84c0-598ea5676e0c",
+        "commands": [
+          {
+            "name": "plasser tpCursor2 der du er",
+            "type": "NestedChoice",
+            "id": "9931540b-5ce8-42fb-926a-cf7d94258af3",
+            "choice": {
+              "id": "ad1b9dc2-a300-480e-9a75-ae5f993ed9be",
+              "name": "plasser tpCursor2 der du er",
+              "type": "Capture",
+              "command": false,
+              "appendLink": false,
+              "captureTo": "",
+              "captureToActiveFile": true,
+              "captureToCanvasNodeId": "",
+              "activeFileWritePosition": "cursor",
+              "createFileIfItDoesntExist": {
+                "enabled": false,
+                "createWithTemplate": false,
+                "template": ""
+              },
+              "format": {
+                "enabled": true,
+                "format": "<%tp.file.cursor(2)%>"
+              },
+              "insertAfter": {
+                "enabled": false,
+                "after": "",
+                "insertAtEnd": false,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top",
+                "inline": false,
+                "replaceExisting": false,
+                "blankLineAfterMatchMode": "auto"
+              },
+              "newLineCapture": {
+                "enabled": false,
+                "direction": "below"
+              },
+              "prepend": false,
+              "task": false,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "templater": {
+                "afterCapture": "none"
+              }
+            }
+          },
+          {
+            "name": "Plasser tpCursor1 i Spm-overskrift",
+            "type": "NestedChoice",
+            "id": "29500b07-47da-4aa5-998b-809fe5532a3c",
+            "choice": {
+              "id": "27d27e15-7a68-4c69-9ad8-695bc603fd95",
+              "name": "Plasser tpCursor1 i Spm-overskrift",
+              "type": "Capture",
+              "command": false,
+              "appendLink": false,
+              "captureTo": "",
+              "captureToActiveFile": true,
+              "captureToCanvasNodeId": "",
+              "activeFileWritePosition": "cursor",
+              "createFileIfItDoesntExist": {
+                "enabled": false,
+                "createWithTemplate": false,
+                "template": ""
+              },
+              "format": {
+                "enabled": true,
+                "format": "<%tp.file.cursor(1)%>"
+              },
+              "insertAfter": {
+                "enabled": true,
+                "after": "## Spørsmål",
+                "insertAtEnd": false,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top",
+                "inline": true,
+                "replaceExisting": false,
+                "blankLineAfterMatchMode": "auto"
+              },
+              "newLineCapture": {
+                "enabled": false,
+                "direction": "below"
+              },
+              "prepend": false,
+              "task": false,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "templater": {
+                "afterCapture": "none"
+              }
+            }
+          },
+          {
+            "name": "Templater: Jump to next cursor location",
+            "type": "Obsidian",
+            "id": "ee2e25b2-56d4-4b61-b25e-1aa3d1f764aa",
+            "commandId": "templater-obsidian:jump-to-next-cursor-location"
+          }
+        ]
+      }
+    },
+    {
+      "id": "944b8b27-e6a3-427e-90bd-f52f80b81838",
+      "name": "Avslutt obs",
+      "type": "Macro",
+      "command": true,
+      "runOnStartup": false,
+      "macro": {
+        "name": "Avslutt obs",
+        "id": "ce793c97-6410-4cce-b593-81535b5eaf0f",
+        "commands": [
+          {
+            "name": "Legg til sluttlinje",
+            "type": "NestedChoice",
+            "id": "1180c2c0-2114-4883-92bb-c2e5c45eccbf",
+            "choice": {
+              "id": "0b73642d-19c4-4502-af8e-28f6267528c5",
+              "name": "Legg til sluttlinje",
+              "type": "Capture",
+              "command": false,
+              "appendLink": false,
+              "captureTo": "",
+              "captureToActiveFile": true,
+              "captureToCanvasNodeId": "",
+              "activeFileWritePosition": "bottom",
+              "createFileIfItDoesntExist": {
+                "enabled": false,
+                "createWithTemplate": false,
+                "template": ""
+              },
+              "format": {
+                "enabled": true,
+                "format": "**{{time:HH:mm:ss}}:** Observasjon ferdig"
+              },
+              "insertAfter": {
+                "enabled": false,
+                "after": "",
+                "insertAtEnd": false,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top",
+                "inline": false,
+                "replaceExisting": false,
+                "blankLineAfterMatchMode": "auto"
+              },
+              "newLineCapture": {
+                "enabled": false,
+                "direction": "below"
+              },
+              "prepend": false,
+              "task": false,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "templater": {
+                "afterCapture": "none"
+              }
+            }
+          },
+          {
+            "name": "Legg til Tid til",
+            "type": "NestedChoice",
+            "id": "5e30da54-e780-4f07-b96c-3570ca81f6a8",
+            "choice": {
+              "id": "4d79c866-0998-4c03-aa3b-509a0995ccc2",
+              "name": "Legg til Tid til",
+              "type": "Capture",
+              "command": false,
+              "appendLink": false,
+              "captureTo": "",
+              "captureToActiveFile": true,
+              "captureToCanvasNodeId": "",
+              "activeFileWritePosition": "cursor",
+              "createFileIfItDoesntExist": {
+                "enabled": false,
+                "createWithTemplate": false,
+                "template": ""
+              },
+              "format": {
+                "enabled": true,
+                "format": "**Til kl:** {{time}}"
+              },
+              "insertAfter": {
+                "enabled": true,
+                "after": "# Observasjon",
+                "insertAtEnd": true,
+                "considerSubsections": false,
+                "createIfNotFound": false,
+                "createIfNotFoundLocation": "top",
+                "inline": false,
+                "replaceExisting": false,
+                "blankLineAfterMatchMode": "auto"
+              },
+              "newLineCapture": {
+                "enabled": false,
+                "direction": "below"
+              },
+              "prepend": false,
+              "task": false,
+              "openFile": false,
+              "fileOpening": {
+                "location": "tab",
+                "direction": "vertical",
+                "mode": "default",
+                "focus": true
+              },
+              "templater": {
+                "afterCapture": "none"
+              }
+            }
+          },
+          {
+            "name": "Regex Pipeline: notatfiks",
+            "type": "Obsidian",
+            "id": "69f576c3-63a5-4d0e-8723-5905658469c7",
+            "commandId": "obsidian-regex-pipeline:ruleset: notatfiks"
           }
         ]
       }
@@ -881,11 +1330,13 @@
   "persistInputPromptDrafts": true,
   "useSelectionAsCaptureValue": true,
   "devMode": false,
-  "templateFolderPath": "07-Tmp",
+  "templateFolderPath": "Xtra-MALER",
   "announceUpdates": "none",
   "version": "2.12.0",
   "globalVariables": {
-    "ObsSituasjoner": "{{VALUE:Innelek,Utelek,Måltid,Toalett,Garderobe, Gå til buss,Gå til destinasjon,Gå fra destinasjon,Gå til barnehage,Kollektivreise,Overgang|Annet}}"
+    "ObsSituasjoner": "{{VALUE:Innelek,Utelek,Måltid,Toalett,Garderobe, Gå til buss,Gå til destinasjon,Gå fra destinasjon,Gå til barnehage,Kollektivreise,Overgang|Annet}}",
+    "NoteTagg": "{{VALUE:Anbefalinger,FysiskUforming,BarnetsBehov,ObserverteTiltak,Barnegruppe,AnsattRos|Annet}}",
+    "DeskriptivTagg": "{{VALUE:Barnets behov,Andre barn,Ansatt tilrettelegger,Fysisk utforming,Tolkning,Note}}"
   },
   "onePageInputEnabled": false,
   "disableOnlineFeatures": true,
