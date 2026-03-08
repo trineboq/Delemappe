@@ -15,7 +15,7 @@ await tp.file.move( "ObsNotater/" + Identifikator + "/" + titleName)
 ## Informasjon fra ansatte
 > **Gjennom observasjonen opplyser ansatte om ...**
 
-## Notater
+## Mine notater
 
 
 ## Spørsmål
