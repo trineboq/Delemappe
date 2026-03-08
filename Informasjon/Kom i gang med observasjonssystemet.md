@@ -5,10 +5,10 @@ Her kan du lese om hvordan komme i gang med mitt digitale observasjonssystem. Sy
 > Ved å laste ned mappen "Observasjonssystem" og legge den til Obsidian-mappe på iCloud, opprettes det et hvelv, som du kan bruke som utgangspunkt for et digitalt observasjonsverktøy. 
 
 Oppsummert fremgangsmåte:
-1. [Last ned obsidian til iphone](Informasjon/Last%20ned%20obsidian%20til%20iphone.md) - Husk: 
+1. [Last ned obsidian til iphone](Delemappe/Informasjon/Last%20ned%20obsidian%20til%20iphone.md) - Husk: 
 	- Synch til icloud
 	- Opprett hvelv
-2. [Last ned obsidian til mac](Informasjon/Last%20ned%20obsidian%20til%20mac.md) - Nyttig:
+2. [Last ned obsidian til mac](Delemappe/Informasjon/Last%20ned%20obsidian%20til%20mac.md) - Nyttig:
 	- vis skulte filer i finder: `⌘` + `⇪` + `.` 
 3. Last ned obsidian-hvelvet fra github (
 	- unzip 
