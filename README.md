@@ -11,4 +11,4 @@ Fra denne siden kan du navigere til andre sider med veiledning til hvordan komme
 2. Trykk på fanen "Local" og "Download Zip" 
    ![](Informasjon/_apx/Last%20ned%20Zip.png)
 
-   3. En zip-fil blir lastet ned til din datamaskin (Åpne plassering til filen - så har du denne til senere).
+3. En zip-fil blir lastet ned til din datamaskin (Åpne plassering til filen - så har du denne til senere).
